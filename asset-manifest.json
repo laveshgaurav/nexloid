@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/nexloid/static/css/main.1e66f801.chunk.css",
+    "main.js": "/nexloid/static/js/main.8f89a36c.chunk.js",
+    "main.js.map": "/nexloid/static/js/main.8f89a36c.chunk.js.map",
+    "runtime-main.js": "/nexloid/static/js/runtime-main.ce44a80a.js",
+    "runtime-main.js.map": "/nexloid/static/js/runtime-main.ce44a80a.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/nexloid/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.09be29f0.chunk.js": "/nexloid/static/js/2.09be29f0.chunk.js",
+    "static/js/2.09be29f0.chunk.js.map": "/nexloid/static/js/2.09be29f0.chunk.js.map",
+    "static/js/3.9b4a64d6.chunk.js": "/nexloid/static/js/3.9b4a64d6.chunk.js",
+    "static/js/3.9b4a64d6.chunk.js.map": "/nexloid/static/js/3.9b4a64d6.chunk.js.map",
+    "index.html": "/nexloid/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/nexloid/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.1e66f801.chunk.css.map": "/nexloid/static/css/main.1e66f801.chunk.css.map",
+    "static/js/2.09be29f0.chunk.js.LICENSE.txt": "/nexloid/static/js/2.09be29f0.chunk.js.LICENSE.txt",
+    "static/media/blogs.1150b34f.svg": "/nexloid/static/media/blogs.1150b34f.svg",
+    "static/media/cro.7dd66be7.svg": "/nexloid/static/media/cro.7dd66be7.svg",
+    "static/media/digital.a2f333c1.svg": "/nexloid/static/media/digital.a2f333c1.svg",
+    "static/media/img1.1dd70cf0.svg": "/nexloid/static/media/img1.1dd70cf0.svg",
+    "static/media/img3.bab98b39.svg": "/nexloid/static/media/img3.bab98b39.svg",
+    "static/media/likeReact.327c075c.svg": "/nexloid/static/media/likeReact.327c075c.svg",
+    "static/media/logo.4a2693dd.png": "/nexloid/static/media/logo.4a2693dd.png",
+    "static/media/power.75315e9b.svg": "/nexloid/static/media/power.75315e9b.svg",
+    "static/media/profile-1.f92e5ecc.jpg": "/nexloid/static/media/profile-1.f92e5ecc.jpg",
+    "static/media/profile-2.96cde40a.jpg": "/nexloid/static/media/profile-2.96cde40a.jpg",
+    "static/media/tag.d9505ea9.svg": "/nexloid/static/media/tag.d9505ea9.svg",
+    "static/media/work1.f3f809e8.png": "/nexloid/static/media/work1.f3f809e8.png",
+    "static/media/work2.10802da0.png": "/nexloid/static/media/work2.10802da0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce44a80a.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.09be29f0.chunk.js",
+    "static/css/main.1e66f801.chunk.css",
+    "static/js/main.8f89a36c.chunk.js"
+  ]
+}
