@@ -1,0 +1,247 @@
+.footer-container{
+    width: 100%;
+    height: auto;
+    background-color: #1A1E21;
+    padding: 2% 8%;
+    display: flex;
+    min-height: 30vh;
+    .section{
+        width: 25%;
+       justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 40%;
+        }
+        h6{
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 14px;
+        }
+        a{
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 12px;
+            text-decoration: none;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            width: max-content;
+            padding: 0px 6px;
+            &:hover {
+                color: #3685C3;
+            }
+            }
+            
+        }
+        .info{
+        h5{
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p{
+             color: white;
+             font-size: 12px;
+        }
+    }
+    form{
+        width: 100%;
+        display: flex;
+        input{
+            border: none;
+            outline: none;
+            background-color: #31363A;
+            color: #929A9F;
+            padding: 2%;
+            font-size: 14px;
+            border-radius: 4px 0 0 4px;
+        }
+        button{
+            background-color: #3C4043;
+            border: none;
+            outline: none;
+            padding:0.4rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: orange;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+    }
+@media only screen and (max-width: 768px) {
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: #1A1E21;
+    padding: 8%;
+    display: flex;
+    min-height: 30vh;
+    flex-wrap: wrap;
+
+    .section {
+        width: 46%;
+        padding: 2%;
+        margin: 2%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 40%;
+        }
+
+        h6 {
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        a {
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 12px;
+            text-decoration: none;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            width: max-content;
+            padding: 0px 6px;
+
+            &:hover {
+                color: #3685C3;
+            }
+        }
+
+    }
+
+    .info {
+        h5 {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            font-size: 12px;
+        }
+    }
+
+    form {
+        width: max-content;
+        display: flex;
+
+        input {
+            border: none;
+            outline: none;
+            background-color: #31363A;
+            color: #929A9F;
+            padding: 2%;
+            font-size: 10px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        button {
+            background-color: #3C4043;
+            border: none;
+            outline: none;
+            padding: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: orange;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
+}
+@media only screen and (max-width: 375px) {
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: #1A1E21;
+    padding: 8%;
+    display: flex;
+    min-height: 30vh;
+    flex-wrap: wrap;
+
+    .section {
+        width: 96%;
+        padding: 2%;
+        margin: 2%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 40%;
+        }
+
+        h6 {
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 14px;
+            margin-bottom: 2.2em;
+
+        }
+
+        a {
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 12px;
+            text-decoration: none;
+            margin-bottom: 0.8rem;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            width: max-content;
+            padding: 0px 6px;
+
+            &:hover {
+                color: #3685C3;
+            }
+        }
+
+    }
+
+    .info {
+        h5 {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            font-size: 12px;
+        }
+    }
+
+    form {
+        width: max-content;
+        display: flex;
+
+        input {
+            border: none;
+            outline: none;
+            background-color: #31363A;
+            color: #929A9F;
+            padding: 2%;
+            font-size: 10px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        button {
+            background-color: #3C4043;
+            border: none;
+            outline: none;
+            padding: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: orange;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
+}

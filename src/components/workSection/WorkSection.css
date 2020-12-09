@@ -1,0 +1,263 @@
+.work-container {
+  width: 100%;
+  height: auto;
+}
+
+.work-container .work-section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 8%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work-container .work-section h2 {
+  color: #464545;
+  position: relative;
+  padding: 0.3rem;
+}
+
+.work-container .work-section h2::after {
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 3px;
+  background-color: #F6861F;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.work-container .work-section .work-box {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-container .work-section .work-box .description {
+  width: 60%;
+  padding: 1rem 5rem;
+}
+
+.work-container .work-section .work-box .description h3 {
+  color: #202020;
+  font-size: 18px;
+  margin-bottom: 0.6rem;
+}
+
+.work-container .work-section .work-box .description p {
+  color: #707070;
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 0.6rem;
+}
+
+.work-container .work-section .work-box .description a {
+  color: #F6861F;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.work-container .work-section .work-box .img-box {
+  width: 40%;
+  padding: 1rem 2rem;
+}
+
+.work-container .work-section .work-box .img-box img {
+  width: 100%;
+}
+
+.work-container .explore {
+  width: 100%;
+  padding: 2% 8%;
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-container .explore p {
+  width: 50%;
+  font-size: 32px;
+}
+
+.work-container .explore button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8.8px 24.5px;
+  border-radius: 5px;
+  background-color: #3685c3;
+  border: 2px solid #3685c3;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.work-container .explore button:hover {
+  background-color: white;
+  color: #3685c3;
+}
+
+.work-container .explore button:focus {
+  border: 2px solid #3685c3;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-container {
+    width: 100%;
+    height: auto;
+  }
+  .work-container .work-section {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2% 8%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work-container .work-section h2 {
+    color: #464545;
+    position: relative;
+    padding: 0.3rem;
+  }
+  .work-container .work-section h2::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 3px;
+    background-color: #F6861F;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .work-container .work-section .work-box {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .work-container .work-section .work-box .description {
+    width: 100%;
+    padding: 2em 3rem;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .work-container .work-section .work-box .description h3 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 0.6rem;
+  }
+  .work-container .work-section .work-box .description p {
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 0.6rem;
+  }
+  .work-container .work-section .work-box .description a {
+    color: #F6861F;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .work-container .work-section .work-box .img-box {
+    width: 100%;
+    padding: 1% 2%;
+    position: relative;
+  }
+  .work-container .work-section .work-box .img-box img {
+    width: 100%;
+  }
+  .work-container .explore {
+    width: 100%;
+    padding: 2% 8%;
+    margin: 5% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-container .explore p {
+    width: 60%;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .work-container {
+    width: 100%;
+    height: auto;
+  }
+  .work-container .work-section {
+    width: 100%;
+    height: 100vh;
+  }
+  .work-container .explore {
+    width: 100%;
+    padding: 2% 8%;
+    margin: 5% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-container .explore p {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=WorkSection.css.map */

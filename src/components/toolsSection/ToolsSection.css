@@ -1,0 +1,114 @@
+.tools-container {
+  width: 100%;
+  height: auto;
+}
+
+.tools-container .tools-section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tools-container .tools-section .heading h2 {
+  color: #464545;
+  border-bottom: 3px solid #F6861F;
+  padding: 0.3rem;
+}
+
+.tools-container .tools-section .tools-content {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tools-container .tools-section .tools-content .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tools-container .tools-section .tools-content .box .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #E5E5E5;
+}
+
+.tools-container .tools-section .tools-content .box h3 {
+  color: #3685C3;
+  padding: 1rem;
+}
+
+.tools-container .tools-section .tools-content .box p {
+  color: #565656;
+}
+
+@media only screen and (max-width: 425px) {
+  .tools-container .tools-section {
+    width: 100%;
+    height: auto;
+  }
+  .tools-container .tools-section .tools-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .tools-container .tools-section .tools-content .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8%;
+  }
+  .tools-container .tools-section .tools-content .box .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #E5E5E5;
+  }
+  .tools-container .tools-section .tools-content .box h3 {
+    color: #3685C3;
+    padding: 1rem;
+  }
+  .tools-container .tools-section .tools-content .box p {
+    color: #565656;
+  }
+}
+/*# sourceMappingURL=ToolsSection.css.map */
