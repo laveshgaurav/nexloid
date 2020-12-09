@@ -10,12 +10,10 @@ function App() {
     //   <Navigation />
     //   <HomePage />
     // </React.Fragment>
-    <Router basename="/">
+    <Router>
       <Navigation />
       <Switch>
-        <Route path="/" exact>
-          <HomePage />
-        </Route>
+        <Route path="/nexloid" exact component={HomePage} />
       </Switch>
     </Router>
   );
