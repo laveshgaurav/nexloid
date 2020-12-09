@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nexloid/static/css/main.14dbc357.chunk.css",
-    "main.js": "/nexloid/static/js/main.6878625f.chunk.js",
-    "main.js.map": "/nexloid/static/js/main.6878625f.chunk.js.map",
+    "main.js": "/nexloid/static/js/main.acc9290f.chunk.js",
+    "main.js.map": "/nexloid/static/js/main.acc9290f.chunk.js.map",
     "runtime-main.js": "/nexloid/static/js/runtime-main.5b54e7f1.js",
     "runtime-main.js.map": "/nexloid/static/js/runtime-main.5b54e7f1.js.map",
     "static/js/2.5789bf81.chunk.js": "/nexloid/static/js/2.5789bf81.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.5b54e7f1.js",
     "static/js/2.5789bf81.chunk.js",
     "static/css/main.14dbc357.chunk.css",
-    "static/js/main.6878625f.chunk.js"
+    "static/js/main.acc9290f.chunk.js"
   ]
 }
