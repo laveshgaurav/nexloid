@@ -104,7 +104,7 @@ function BlogSection() {
               <img src={profile2} />
             </div>
             <div>
-              <h4>Sam Wilson</h4>
+              <h4>Max William</h4>
               <p>MD, the wagon</p>
             </div>
           </div>
