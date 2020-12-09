@@ -10,10 +10,10 @@ function App() {
     //   <Navigation />
     //   <HomePage />
     // </React.Fragment>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Switch>
-        <Route path="/nexloid" exact component={HomePage} />
+        <Route path="/" exact component={HomePage} />
       </Switch>
     </Router>
   );
