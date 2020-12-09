@@ -194,7 +194,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .footer-container {
     width: 100%;
     height: auto;
@@ -295,3 +295,4 @@
     border-radius: 0px 4px 4px 0px;
   }
 }
+/*# sourceMappingURL=Footer.css.map */

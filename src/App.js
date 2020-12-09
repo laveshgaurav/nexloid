@@ -6,15 +6,18 @@ import HomePage from "./pages/homePage/HomePage";
 
 function App() {
   return (
-    <React.Fragment>
+    // <React.Fragment>
+    //   <Navigation />
+    //   <HomePage />
+    // </React.Fragment>
+    <Router basename="/">
       <Navigation />
-      <HomePage />
-    </React.Fragment>
-    // <Router basename="/">
-    //   <Switch>
-    //     <Route exact path="/" component={HomePage} />
-    //   </Switch>
-    // </Router>
+      <Switch>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
