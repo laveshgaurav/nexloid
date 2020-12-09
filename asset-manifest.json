@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nexloid/static/css/main.1e66f801.chunk.css",
-    "main.js": "/nexloid/static/js/main.ee4d9a46.chunk.js",
-    "main.js.map": "/nexloid/static/js/main.ee4d9a46.chunk.js.map",
-    "runtime-main.js": "/nexloid/static/js/runtime-main.a4795367.js",
-    "runtime-main.js.map": "/nexloid/static/js/runtime-main.a4795367.js.map",
-    "static/js/2.b312f161.chunk.js": "/nexloid/static/js/2.b312f161.chunk.js",
-    "static/js/2.b312f161.chunk.js.map": "/nexloid/static/js/2.b312f161.chunk.js.map",
-    "static/js/3.873f2e83.chunk.js": "/nexloid/static/js/3.873f2e83.chunk.js",
-    "static/js/3.873f2e83.chunk.js.map": "/nexloid/static/js/3.873f2e83.chunk.js.map",
+    "main.css": "/nexloid/static/css/main.14dbc357.chunk.css",
+    "main.js": "/nexloid/static/js/main.bc89b4c1.chunk.js",
+    "main.js.map": "/nexloid/static/js/main.bc89b4c1.chunk.js.map",
+    "runtime-main.js": "/nexloid/static/js/runtime-main.5b54e7f1.js",
+    "runtime-main.js.map": "/nexloid/static/js/runtime-main.5b54e7f1.js.map",
+    "static/js/2.5789bf81.chunk.js": "/nexloid/static/js/2.5789bf81.chunk.js",
+    "static/js/2.5789bf81.chunk.js.map": "/nexloid/static/js/2.5789bf81.chunk.js.map",
+    "static/js/3.a1744f72.chunk.js": "/nexloid/static/js/3.a1744f72.chunk.js",
+    "static/js/3.a1744f72.chunk.js.map": "/nexloid/static/js/3.a1744f72.chunk.js.map",
     "index.html": "/nexloid/index.html",
-    "static/css/main.1e66f801.chunk.css.map": "/nexloid/static/css/main.1e66f801.chunk.css.map",
-    "static/js/2.b312f161.chunk.js.LICENSE.txt": "/nexloid/static/js/2.b312f161.chunk.js.LICENSE.txt",
+    "static/css/main.14dbc357.chunk.css.map": "/nexloid/static/css/main.14dbc357.chunk.css.map",
+    "static/js/2.5789bf81.chunk.js.LICENSE.txt": "/nexloid/static/js/2.5789bf81.chunk.js.LICENSE.txt",
     "static/media/blogs.1150b34f.svg": "/nexloid/static/media/blogs.1150b34f.svg",
     "static/media/cro.7dd66be7.svg": "/nexloid/static/media/cro.7dd66be7.svg",
     "static/media/digital.a2f333c1.svg": "/nexloid/static/media/digital.a2f333c1.svg",
@@ -27,9 +27,9 @@
     "static/media/work2.10802da0.png": "/nexloid/static/media/work2.10802da0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a4795367.js",
-    "static/js/2.b312f161.chunk.js",
-    "static/css/main.1e66f801.chunk.css",
-    "static/js/main.ee4d9a46.chunk.js"
+    "static/js/runtime-main.5b54e7f1.js",
+    "static/js/2.5789bf81.chunk.js",
+    "static/css/main.14dbc357.chunk.css",
+    "static/js/main.bc89b4c1.chunk.js"
   ]
 }
