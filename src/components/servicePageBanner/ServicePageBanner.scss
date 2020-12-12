@@ -1,0 +1,183 @@
+.Service-Banner-Container {
+    width: 100%;
+    height: auto;
+
+    .Service-Banner-Section {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        padding: 0 8%;
+
+        .section1 {
+            width: 40%;
+            height: 100%;
+            // background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .heading {
+
+                // border: 2px solid red;
+                h3 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    // line-height: 1.33;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #464545;
+                }
+
+                p {
+                    margin-top: 4%;
+                    font-size: 12px;
+                    padding-right: 12%;
+
+                }
+
+                button {
+                    margin-top: 4%;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 8.8px 24.5px;
+                    border-radius: 5px;
+                    background-color: #3685c3;
+                    border: 2px solid #3685c3;
+                    transition: 0.3s ease-in;
+
+                    &:hover {
+                        background-color: white;
+                        color: #3685c3;
+
+                    }
+
+                    &:focus {
+                        border: 2px solid #3685c3;
+
+                        outline: none;
+
+                    }
+                }
+
+            }
+        }
+
+        .section2 {
+            width: 55%;
+            height: 100%;
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8%;
+
+            .img-box {
+                width: 380px;
+                height: 380px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .section3 {
+            width: 5%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            // align-items: center;
+            span {
+                width: 100%;
+                padding: 0.4rem;
+                margin-top: 1rem;
+                // background-color: aquamarine;
+                text-align: center;
+
+                a {
+                    color: #464545;
+
+                    &:hover i {
+                        color: #3685c3;
+                    }
+
+                    i {
+                        transition: 0.4s ease-out;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .Service-Banner-Container {
+
+
+        .Service-Banner-Section {
+
+            height: auto;
+
+            flex-direction: column;
+
+            .section1 {
+                width: 100%;
+                height: 100%;
+
+
+                .heading {
+
+                    h3 {}
+
+                    p {}
+
+                    button {}
+
+                }
+            }
+
+            .section2 {
+                width: 100%;
+                height: auto;
+
+
+                .img-box {
+                    width: 100%;
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .section3 {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+
+                span {
+
+                    a {}
+                }
+            }
+        }
+
+    }
+}

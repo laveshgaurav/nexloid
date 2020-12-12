@@ -1,0 +1,179 @@
+.Service-Banner-Container {
+  width: 100%;
+  height: auto;
+}
+
+.Service-Banner-Container .Service-Banner-Section {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8%;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 .heading h3 {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464545;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 .heading p {
+  margin-top: 4%;
+  font-size: 12px;
+  padding-right: 12%;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 .heading button {
+  margin-top: 4%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8.8px 24.5px;
+  border-radius: 5px;
+  background-color: #3685c3;
+  border: 2px solid #3685c3;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 .heading button:hover {
+  background-color: white;
+  color: #3685c3;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section1 .heading button:focus {
+  border: 2px solid #3685c3;
+  outline: none;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section2 {
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8%;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section2 .img-box {
+  width: 380px;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section2 .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section3 {
+  width: 5%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section3 span {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section3 span a {
+  color: #464545;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section3 span a:hover i {
+  color: #3685c3;
+}
+
+.Service-Banner-Container .Service-Banner-Section .section3 span a i {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Service-Banner-Container .Service-Banner-Section {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Service-Banner-Container .Service-Banner-Section .section1 {
+    width: 100%;
+    height: 100%;
+  }
+  .Service-Banner-Container .Service-Banner-Section .section2 {
+    width: 100%;
+    height: auto;
+  }
+  .Service-Banner-Container .Service-Banner-Section .section2 .img-box {
+    width: 100%;
+    height: auto;
+  }
+  .Service-Banner-Container .Service-Banner-Section .section2 .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .Service-Banner-Container .Service-Banner-Section .section3 {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=ServicePageBanner.css.map */

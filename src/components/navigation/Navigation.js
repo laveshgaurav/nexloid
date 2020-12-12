@@ -3,6 +3,7 @@ import "./Navigation.css";
 import logo from "../../assets/logo.png";
 import ham from "../../assets/ham.png";
 import close from "../../assets/close.png";
+import { Link } from "react-router-dom";
 function Navigation() {
   const [toggle, setToggle] = useState(true);
   let drawerClasses = "navbar";
@@ -25,12 +26,14 @@ function Navigation() {
           <img src={close} className="ham" onClick={clickHam} alt="close" />
         )}
 
-        <img src={logo} alt="logo" className="logo_img" />
+        <Link to="">
+          <img src={logo} alt="logo" className="logo_img" />
+        </Link>
       </div>
       <div className={drawerClasses}>
-        <a className="nav-links" href="#home">
+        <Link className="nav-links" to="service" onClick={clickHam}>
           Service
-        </a>
+        </Link>
         <div className="dropdown">
           <button className="dropbtn">
             Tools

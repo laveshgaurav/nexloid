@@ -8,6 +8,7 @@ import WorkSection from "../../components/workSection/WorkSection";
 import ToolsSection from "../../components/toolsSection/ToolsSection";
 import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 function HomePage() {
   return (
@@ -30,21 +31,7 @@ function HomePage() {
           </div>
         </div>
         <div className="section3">
-          <span>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </span>
-          <span>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </span>
+          <SocialMedia />
         </div>
       </div>
       <div className="Intro">
