@@ -1,6 +1,7 @@
 import React from "react";
 import tag from "../../assets/tag-service.svg";
 import SocialMedia from "../socialMedia/SocialMedia";
+import { motion } from "framer-motion";
 import "./ServicePageBanner.css";
 function ServicePageBanner() {
   return (
@@ -21,7 +22,7 @@ function ServicePageBanner() {
         </div>
         <div className="section2">
           <div className="img-box">
-            <img src={tag} />
+            <img src={tag} alt="tag" />
           </div>
         </div>
         <div className="section3">

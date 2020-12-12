@@ -4,6 +4,7 @@ import ServiceTool from "../../components/serviceTool/ServiceTool";
 import "./ServicePage.css";
 import img from "../../assets/8401.jpg";
 import Footer from "../../components/footer/Footer";
+import ContactUs from "../../components/contactUs/ContactUs";
 function ServicePage() {
   return (
     <React.Fragment>
