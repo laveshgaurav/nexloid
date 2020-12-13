@@ -61,7 +61,9 @@ function Navigation() {
           <a className="nav-links">Works</a>
           <a className="nav-links">Blogs</a>
           <a className="nav-links">Career</a>
-          <a className="nav-links">About</a>
+          <Link className="nav-links" to="aboutUs" onClick={clickHam}>
+            About
+          </Link>
         </div>
 
         <div className="Button">

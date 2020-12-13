@@ -6,8 +6,7 @@
         height:90vh;
         display: flex;
         align-items: center;
-            padding: 0 8%;
-
+         padding: 0 8%;
         .section1{
             width: 40%;
             height: 100%;
@@ -19,7 +18,7 @@
             .heading{
                 // border: 2px solid red;
                 h3{
-                font-size:32px;
+                font-size:2rem;
                 font-weight: bold;
                 font-stretch: normal;
                 font-style: normal;
@@ -30,17 +29,18 @@
                       }
                       p{
                           margin-top: 4%;
-                          font-size: 12px;
+                          font-size: 1rem;
                           padding-right: 12%;
                           
                       }
                       button{
-                                                    margin-top: 4%;
+                  margin-top: 4%;
     cursor: pointer;
                        border: none;
                        outline: none;
                         color: white;
                           padding: 8.8px 24.5px;
+                          font-size: 1rem;
                           border-radius: 5px;
                           background-color: #3685c3;
                           border: 2px solid #3685c3;
@@ -48,17 +48,12 @@
                           &:hover {
                               background-color: white;
                               color: #3685c3;
-
                           }
-
                           &:focus {
-                                                  border: 2px solid #3685c3;
-
+     border: 2px solid #3685c3;
                               outline: none;
-
                           }
-                      }
-                      
+                      }                      
             }
         }
         .section2{
@@ -70,8 +65,8 @@
             justify-content: center;
             padding: 8%;
             .img-box{
-                width: 380px;
-                height: 380px;
+                width: 100%;
+                height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -101,7 +96,7 @@ img{
                     }
                     i{
                         transition: 0.4s ease-out;
-                        font-size: 24px;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -109,11 +104,10 @@ img{
     }
     .Intro{
          width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
             padding: 0 8%;
-
         .section1{
             width: 50%;
             height: 100%;
@@ -125,7 +119,7 @@ img{
             .heading{
                 // border: 2px solid red;
                 h3{
-                font-size:24px;
+                font-size:2rem;
                 font-weight: bold;
                 font-stretch: normal;
                 font-style: normal;
@@ -136,7 +130,7 @@ img{
                       }
                       p{
                           margin-top: 4%;
-                          font-size: 12px;
+                          font-size: 1rem;
                           text-align: justify;
                       }
                       
@@ -151,8 +145,8 @@ img{
             justify-content: center;
             padding: 2%;
             .img-box{
-                width: 380px;
-                height: 380px;
+                width: 100%;
+                height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -168,43 +162,19 @@ img{
 
 @media only screen and (max-width: 768px) {
 .Home-Container {
-
-
-    .Home-Section {
-
+.Home-Section {
         height: auto;
-
 flex-direction: column;
         .section1 {
             width: 100%;
             height: 100%;
-
-
-            .heading {
-
-                h3 {
-
-                }
-
-                p {
-
-                }
-
-                button {
-                }
-
-            }
         }
-
         .section2 {
             width: 100%;
             height: auto;
-
-
             .img-box {
                 width:100%;
                 height: auto;
-
                 img {
                     width: 100%;
                     height: 100%;
@@ -216,12 +186,6 @@ flex-direction: column;
             width: 100%;
             height: auto;
             flex-direction: row;
-            span {
-
-                a {
-
-                }
-            }
         }
     }
         .Intro {
@@ -230,8 +194,6 @@ flex-direction: column;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 8%;
-
             .section1 {
                 width: 100%;
                 height: auto;
@@ -240,10 +202,7 @@ flex-direction: column;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-
                 .heading {
-
-                    // border: 2px solid red;
                     h3 {
                         font-size: 24px;
                         font-weight: bold;
@@ -254,13 +213,10 @@ flex-direction: column;
                         text-align: left;
                         color: #464545;
                     }
-
                     p {
                         margin-top: 4%;
                         font-size: 12px;
-
                     }
-
                 }
             }
 
@@ -272,14 +228,12 @@ flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 padding: 2%;
-
                 .img-box {
                     width: 380px;
                     height: 380px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     img {
                         width: 100%;
                         height: 100%;
@@ -287,5 +241,119 @@ flex-direction: column;
                 }
             }
         }
+}
+}
+@media only screen and (min-width: 1441px) {
+.Home-Container {
+    .Home-Section {
+        min-height:90vh;
+        .section1 {
+            .heading {
+                h3 {
+                    font-size: calc(2rem + 2vh);
+                }
+
+                p {
+
+                                        font-size: calc(1rem + 2vh);
+
+
+                }
+
+                button {
+                                                                              font-size: calc(1rem + 2vh);
+
+                }
+            }
+        }
+
+        .section2 {
+            width: 55%;
+            height: 100%;
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8%;
+
+            .img-box {
+                width:100%;
+                height:100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .section3 {
+            width: 5%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            // align-items: center;
+            span {
+                width: 100%;
+                padding: 0.4rem;
+                margin-top: 4rem;
+                // background-color: aquamarine;
+                text-align: center;
+
+                a {
+                    color: #464545;
+
+                    &:hover i {
+                        color: #3685c3;
+                    }
+
+                    i {
+                        transition: 0.4s ease-out;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Intro {
+
+
+        .section1 {
+
+
+            .heading {
+
+                h3 {
+                    font-size: 3rem;
+
+                }
+
+                p {
+                    margin-top: 4%;
+                    font-size: 2rem;
+                }
+
+            }
+        }
+
+        .section2 {
+
+
+            .img-box {
+                width: 100%;
+                height: 100%;
+
+
+
+            }
+        }
+    }
+
 }
 }

@@ -14,8 +14,7 @@ function ServicePageBanner() {
             <p>
               With my knowledge in both design and technology I foster
               productive te ams in an collaborative environment that meets the
-              requirements of eatives and developers at the same time. With my
-              knowledge in both design and technology I foster
+              requirements of eatives and developers at the same time.
             </p>
             <button>Watch a video</button>
           </div>

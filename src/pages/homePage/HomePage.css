@@ -34,7 +34,7 @@
 }
 
 .Home-Container .Home-Section .section1 .heading h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -45,7 +45,7 @@
 
 .Home-Container .Home-Section .section1 .heading p {
   margin-top: 4%;
-  font-size: 12px;
+  font-size: 1rem;
   padding-right: 12%;
 }
 
@@ -56,6 +56,7 @@
   outline: none;
   color: white;
   padding: 8.8px 24.5px;
+  font-size: 1rem;
   border-radius: 5px;
   background-color: #3685c3;
   border: 2px solid #3685c3;
@@ -89,8 +90,8 @@
 }
 
 .Home-Container .Home-Section .section2 .img-box {
-  width: 380px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,12 +141,12 @@
 .Home-Container .Home-Section .section3 span a i {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .Home-Container .Intro {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +175,7 @@
 }
 
 .Home-Container .Intro .section1 .heading h3 {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -185,7 +186,7 @@
 
 .Home-Container .Intro .section1 .heading p {
   margin-top: 4%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: justify;
 }
 
@@ -205,8 +206,8 @@
 }
 
 .Home-Container .Intro .section2 .img-box {
-  width: 380px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +269,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 8%;
   }
   .Home-Container .Intro .section1 {
     width: 100%;
@@ -328,6 +328,94 @@
             justify-content: center;
   }
   .Home-Container .Intro .section2 .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .Home-Container .Home-Section {
+    min-height: 90vh;
+  }
+  .Home-Container .Home-Section .section1 .heading h3 {
+    font-size: calc(2rem + 2vh);
+  }
+  .Home-Container .Home-Section .section1 .heading p {
+    font-size: calc(1rem + 2vh);
+  }
+  .Home-Container .Home-Section .section1 .heading button {
+    font-size: calc(1rem + 2vh);
+  }
+  .Home-Container .Home-Section .section2 {
+    width: 55%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 8%;
+  }
+  .Home-Container .Home-Section .section2 .img-box {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Home-Container .Home-Section .section2 .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .Home-Container .Home-Section .section3 {
+    width: 5%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .Home-Container .Home-Section .section3 span {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .Home-Container .Home-Section .section3 span a {
+    color: #464545;
+  }
+  .Home-Container .Home-Section .section3 span a:hover i {
+    color: #3685c3;
+  }
+  .Home-Container .Home-Section .section3 span a i {
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    font-size: 2.5rem;
+  }
+  .Home-Container .Intro .section1 .heading h3 {
+    font-size: 3rem;
+  }
+  .Home-Container .Intro .section1 .heading p {
+    margin-top: 4%;
+    font-size: 2rem;
+  }
+  .Home-Container .Intro .section2 .img-box {
     width: 100%;
     height: 100%;
   }

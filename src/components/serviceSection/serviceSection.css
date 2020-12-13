@@ -67,12 +67,12 @@
 
 .service-container .service-section .services .service-box p {
   color: #565656;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .service-container .service-section .services .service-box h3 {
   color: #3685C3;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 425px) {
@@ -118,6 +118,18 @@
   .service-container .service-section .services .service-box h3 {
     color: #3685C3;
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .service-container .service-section h2 {
+    font-size: 4rem;
+  }
+  .service-container .service-section .services .service-box p {
+    font-size: 1.5rem;
+  }
+  .service-container .service-section .services .service-box h3 {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=ServiceSection.css.map */

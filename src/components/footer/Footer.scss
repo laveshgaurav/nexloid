@@ -16,12 +16,13 @@
         h6{
             color: #FFFFFF;
             font-weight: 200;
-            font-size: 14px;
+            font-size: 1rem;
         }
         a{
             color: #FFFFFF;
             font-weight: 200;
-            font-size: 12px;
+            font-size:1rem;
+            margin-bottom: 1.4rem;
             text-decoration: none;
             transition: 0.4s ease-in-out;
             cursor: pointer;
@@ -29,19 +30,24 @@
             padding: 0px 6px;
             &:hover {
                 color: #3685C3;
+               
             }
+             &:last-child {
+                 margin-bottom: 0;
+
+             }
             }
             
         }
         .info{
         h5{
             color: white;
-            font-size: 14px;
+            font-size:1.2rem;
             font-weight: bold;
         }
         p{
              color: white;
-             font-size: 12px;
+             font-size: 1rem;
         }
     }
     form{
@@ -53,7 +59,7 @@
             background-color: #31363A;
             color: #929A9F;
             padding: 2%;
-            font-size: 14px;
+            font-size: 1rem;
             border-radius: 4px 0 0 4px;
         }
         button{

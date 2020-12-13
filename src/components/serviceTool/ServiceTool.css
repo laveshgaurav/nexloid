@@ -135,4 +135,20 @@
     margin-bottom: 0;
   }
 }
+
+@media only screen and (min-width: 1441px) {
+  .ServiceTools-Container .ServiceTools-Section h3 {
+    font-size: calc(2rem + 2vh);
+  }
+  .ServiceTools-Container .ServiceTools-Section .features .box .img-box {
+    width: calc(128px + 2vh);
+    height: calc(128px + 2vh);
+  }
+  .ServiceTools-Container .ServiceTools-Section .features .box h4 {
+    font-size: calc(0.8rem + 2vh);
+  }
+  .ServiceTools-Container .ServiceTools-Section .features .box p {
+    font-size: calc(1rem + 2vh);
+  }
+}
 /*# sourceMappingURL=ServiceTool.css.map */

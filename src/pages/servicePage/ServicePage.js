@@ -10,7 +10,7 @@ function ServicePage() {
     <React.Fragment>
       <ServicePageBanner />
       <ServiceTool />
-      <div className="service-containers">
+      <div className="servicePage-containers">
         <div className="service-box">
           <div className="content">
             <h3>Tag Management and Data Collection</h3>

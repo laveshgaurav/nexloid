@@ -30,13 +30,14 @@
 .footer-container .section h6 {
   color: #FFFFFF;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .footer-container .section a {
   color: #FFFFFF;
   font-weight: 200;
-  font-size: 12px;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
   text-decoration: none;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -51,15 +52,19 @@
   color: #3685C3;
 }
 
+.footer-container .section a:last-child {
+  margin-bottom: 0;
+}
+
 .footer-container .info h5 {
   color: white;
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .footer-container .info p {
   color: white;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .footer-container form {
@@ -75,7 +80,7 @@
   background-color: #31363A;
   color: #929A9F;
   padding: 2%;
-  font-size: 14px;
+  font-size: 1rem;
   border-radius: 4px 0 0 4px;
 }
 

@@ -1,10 +1,10 @@
-.service-containers {
+.servicePage-containers {
   width: 100%;
   background-color: #aedbff;
   padding: 0 8%;
 }
 
-.service-containers .service-box {
+.servicePage-containers .service-box {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,27 +14,27 @@
           align-items: center;
 }
 
-.service-containers .service-box .content {
+.servicePage-containers .service-box .content {
   padding: 2rem 4rem 2rem 0;
   width: 60%;
 }
 
-.service-containers .service-box .content h3 {
+.servicePage-containers .service-box .content h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
-.service-containers .service-box .content p {
+.servicePage-containers .service-box .content p {
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
-.service-containers .service-box .img-box {
+.servicePage-containers .service-box .img-box {
   width: 40%;
   padding: 2rem;
 }
 
-.service-containers .service-box .img-box img {
+.servicePage-containers .service-box .img-box img {
   border-radius: 2rem;
   width: 100%;
 }
@@ -83,12 +83,12 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .service-containers {
+  .servicePage-containers {
     width: 100%;
     background-color: #aedbff;
     padding: 0 8%;
   }
-  .service-containers .service-box {
+  .servicePage-containers .service-box {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -101,25 +101,46 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .service-containers .service-box .content {
+  .servicePage-containers .service-box .content {
     padding: 2rem 1rem;
     width: 100%;
   }
-  .service-containers .service-box .content h3 {
+  .servicePage-containers .service-box .content h3 {
     font-weight: bold;
     font-size: 20px;
   }
-  .service-containers .service-box .content p {
+  .servicePage-containers .service-box .content p {
     width: 100%;
     font-size: 12px;
   }
-  .service-containers .service-box .img-box {
+  .servicePage-containers .service-box .img-box {
     width: 100%;
     padding: 0.5rem;
   }
-  .service-containers .service-box .img-box img {
+  .servicePage-containers .service-box .img-box img {
     border-radius: 2rem;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .servicePage-containers .service-box .content h3 {
+    font-weight: bold;
+    font-size: calc(2rem + 2vh);
+  }
+  .servicePage-containers .service-box .content p {
+    font-size: calc(1rem + 2vh);
+  }
+  .servicePage-containers .service-box .img-box {
+    width: 40%;
+    padding: 2rem;
+  }
+  .servicePage-containers .service-box .img-box img {
+    border-radius: 2rem;
+    width: 100%;
+  }
+  .button-container button {
+    font-size: calc(1rem + 2vh);
   }
 }
 /*# sourceMappingURL=ServicePage.css.map */

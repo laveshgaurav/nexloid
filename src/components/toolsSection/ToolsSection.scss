@@ -36,9 +36,11 @@
                 h3{
                     color: #3685C3;
                     padding: 1rem;
+                    font-size: 2rem;
                 }
                 p{
                     color: #565656;
+                    font-size: 1rem;
                 }
             }
         }
@@ -82,5 +84,31 @@ padding: 8%;
         }
     }
 }
+}
+@media only screen and (min-width: 1441px) {
+    .tools-container {
 
+        .tools-section {
+            .heading {
+
+                h2 {
+                                  font-size:calc(2rem + 2vh)
+                }
+            }
+
+            .tools-content {
+                .box {
+
+
+                    h3 {
+                                  font-size:calc(2rem +2vh);
+                    }
+
+                    p {
+                        font-size: calc(1rem + 2vh);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -105,3 +105,40 @@
                    }
                }
 }
+@media only screen and (min-width: 1441px) {
+.ServiceTools-Container {
+
+
+    .ServiceTools-Section {
+
+
+        h3 {
+            font-size: calc(2rem + 2vh);
+        }
+
+        .features {
+
+
+            .box {
+
+
+                .img-box {
+                    width:calc(128px + 2vh);
+                    height:calc(128px + 2vh);
+
+                }
+
+                h4 {
+                                font-size: calc(0.8rem + 2vh);
+
+                }
+
+                p {
+                                                   font-size: calc(1rem + 2vh);
+
+                }
+            }
+        }
+    }
+}
+}

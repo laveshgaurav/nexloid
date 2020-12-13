@@ -59,10 +59,12 @@
 .tools-container .tools-section .tools-content .box h3 {
   color: #3685C3;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 .tools-container .tools-section .tools-content .box p {
   color: #565656;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 425px) {
@@ -109,6 +111,18 @@
   }
   .tools-container .tools-section .tools-content .box p {
     color: #565656;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .tools-container .tools-section .heading h2 {
+    font-size: calc(2rem + 2vh);
+  }
+  .tools-container .tools-section .tools-content .box h3 {
+    font-size: calc(2rem +2vh);
+  }
+  .tools-container .tools-section .tools-content .box p {
+    font-size: calc(1rem + 2vh);
   }
 }
 /*# sourceMappingURL=ToolsSection.css.map */

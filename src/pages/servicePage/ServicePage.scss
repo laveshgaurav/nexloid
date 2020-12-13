@@ -1,4 +1,4 @@
-.service-containers{
+.servicePage-containers{
     width: 100%;
     background-color: #aedbff;
         padding: 0 8%;
@@ -11,11 +11,11 @@
                 width: 60%;
                 h3{
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: 2rem;
                 }
                 p{
                     width: 100%;
-                    font-size: 12px;
+                    font-size: 1rem;
                 }
             }
             .img-box{
@@ -61,7 +61,7 @@ align-items: center;
     }
 }
 @media only screen and (max-width: 425px) {
-    .service-containers {
+    .servicePage-containers {
         width: 100%;
         background-color: #aedbff;
         padding: 0 8%;
@@ -96,6 +96,46 @@ align-items: center;
                     width: 100%;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .servicePage-containers {
+
+
+        .service-box {
+
+
+            .content {
+
+
+                h3 {
+                    font-weight: bold;
+                    font-size: calc(2rem + 2vh);
+                }
+
+                p {
+                                        font-size: calc(1rem + 2vh);
+
+                }
+            }
+
+            .img-box {
+                width: 40%;
+                padding: 2rem;
+
+                img {
+                    border-radius: 2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .button-container{
+        button{
+                                        font-size: calc(1rem + 2vh);
+
         }
     }
 }

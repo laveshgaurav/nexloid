@@ -111,7 +111,8 @@
 }
 
 .blogs-container .review .testimonial {
-  width: 320px;
+  max-width: 320px;
+  height: auto;
   padding: 2% 1%;
   position: absolute;
   top: 10%;
@@ -184,7 +185,7 @@
 
 .blogs-container .explore p {
   width: 50%;
-  font-size: 32px;
+  font-size: 2rem;
   color: #3685c3;
 }
 
@@ -458,6 +459,132 @@
   .blogs-container .explore button:focus {
     border: 2px solid #3685c3;
     outline: none;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .blogs-container .blogs-section h2 {
+    font-size: calc(2rem + 2vh);
+  }
+  .blogs-container .blogs-section .blogs-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blogs-container .blogs-section .blogs-content .section2 {
+    width: 60%;
+  }
+  .blogs-container .blogs-section .blogs-content .section2 .cards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blogs-container .blogs-section .blogs-content .section2 .cards .box {
+    width: 96%;
+    margin: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .blogs-container .blogs-section .blogs-content .section2 .cards .box button {
+    font-size: calc(1rem + 2vh);
+  }
+  .blogs-container .review {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .blogs-container .review .img-box {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .blogs-container .review .img-box img {
+    width: 60%;
+  }
+  .blogs-container .review .testimonial {
+    max-width: 720px;
+    height: auto;
+    padding: 2% 1%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    -webkit-box-shadow: 3px 3px 10px 1px #29292994;
+            box-shadow: 3px 3px 10px 1px #29292994;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blogs-container .review .testimonial h4 {
+    font-size: calc(1rem + 2vh);
+    margin-bottom: 0.4rem;
+  }
+  .blogs-container .review .testimonial p {
+    margin-bottom: 0.4rem;
+    font-size: calc(0.2rem + 2vh);
+  }
+  .blogs-container .review .testimonial .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 50%;
+  }
+  .blogs-container .review .testimonial .profile .img-box {
+    width: 64px;
+    height: 64px;
+    margin-right: 0.6rem;
+  }
+  .blogs-container .review .testimonial .profile .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .blogs-container .explore {
+    width: 100%;
+    padding: 2% 8%;
+    margin: 5% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogs-container .explore p {
+    width: 50%;
+    font-size: calc(2rem + 2vh);
+    color: #3685c3;
+  }
+  .blogs-container .explore button {
+    font-size: calc(1rem + 2vh);
   }
 }
 /*# sourceMappingURL=BlogSection.css.map */
