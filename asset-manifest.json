@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/nexloid/static/css/main.33e21a9e.chunk.css",
-    "main.js": "/nexloid/static/js/main.6b983bf2.chunk.js",
-    "main.js.map": "/nexloid/static/js/main.6b983bf2.chunk.js.map",
-    "runtime-main.js": "/nexloid/static/js/runtime-main.b0c31f51.js",
-    "runtime-main.js.map": "/nexloid/static/js/runtime-main.b0c31f51.js.map",
-    "static/js/2.64b2efbb.chunk.js": "/nexloid/static/js/2.64b2efbb.chunk.js",
-    "static/js/2.64b2efbb.chunk.js.map": "/nexloid/static/js/2.64b2efbb.chunk.js.map",
-    "static/js/3.14a40f73.chunk.js": "/nexloid/static/js/3.14a40f73.chunk.js",
-    "static/js/3.14a40f73.chunk.js.map": "/nexloid/static/js/3.14a40f73.chunk.js.map",
+    "main.css": "/nexloid/static/css/main.3de24cfb.chunk.css",
+    "main.js": "/nexloid/static/js/main.c4994e4e.chunk.js",
+    "main.js.map": "/nexloid/static/js/main.c4994e4e.chunk.js.map",
+    "runtime-main.js": "/nexloid/static/js/runtime-main.c9ab62fd.js",
+    "runtime-main.js.map": "/nexloid/static/js/runtime-main.c9ab62fd.js.map",
+    "static/js/2.5af843ad.chunk.js": "/nexloid/static/js/2.5af843ad.chunk.js",
+    "static/js/2.5af843ad.chunk.js.map": "/nexloid/static/js/2.5af843ad.chunk.js.map",
+    "static/js/3.00c37192.chunk.js": "/nexloid/static/js/3.00c37192.chunk.js",
+    "static/js/3.00c37192.chunk.js.map": "/nexloid/static/js/3.00c37192.chunk.js.map",
     "index.html": "/nexloid/index.html",
-    "static/css/main.33e21a9e.chunk.css.map": "/nexloid/static/css/main.33e21a9e.chunk.css.map",
-    "static/js/2.64b2efbb.chunk.js.LICENSE.txt": "/nexloid/static/js/2.64b2efbb.chunk.js.LICENSE.txt",
+    "static/css/main.3de24cfb.chunk.css.map": "/nexloid/static/css/main.3de24cfb.chunk.css.map",
+    "static/js/2.5af843ad.chunk.js.LICENSE.txt": "/nexloid/static/js/2.5af843ad.chunk.js.LICENSE.txt",
     "static/media/8401.16ad47fa.jpg": "/nexloid/static/media/8401.16ad47fa.jpg",
+    "static/media/aboutUs.88f59209.svg": "/nexloid/static/media/aboutUs.88f59209.svg",
     "static/media/blogs.1150b34f.svg": "/nexloid/static/media/blogs.1150b34f.svg",
+    "static/media/cloud.b5eb3b5f.svg": "/nexloid/static/media/cloud.b5eb3b5f.svg",
     "static/media/contact-us.2f5fa029.png": "/nexloid/static/media/contact-us.2f5fa029.png",
     "static/media/cro.7dd66be7.svg": "/nexloid/static/media/cro.7dd66be7.svg",
     "static/media/digital.a2f333c1.svg": "/nexloid/static/media/digital.a2f333c1.svg",
@@ -30,9 +32,9 @@
     "static/media/work2.10802da0.png": "/nexloid/static/media/work2.10802da0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b0c31f51.js",
-    "static/js/2.64b2efbb.chunk.js",
-    "static/css/main.33e21a9e.chunk.css",
-    "static/js/main.6b983bf2.chunk.js"
+    "static/js/runtime-main.c9ab62fd.js",
+    "static/js/2.5af843ad.chunk.js",
+    "static/css/main.3de24cfb.chunk.css",
+    "static/js/main.c4994e4e.chunk.js"
   ]
 }
