@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.2265a94e.chunk.js": "/nexloid/static/js/0.2265a94e.chunk.js",
     "static/js/0.2265a94e.chunk.js.map": "/nexloid/static/js/0.2265a94e.chunk.js.map",
-    "main.css": "/nexloid/static/css/main.53d06206.chunk.css",
+    "main.css": "/nexloid/static/css/main.68becdb1.chunk.css",
     "main.js": "/nexloid/static/js/main.61b5c52e.chunk.js",
     "main.js.map": "/nexloid/static/js/main.61b5c52e.chunk.js.map",
     "runtime-main.js": "/nexloid/static/js/runtime-main.386a4d13.js",
@@ -34,7 +34,7 @@
     "static/css/6.c7d5d36e.chunk.css.map": "/nexloid/static/css/6.c7d5d36e.chunk.css.map",
     "static/css/7.1c301128.chunk.css.map": "/nexloid/static/css/7.1c301128.chunk.css.map",
     "static/css/8.748eb818.chunk.css.map": "/nexloid/static/css/8.748eb818.chunk.css.map",
-    "static/css/main.53d06206.chunk.css.map": "/nexloid/static/css/main.53d06206.chunk.css.map",
+    "static/css/main.68becdb1.chunk.css.map": "/nexloid/static/css/main.68becdb1.chunk.css.map",
     "static/js/0.2265a94e.chunk.js.LICENSE.txt": "/nexloid/static/js/0.2265a94e.chunk.js.LICENSE.txt",
     "static/js/3.e8af092d.chunk.js.LICENSE.txt": "/nexloid/static/js/3.e8af092d.chunk.js.LICENSE.txt",
     "static/js/9.22a03f08.chunk.js.LICENSE.txt": "/nexloid/static/js/9.22a03f08.chunk.js.LICENSE.txt",
@@ -63,7 +63,7 @@
   "entrypoints": [
     "static/js/runtime-main.386a4d13.js",
     "static/js/3.e8af092d.chunk.js",
-    "static/css/main.53d06206.chunk.css",
+    "static/css/main.68becdb1.chunk.css",
     "static/js/main.61b5c52e.chunk.js"
   ]
 }
