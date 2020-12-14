@@ -1,0 +1,2 @@
+(this.webpackJsonpnexloid=this.webpackJsonpnexloid||[]).push([[7],{59:function(e,c,n){},61:function(e,c,n){"use strict";n.r(c);var i=n(0);n(1),n(59);c.default=function(){return Object(i.jsx)("div",{className:"Loader-container",children:Object(i.jsx)("div",{className:"circle",children:"LOAD"})})}}}]);
+//# sourceMappingURL=7.529da132.chunk.js.map
