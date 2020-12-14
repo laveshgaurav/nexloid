@@ -53,14 +53,17 @@ function Navigation() {
               ></i>
             </button>
             <div className="dropdown-content">
-              <a className="nav-links">Link 1</a>
-              <a className="nav-links">Link 2</a>
-              <a className="nav-links">Link 3</a>
+              <a className="nav-links">Testing & CRO</a>
+              <a className="nav-links">Business Intelligence</a>
+              <a className="nav-links">Digital Development</a>
+              <a className="nav-links">Data Collection</a>
             </div>
           </div>
           <a className="nav-links">Works</a>
           <a className="nav-links">Blogs</a>
-          <a className="nav-links">Career</a>
+          <Link className="nav-links" to="career" onClick={clickHam}>
+            Career
+          </Link>
           <Link className="nav-links" to="aboutUs" onClick={clickHam}>
             About
           </Link>

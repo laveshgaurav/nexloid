@@ -1,7 +1,8 @@
-   .AboutUs-Container {
-       width: 100%;
-       height: auto;
-   .AboutUs-Section {
+.career-Banner-Container {
+    width: 100%;
+    height: auto;
+
+    .career-Banner-Section {
         width: 100%;
         height: 90vh;
         display: flex;
@@ -45,7 +46,6 @@
                     outline: none;
                     color: white;
                     padding: 8.8px 24.5px;
-                    font-size: 1rem;
                     border-radius: 5px;
                     background-color: #3685c3;
                     border: 2px solid #3685c3;
@@ -54,13 +54,17 @@
                     &:hover {
                         background-color: white;
                         color: #3685c3;
+
                     }
 
                     &:focus {
                         border: 2px solid #3685c3;
+
                         outline: none;
+
                     }
                 }
+
             }
         }
 
@@ -111,109 +115,148 @@
 
                     i {
                         transition: 0.4s ease-out;
-                        font-size: 1.5rem;
+                        font-size: 24px;
                     }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .career-Banner-Container {
+
+
+        .career-Banner-Section {
+
+            height: auto;
+
+            flex-direction: column;
+
+            .section1 {
+                width: 100%;
+                height: 100%;
+
+
+                .heading {
+
+                    h3 {}
+
+                    p {}
+
+                    button {}
+
+                }
+            }
+
+            .section2 {
+                width: 100%;
+                height: auto;
+
+
+                .img-box {
+                    width: 100%;
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .section3 {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+
+                span {
+
+                    a {}
                 }
             }
         }
 
     }
-
- .text-banner{
-     width: 100%;
-     height: 33vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     text-align: center;
-     background-color: #c6e5ff;
-     h4{
-         font-size: 1.5rem;
-         font-weight: light;
-     }
-     p{
-         font-size: 1rem;
-     }
- }
- .right-text{
-     padding: 0 8%;
-     align-items: flex-start;
- }
 }
-@media only screen and (max-width: 768px) {
-       .AboutUs-Container {
-           width: 100%;
-           height: auto;
 
-           .AboutUs-Section {
-               height: auto;
-flex-direction: column;
-        padding:  8%;
+@media only screen and (min-width: 1441px) {
+    .career-Banner-Container {
+
+        .career-Banner-Section {
+            height: 90vh;
 
 
-               .section1 {
-                   width: 100%;
-                   height: 100%;
-               }
-
-               .section2 {
-                   width: 100%;
-                   height: auto;
+            .section1 {
 
 
-                   .img-box {
-                      width:100%;
-                      height: auto;
+                .heading {
 
+                    // border: 2px solid red;
+                    h3 {
+                        font-size: calc(2rem + 2vh);
 
-                       img {
-                           width: 100%;
-                           height: 100%;
-                       }
-                   }
-               }
+                    }
 
-               .section3 {
-                   width: 100%;
-                   height: auto;
-            flex-direction: row;
+                    p {
+                        font-size: calc(1rem + 2vh);
 
-               }
-           }
-            .text-banner {
-                width: 100%;
-                height: 33vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                text-align: center;
+                    }
 
-                h4 {
-                    font-size: 1rem;
-                    font-weight: light;
+                    button {
+                        font-size: calc(1rem + 2vh);
+
+                    }
+
                 }
             }
-       }
-}
 
-.team {
-    position: relative;
-    margin: 2rem 0;
-    &::after {
-    overflow: hidden;
-    position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -3;
-        content: '';
-       background-color: #83acc978;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+            .section2 {
+
+
+                .img-box {
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .section3 {
+                width: 5%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                // align-items: center;
+                span {
+                    width: 100%;
+                    padding: 0.4rem;
+                    margin-top: 4rem;
+                    // background-color: aquamarine;
+                    text-align: center;
+
+                    a {
+                        color: #464545;
+
+                        &:hover i {
+                            color: #3685c3;
+                        }
+
+                        i {
+                            transition: 0.4s ease-out;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import AboutUs from "../../assets/aboutUs.svg";
 import cloud from "../../assets/cloud.svg";
+import teams from "../../assets/teams.svg";
+import project from "../../assets/project.svg";
 
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -35,6 +37,26 @@ function AboutUsPage() {
           <SocialMedia />
         </div>
       </div>
+      <div className="team AboutUs-Section">
+        <div className="section2">
+          <div className="img-box">
+            <img src={teams} alt="teams" />
+          </div>
+        </div>
+        <div className="section1">
+          <div className="heading">
+            <h3>Our Team</h3>
+
+            <p>
+              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
+              artsy and fun team members. Our agency strives to create emotional
+              and meaningful stories, which in turn become fantastic digital
+              experiences.
+            </p>
+            {/* <button>GET IN TOUCH</button> */}
+          </div>
+        </div>
+      </div>
       <div className="AboutUs-Section">
         <div className="section2">
           <div className="img-box">
@@ -63,6 +85,31 @@ function AboutUsPage() {
         </h4>
         <h4>simplest form to boost your</h4>
         <h4>services.</h4>
+      </div>
+      <div className="AboutUs-Section">
+        <div className="section1">
+          <div className="heading">
+            <h3>Looking for more ?</h3>
+            <p>
+              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
+              artsy and fun team members. Our agency strives to create emotional
+              and meaningful stories, which in turn become fantastic digital
+              experiences.
+            </p>
+            <button>Explore our projects</button>
+          </div>
+        </div>
+        <div className="section2">
+          <div className="img-box">
+            <img src={project} alt="project" />
+          </div>
+        </div>
+      </div>
+      <div className="right-text text-banner">
+        <h4>
+          <span style={{ color: "#f6861f" }}>Inspired to work with us?</span>
+        </h4>
+        <p>Write to us @mail.id@gmail.com</p>
       </div>
       <Footer />
     </div>

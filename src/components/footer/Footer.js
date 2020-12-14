@@ -22,8 +22,12 @@ function Footer() {
             SERVICES
           </Link>
           <Link className="links">TOOLS</Link>
-          <Link className="links">CAREERS</Link>
-          <Link className="links">ABOUT US</Link>
+          <Link className="links" to="career">
+            CAREERS
+          </Link>
+          <Link className="links" to="aboutUs">
+            ABOUT US
+          </Link>
         </div>
         <div className="section">
           <div className="info">

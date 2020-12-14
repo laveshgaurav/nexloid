@@ -1,9 +1,9 @@
-.AboutUs-Container {
+.career-Banner-Container {
   width: 100%;
   height: auto;
 }
 
-.AboutUs-Container .AboutUs-Section {
+.career-Banner-Container .career-Banner-Section {
   width: 100%;
   height: 90vh;
   display: -webkit-box;
@@ -15,7 +15,7 @@
   padding: 0 8%;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 {
+.career-Banner-Container .career-Banner-Section .section1 {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -33,7 +33,7 @@
           justify-content: center;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 .heading h3 {
+.career-Banner-Container .career-Banner-Section .section1 .heading h3 {
   font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -43,20 +43,19 @@
   color: #464545;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 .heading p {
+.career-Banner-Container .career-Banner-Section .section1 .heading p {
   margin-top: 4%;
   font-size: 1rem;
   padding-right: 12%;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 .heading button {
+.career-Banner-Container .career-Banner-Section .section1 .heading button {
   margin-top: 4%;
   cursor: pointer;
   border: none;
   outline: none;
   color: white;
   padding: 8.8px 24.5px;
-  font-size: 1rem;
   border-radius: 5px;
   background-color: #3685c3;
   border: 2px solid #3685c3;
@@ -64,17 +63,17 @@
   transition: 0.3s ease-in;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 .heading button:hover {
+.career-Banner-Container .career-Banner-Section .section1 .heading button:hover {
   background-color: white;
   color: #3685c3;
 }
 
-.AboutUs-Container .AboutUs-Section .section1 .heading button:focus {
+.career-Banner-Container .career-Banner-Section .section1 .heading button:focus {
   border: 2px solid #3685c3;
   outline: none;
 }
 
-.AboutUs-Container .AboutUs-Section .section2 {
+.career-Banner-Container .career-Banner-Section .section2 {
   width: 55%;
   height: 100%;
   display: -webkit-box;
@@ -89,7 +88,7 @@
   padding: 8%;
 }
 
-.AboutUs-Container .AboutUs-Section .section2 .img-box {
+.career-Banner-Container .career-Banner-Section .section2 .img-box {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -103,12 +102,12 @@
           justify-content: center;
 }
 
-.AboutUs-Container .AboutUs-Section .section2 .img-box img {
+.career-Banner-Container .career-Banner-Section .section2 .img-box img {
   width: 100%;
   height: 100%;
 }
 
-.AboutUs-Container .AboutUs-Section .section3 {
+.career-Banner-Container .career-Banner-Section .section3 {
   width: 5%;
   height: 70%;
   display: -webkit-box;
@@ -123,93 +122,52 @@
           justify-content: flex-end;
 }
 
-.AboutUs-Container .AboutUs-Section .section3 span {
+.career-Banner-Container .career-Banner-Section .section3 span {
   width: 100%;
   padding: 0.4rem;
   margin-top: 1rem;
   text-align: center;
 }
 
-.AboutUs-Container .AboutUs-Section .section3 span a {
+.career-Banner-Container .career-Banner-Section .section3 span a {
   color: #464545;
 }
 
-.AboutUs-Container .AboutUs-Section .section3 span a:hover i {
+.career-Banner-Container .career-Banner-Section .section3 span a:hover i {
   color: #3685c3;
 }
 
-.AboutUs-Container .AboutUs-Section .section3 span a i {
+.career-Banner-Container .career-Banner-Section .section3 span a i {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  font-size: 1.5rem;
-}
-
-.AboutUs-Container .text-banner {
-  width: 100%;
-  height: 33vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  background-color: #c6e5ff;
-}
-
-.AboutUs-Container .text-banner h4 {
-  font-size: 1.5rem;
-  font-weight: light;
-}
-
-.AboutUs-Container .text-banner p {
-  font-size: 1rem;
-}
-
-.AboutUs-Container .right-text {
-  padding: 0 8%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 768px) {
-  .AboutUs-Container {
-    width: 100%;
-    height: auto;
-  }
-  .AboutUs-Container .AboutUs-Section {
+  .career-Banner-Container .career-Banner-Section {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 8%;
   }
-  .AboutUs-Container .AboutUs-Section .section1 {
+  .career-Banner-Container .career-Banner-Section .section1 {
     width: 100%;
     height: 100%;
   }
-  .AboutUs-Container .AboutUs-Section .section2 {
+  .career-Banner-Container .career-Banner-Section .section2 {
     width: 100%;
     height: auto;
   }
-  .AboutUs-Container .AboutUs-Section .section2 .img-box {
+  .career-Banner-Container .career-Banner-Section .section2 .img-box {
     width: 100%;
     height: auto;
   }
-  .AboutUs-Container .AboutUs-Section .section2 .img-box img {
+  .career-Banner-Container .career-Banner-Section .section2 .img-box img {
     width: 100%;
     height: 100%;
   }
-  .AboutUs-Container .AboutUs-Section .section3 {
+  .career-Banner-Container .career-Banner-Section .section3 {
     width: 100%;
     height: auto;
     -webkit-box-orient: horizontal;
@@ -217,50 +175,55 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .AboutUs-Container .text-banner {
+}
+
+@media only screen and (min-width: 1441px) {
+  .career-Banner-Container .career-Banner-Section {
+    height: 90vh;
+  }
+  .career-Banner-Container .career-Banner-Section .section1 .heading h3 {
+    font-size: calc(2rem + 2vh);
+  }
+  .career-Banner-Container .career-Banner-Section .section1 .heading p {
+    font-size: calc(1rem + 2vh);
+  }
+  .career-Banner-Container .career-Banner-Section .section1 .heading button {
+    font-size: calc(1rem + 2vh);
+  }
+  .career-Banner-Container .career-Banner-Section .section2 .img-box img {
     width: 100%;
-    height: 33vh;
+    height: 100%;
+  }
+  .career-Banner-Container .career-Banner-Section .section3 {
+    width: 5%;
+    height: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .career-Banner-Container .career-Banner-Section .section3 span {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 4rem;
     text-align: center;
   }
-  .AboutUs-Container .text-banner h4 {
-    font-size: 1rem;
-    font-weight: light;
+  .career-Banner-Container .career-Banner-Section .section3 span a {
+    color: #464545;
+  }
+  .career-Banner-Container .career-Banner-Section .section3 span a:hover i {
+    color: #3685c3;
+  }
+  .career-Banner-Container .career-Banner-Section .section3 span a i {
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    font-size: 2.5rem;
   }
 }
-
-.team {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.team::after {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -3;
-  content: '';
-  background-color: #83acc978;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-}
-/*# sourceMappingURL=AboutUsPage.css.map */
+/*# sourceMappingURL=CareerPageBanner.css.map */

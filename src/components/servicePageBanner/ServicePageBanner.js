@@ -1,7 +1,6 @@
 import React from "react";
 import tag from "../../assets/tag-service.svg";
 import SocialMedia from "../socialMedia/SocialMedia";
-import { motion } from "framer-motion";
 import "./ServicePageBanner.css";
 function ServicePageBanner() {
   return (

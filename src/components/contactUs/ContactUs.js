@@ -66,7 +66,10 @@ function ContactUs({ show, closeDrawer }) {
                   <option>Digital Development</option>
                 </select>
               </div>
-              <button type="submit">
+              <button
+                type="submit"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 Submit
                 <i
                   class="fa fa-long-arrow-right"

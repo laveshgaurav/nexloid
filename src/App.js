@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import CareerPage from "./pages/careerPage/CareerPage";
 // import Loader from "./components/Loader/Loader";
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
 const HomePage = lazy(() => import("./pages/homePage/HomePage"));
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/service" exact component={ServicePage} />
           <Route path="/aboutUs" exact component={AboutUsPage} />
+          <Route path="/career" exact component={CareerPage} />
         </Switch>
       </Suspense>
     </Router>

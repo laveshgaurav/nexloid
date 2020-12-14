@@ -1,0 +1,62 @@
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(12px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 300ms, transform 300ms;
+}
+.position-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    margin: 4%;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+&:hover{
+     border: none;
+     outline: none;
+     background-color: rgb(206, 206, 206);
+     color: #444;
+}
+    &:focus{
+            border: none;
+            outline: none;
+            color: #eee;
+            background-color: #444;
+    }
+    
+}
+
+.careerContent{
+    padding: 2% 4%;
+    background-color: rgb(177, 177, 177);
+}
