@@ -1,0 +1,75 @@
+.Blog-Card2 {
+  width: 30%;
+  height: auto;
+  padding: 4% 2%;
+  margin: 1.5%;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Blog-Card2 h5 {
+  font-size: 1.5rem;
+  color: #565656;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+
+.Blog-Card2 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f6861f;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+
+.Blog-Card2 p {
+  font-size: 1rem;
+  color: #565656;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+
+.Blog-Card2:hover {
+  background-color: #3685c3;
+  -webkit-box-shadow: 0px 6px 12px 0px #00000086;
+          box-shadow: 0px 6px 12px 0px #00000086;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.Blog-Card2:hover h5 {
+  color: white;
+}
+
+.Blog-Card2:hover h2 {
+  color: white;
+}
+
+.Blog-Card2:hover p {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .Blog-Card2 {
+    width: 46%;
+    height: auto;
+    padding: 4% 2%;
+    margin: 2%;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Blog-Card2 {
+    width: 96%;
+    height: auto;
+    padding: 12% 8%;
+    margin: 2%;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+  }
+}
+/*# sourceMappingURL=BlogCardMain.css.map */

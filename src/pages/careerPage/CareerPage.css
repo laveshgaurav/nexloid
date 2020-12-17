@@ -5,6 +5,8 @@
   padding: 2% 8%;
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
           clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
 
 @media only screen and (max-width: 768px) {
@@ -15,6 +17,8 @@
     padding: 2% 8%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
   }
 }
 /*# sourceMappingURL=CareerPage.css.map */
