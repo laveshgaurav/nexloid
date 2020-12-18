@@ -3,7 +3,7 @@ import "./Navigation.css";
 import logo from "../../assets/logo.png";
 import ham from "../../assets/ham.png";
 import close from "../../assets/close.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ContactUs from "../contactUs/ContactUs";
 function Navigation() {
   const [toggle, setToggle] = useState(true);
@@ -40,9 +40,14 @@ function Navigation() {
           </Link>
         </div>
         <div className={drawerClasses}>
-          <Link className="nav-links" to="service" onClick={clickHam}>
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/service"
+            onClick={clickHam}
+          >
             Service
-          </Link>
+          </NavLink>
           <div className="dropdown">
             <button className="dropbtn">
               Tools
@@ -53,22 +58,44 @@ function Navigation() {
               ></i>
             </button>
             <div className="dropdown-content">
-              <a className="nav-links">Testing & CRO</a>
-              <a className="nav-links">Business Intelligence</a>
-              <a className="nav-links">Digital Development</a>
-              <a className="nav-links">Data Collection</a>
+              <Link className="nav-links">Testing & CRO</Link>
+              <Link className="nav-links">Business Intelligence</Link>
+              <Link className="nav-links">Digital Development</Link>
+              <Link className="nav-links">Data Collection</Link>
             </div>
           </div>
-          <a className="nav-links">Works</a>
-          <Link className="nav-links" to="blogs" onClick={clickHam}>
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/blogs"
+            onClick={clickHam}
+          >
+            Works
+          </NavLink>
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/blogs"
+            onClick={clickHam}
+          >
             Blogs
-          </Link>
-          <Link className="nav-links" to="career" onClick={clickHam}>
+          </NavLink>
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/career"
+            onClick={clickHam}
+          >
             Career
-          </Link>
-          <Link className="nav-links" to="aboutUs" onClick={clickHam}>
+          </NavLink>
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/aboutUs"
+            onClick={clickHam}
+          >
             About
-          </Link>
+          </NavLink>
         </div>
 
         <div className="Button">

@@ -1,7 +1,6 @@
 import React from "react";
 import BlogCardMain from "../../components/blogCardMain/BlogCardMain";
 import BlogPageBanner from "../../components/blogPageBanner/BlogPageBanner";
-import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import "./BlogPage.css";
 function BlogPage() {

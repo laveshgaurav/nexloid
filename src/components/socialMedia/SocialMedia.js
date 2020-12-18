@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SocialMedia() {
   return (
     <React.Fragment>
       <span>
-        <a href="#">
+        <Link>
           <i class="fab fa-facebook-f"></i>
-        </a>
+        </Link>
       </span>
       <span>
-        <a href="#">
+        <Link>
           <i class="fab fa-linkedin-in"></i>
-        </a>
+        </Link>
       </span>
       <span>
-        <a href="#">
+        <Link>
           <i class="fab fa-twitter"></i>
-        </a>
+        </Link>
       </span>
     </React.Fragment>
   );

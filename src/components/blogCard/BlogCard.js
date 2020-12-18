@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BlogCard.css";
 function BlogCard(props) {
   return (
     <div className="blogCard-container">
       <h3>{props.name}</h3>
       <p>{props.content}</p>
-      <a href="#">Read more</a>
+      <Link>Read more</Link>
     </div>
   );
 }

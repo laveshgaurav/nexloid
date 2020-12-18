@@ -1,6 +1,16 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+// import Navigation from "./components/navigation/Navigation";
+// import HomePage from "./pages/homePage/HomePage";
+// import SingleBlogPage from "./pages/singleBlogPage/SingleBlogPage";
+// import CareerPage from "./pages/careerPage/CareerPage";
+// import BlogPage from "./pages/blogPage/BlogPage";
+// import ServicePage from "./pages/servicePage/ServicePage";
+// import AboutUsPage from "./pages/aboutUsPage/AboutUsPage";
+const SingleBlogPage = lazy(() =>
+  import("./pages/singleBlogPage/SingleBlogPage")
+);
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
 const HomePage = lazy(() => import("./pages/homePage/HomePage"));
 const ServicePage = lazy(() => import("./pages/servicePage/ServicePage"));
@@ -24,6 +34,7 @@ function App() {
       >
         <Navigation />
         <Switch>
+          <Route path="/blogs/:id" exact component={SingleBlogPage} />
           <Route path="/" exact component={HomePage} />
           <Route path="/service" exact component={ServicePage} />
           <Route path="/aboutUs" exact component={AboutUsPage} />

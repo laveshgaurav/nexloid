@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDom from "react-dom";
-import { CSSTransition } from "react-transition-group";
 import logo from "../../assets/logo.png";
 import close from "../../assets/close.png";
 import contactUs from "../../assets/contact-us.png";
@@ -33,7 +32,7 @@ function ContactUs({ show, closeDrawer }) {
           <div className="image-box">
             <h3>We'd love to hear</h3>
             <h3>from you.</h3>
-            <img src={contactUs} />
+            <img src={contactUs} alt="contact" />
           </div>
           <div className="form">
             <h3>Contact us</h3>

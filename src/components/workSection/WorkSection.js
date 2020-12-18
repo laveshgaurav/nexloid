@@ -2,6 +2,7 @@ import React from "react";
 import "./WorkSection.css";
 import work1 from "../../assets/work1.png";
 import work2 from "../../assets/work2.png";
+import { Link } from "react-router-dom";
 
 function WorkSection() {
   return (
@@ -16,7 +17,7 @@ function WorkSection() {
               productive teams in an collaborative environment that meets the
               requirements of creatives and developers at the same time.
             </p>
-            <a href="#">View case study</a>
+            <Link href="#img-box">View case study</Link>
           </div>
           <div className="img-box">
             <img src={work2} alt="work2" />
@@ -33,7 +34,7 @@ function WorkSection() {
               productive teams in an collaborative environment that meets the
               requirements of creatives and developers at the same time.
             </p>
-            <a href="#">View case study</a>
+            <Link href="#description">View case study</Link>
           </div>
         </div>
       </div>

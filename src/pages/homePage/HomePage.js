@@ -2,7 +2,6 @@ import React from "react";
 import "./HomePage.css";
 import img1 from "../../assets/img1.svg";
 import img3 from "../../assets/img3.svg";
-import BlogCard from "../../components/blogCard/BlogCard";
 import ServiceSection from "../../components/serviceSection/ServiceSection";
 import WorkSection from "../../components/workSection/WorkSection";
 import ToolsSection from "../../components/toolsSection/ToolsSection";
@@ -27,7 +26,7 @@ function HomePage() {
         </div>
         <div className="section2">
           <div className="img-box">
-            <img src={img1} />
+            <img src={img1} alt="img1" />
           </div>
         </div>
         <div className="section3">

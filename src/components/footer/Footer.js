@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <div className="section">
           <Link to="/" style={{ textAlign: "center" }}>
-            <img src={logo} />
+            <img src={logo} alt="logo" />
           </Link>
         </div>
         <div className="section">
@@ -17,18 +17,18 @@ function Footer() {
           <h6>mail.id@gmail.com</h6>
         </div>
         <div className="section">
-          <Link className="links" to="service">
+          <Link className="links" to="/service">
             SERVICES
           </Link>
           <Link className="links">TOOLS</Link>
-          <Link className="links" to="blogs">
+          <Link className="links" to="/blogs">
             BLOGS
           </Link>
 
-          <Link className="links" to="career">
+          <Link className="links" to="/career">
             CAREERS
           </Link>
-          <Link className="links" to="aboutUs">
+          <Link className="links" to="/aboutUs">
             ABOUT US
           </Link>
         </div>

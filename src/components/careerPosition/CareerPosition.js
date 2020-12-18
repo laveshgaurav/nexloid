@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./CareerPosition.css";
 function CareerPosition(props) {

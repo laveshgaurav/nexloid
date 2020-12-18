@@ -6,7 +6,6 @@ import likeReact from "../../assets/likeReact.svg";
 import profile1 from "../../assets/profile-1.jpg";
 import profile2 from "../../assets/profile-2.jpg";
 
-import { Carousel } from "bootstrap";
 function BlogSection() {
   const cards = useRef(null);
   useEffect(() => {
@@ -14,6 +13,7 @@ function BlogSection() {
     return () => {
       clearInterval(interval);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   let slideIndex = 0;
   const showSlide = () => {
@@ -38,7 +38,7 @@ function BlogSection() {
         </div>
         <div className="blogs-content">
           <div className="section1">
-            <img src={blogs} />
+            <img src={blogs} alt="blogs" />
           </div>
           <div className="section2">
             <div className="cards">
@@ -71,7 +71,7 @@ function BlogSection() {
       </div>
       <div className="review">
         <div className="img-box">
-          <img src={likeReact} />
+          <img src={likeReact} alt="likeReact" />
         </div>
         <div className="testimonial" ref={cards}>
           <h4>Awesome way</h4>
@@ -83,7 +83,7 @@ function BlogSection() {
           </p>
           <div className="profile">
             <div className="img-box">
-              <img src={profile1} />
+              <img src={profile1} alt="profile1" />
             </div>
             <div>
               <h4>John Doe</h4>
@@ -101,7 +101,7 @@ function BlogSection() {
           </p>
           <div className="profile">
             <div className="img-box">
-              <img src={profile2} />
+              <img src={profile2} alt="profile2" />
             </div>
             <div>
               <h4>Max William</h4>
