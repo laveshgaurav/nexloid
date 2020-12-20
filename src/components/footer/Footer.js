@@ -20,7 +20,9 @@ function Footer() {
           <Link className="links" to="/service">
             SERVICES
           </Link>
-          <Link className="links">TOOLS</Link>
+          <Link className="links" to="/works">
+            WORKS
+          </Link>
           <Link className="links" to="/blogs">
             BLOGS
           </Link>

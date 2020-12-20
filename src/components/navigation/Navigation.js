@@ -67,7 +67,7 @@ function Navigation() {
           <NavLink
             activeClassName="link-active"
             className="nav-links"
-            to="/blogs"
+            to="/works"
             onClick={clickHam}
           >
             Works

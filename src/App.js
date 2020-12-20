@@ -39,6 +39,7 @@ function App() {
           <Route path="/service" exact component={ServicePage} />
           <Route path="/aboutUs" exact component={AboutUsPage} />
           <Route path="/blogs" exact component={BlogPage} />
+          <Route path="/works" exact component={BlogPage} />
           <Route path="/career" exact component={CareerPage} />
         </Switch>
       </Suspense>
