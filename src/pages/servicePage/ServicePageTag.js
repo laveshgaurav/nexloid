@@ -4,10 +4,18 @@ import ServiceTool from "../../components/serviceTool/ServiceTool";
 import "./ServicePage.css";
 import img from "../../assets/8401.jpg";
 import Footer from "../../components/footer/Footer";
-function ServicePage() {
+import tag from "../../assets/tag-service.svg";
+function ServicePageTag() {
   return (
     <React.Fragment>
-      <ServicePageBanner />
+      <ServicePageBanner
+        image={tag}
+        head1="Tag"
+        head2="Management"
+        para="With my knowledge in both design and technology I foster
+              productive te ams in an collaborative environment that meets the
+              requirements of eatives and developers at the same time."
+      />
       <ServiceTool />
       <div className="servicePage-containers">
         <div className="service-box">
@@ -39,4 +47,4 @@ function ServicePage() {
   );
 }
 
-export default ServicePage;
+export default ServicePageTag;

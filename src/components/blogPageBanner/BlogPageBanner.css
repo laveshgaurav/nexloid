@@ -85,7 +85,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8%;
 }
 
 .Blog-Banner-Container .Blog-Banner-Section .section2 .img-box {
@@ -182,13 +181,13 @@
     height: 90vh;
   }
   .Blog-Banner-Container .Blog-Banner-Section .section1 .heading h3 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(2.5rem);
   }
   .Blog-Banner-Container .Blog-Banner-Section .section1 .heading p {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .Blog-Banner-Container .Blog-Banner-Section .section1 .heading button {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .Blog-Banner-Container .Blog-Banner-Section .section2 .img-box img {
     width: 100%;

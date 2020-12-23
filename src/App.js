@@ -13,7 +13,12 @@ const SingleBlogPage = lazy(() =>
 );
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
 const HomePage = lazy(() => import("./pages/homePage/HomePage"));
-const ServicePage = lazy(() => import("./pages/servicePage/ServicePage"));
+const ServicePageTag = lazy(() => import("./pages/servicePage/ServicePageTag"));
+const ServicePageCro = lazy(() => import("./pages/servicePage/ServicePageCro"));
+const ServicePageBusiness = lazy(() =>
+  import("./pages/servicePage/ServicePageBusiness")
+);
+
 const AboutUsPage = lazy(() => import("./pages/aboutUsPage/AboutUsPage"));
 const CareerPage = lazy(() => import("./pages/careerPage/CareerPage"));
 const BlogPage = lazy(() => import("./pages/blogPage/BlogPage"));
@@ -36,7 +41,17 @@ function App() {
         <Switch>
           <Route path="/blogs/:id" exact component={SingleBlogPage} />
           <Route path="/" exact component={HomePage} />
-          <Route path="/service" exact component={ServicePage} />
+          <Route
+            path="/service-tagManagement"
+            exact
+            component={ServicePageTag}
+          />
+          <Route path="/service-CRO" exact component={ServicePageCro} />
+          <Route
+            path="/service-BusinessIntelligence"
+            exact
+            component={ServicePageBusiness}
+          />
           <Route path="/aboutUs" exact component={AboutUsPage} />
           <Route path="/blogs" exact component={BlogPage} />
           <Route path="/works" exact component={BlogPage} />

@@ -45,13 +45,13 @@
 
 @media only screen and (min-width: 1441px) {
   .blogCard-container h3 {
-    font-size: calc(1.5rem + 2vh);
+    font-size: 2.5rem;
   }
   .blogCard-container p {
-    font-size: calc(1rem + 2vh);
+    font-size: 1.5rem;
   }
   .blogCard-container a {
-    font-size: calc(0.8rem + 2vh);
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=BlogCard.css.map */

@@ -40,14 +40,43 @@ function Navigation() {
           </Link>
         </div>
         <div className={drawerClasses}>
-          <NavLink
+          {/* <NavLink
             activeClassName="link-active"
             className="nav-links"
             to="/service"
             onClick={clickHam}
           >
             Service
-          </NavLink>
+          </NavLink> */}
+          <div className="dropdown">
+            <button className="dropbtn">
+              Services
+              <i
+                className="fa fa-angle-down"
+                aria-hidden="true"
+                style={{ marginLeft: "4px" }}
+              ></i>
+            </button>
+            <div className="dropdown-content">
+              <Link
+                className="nav-links"
+                to="/service-tagManagement"
+                onClick={clickHam}
+              >
+                Tag Management
+              </Link>
+              <Link className="nav-links" to="/service-CRO" onClick={clickHam}>
+                CRO
+              </Link>
+              <Link
+                className="nav-links"
+                to="/service-BusinessIntelligence"
+                onClick={clickHam}
+              >
+                Business Intelligence
+              </Link>
+            </div>
+          </div>
           <div className="dropdown">
             <button className="dropbtn">
               Tools
@@ -58,10 +87,8 @@ function Navigation() {
               ></i>
             </button>
             <div className="dropdown-content">
-              <Link className="nav-links">Testing & CRO</Link>
-              <Link className="nav-links">Business Intelligence</Link>
-              <Link className="nav-links">Digital Development</Link>
-              <Link className="nav-links">Data Collection</Link>
+              <Link className="nav-links">Organic</Link>
+              <Link className="nav-links">Nex-A</Link>
             </div>
           </div>
           <NavLink

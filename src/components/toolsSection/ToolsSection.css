@@ -5,7 +5,7 @@
 
 .tools-container .tools-section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,13 +116,13 @@
 
 @media only screen and (min-width: 1441px) {
   .tools-container .tools-section .heading h2 {
-    font-size: calc(2rem + 2vh);
+    font-size: 2.5rem;
   }
   .tools-container .tools-section .tools-content .box h3 {
-    font-size: calc(2rem +2vh);
+    font-size: 2.5rem;
   }
   .tools-container .tools-section .tools-content .box p {
-    font-size: calc(1rem + 2vh);
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=ToolsSection.css.map */
