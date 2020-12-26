@@ -12,9 +12,9 @@ function CareerPosition(props) {
       <button className="accordion" onClick={openAccordion}>
         {props.title}
         {open ? (
-          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          <i className="fa fa-chevron-up" aria-hidden="true"></i>
         ) : (
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i className="fa fa-chevron-down" aria-hidden="true"></i>
         )}
       </button>
       <CSSTransition in={open} timeout={300} classNames="alert" unmountOnExit>

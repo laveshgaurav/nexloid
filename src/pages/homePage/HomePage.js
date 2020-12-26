@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import "./HomePage.css";
 import img1 from "../../assets/img1.svg";
 import img3 from "../../assets/img3.svg";
@@ -9,7 +10,20 @@ import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 
+import { fetchLatestArticles } from '../../redux/actions/actions';
+
+
 function HomePage() {
+  const { latestArticles } = useSelector(({nexloid}) => ({
+    latestArticles: nexloid.latestArticles
+  }), shallowEqual);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchLatestArticles());
+  }, [dispatch]);
+
   return (
     <div className="Home-Container">
       <div className="Home-Section">
@@ -72,7 +86,7 @@ function HomePage() {
       <ServiceSection />
       <ToolsSection />
       <WorkSection />
-      <BlogSection />
+      <BlogSection articles={latestArticles}/>
       <Footer />
     </div>
   );

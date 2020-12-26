@@ -1,48 +1,39 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import BlogCardMain from "../../components/blogCardMain/BlogCardMain";
 import BlogPageBanner from "../../components/blogPageBanner/BlogPageBanner";
 import Footer from "../../components/footer/Footer";
 import "./BlogPage.css";
+
+import { fetchAllArticles } from '../../redux/actions/actions';
+
 function BlogPage() {
+
+  const { allArticles } = useSelector(({nexloid}) => ({
+    allArticles: nexloid.allArticles
+  }), shallowEqual);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAllArticles());
+  }, [dispatch]);
+
   return (
     <React.Fragment>
       <BlogPageBanner />
       <div className="blogs-container">
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
-        <BlogCardMain
-          date="10th Sep, 2020"
-          title="Blog name"
-          content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-        />
+        {
+          allArticles.length?allArticles.map((data, index) => (
+            <BlogCardMain
+              date={data.date}
+              title={data.title}
+              content={data.summary.substring(100)}
+              to={'/blogs/'+data.permalink}
+              key={index}
+            />
+          )):null
+        }
       </div>
       <Footer />
     </React.Fragment>

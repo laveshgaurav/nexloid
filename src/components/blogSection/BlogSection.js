@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import {withRouter} from 'react-router-dom';
 import "./BlogSection.css";
 import blogs from "../../assets/blogs.svg";
 import BlogCard from "../blogCard/BlogCard";
@@ -6,7 +7,7 @@ import likeReact from "../../assets/likeReact.svg";
 import profile1 from "../../assets/profile-1.jpg";
 import profile2 from "../../assets/profile-2.jpg";
 
-function BlogSection() {
+function BlogSection(props) {
   const cards = useRef(null);
   useEffect(() => {
     const interval = setInterval(() => showSlide(), 1500);
@@ -30,6 +31,12 @@ function BlogSection() {
     slides[slideIndex - 1].style.display = "block";
   };
 
+  let nextPath = (path) => {
+    props.history.push(path)
+  }
+
+  let { articles } = props;
+
   return (
     <div className="blogs-container">
       <div className="blogs-section">
@@ -43,27 +50,17 @@ function BlogSection() {
           <div className="section2">
             <div className="cards">
               <div className="box">
-                <BlogCard
-                  name="BLOG NAME"
-                  content="This article covers the subject of real-time website personalization both from a key point of view and from a technical stance including a few contemplations for google optimize."
-                />
-                <BlogCard
-                  name="BLOG NAME"
-                  content="This article covers the subject of real-time website personalization both from a key point of view and from a technical stance including a few contemplations for google optimize."
-                />
-                <BlogCard
-                  name="BLOG NAME"
-                  content="This article covers the subject of real-time website personalization both from a key point of view and from a technical stance including a few contemplations for google optimize."
-                />
-                <BlogCard
-                  name="BLOG NAME"
-                  content="This article covers the subject of real-time website personalization both from a key point of view and from a technical stance including a few contemplations for google optimize."
-                />
-                <BlogCard
-                  name="BLOG NAME"
-                  content="This article covers the subject of real-time website personalization both from a key point of view and from a technical stance including a few contemplations for google optimize."
-                />
-                <button>More Blogs</button>
+                {
+                  articles.length?articles.map((data, index)=>(
+                    <BlogCard
+                      name={data.title}
+                      content={data.summary.substring(0,200)+'...'}
+                      permalink={data.permalink}
+                      key={index}
+                    />
+                  )):null
+                }
+                <button onClick={()=>nextPath('/blogs')}>More Blogs</button>
               </div>
             </div>
           </div>
@@ -118,4 +115,4 @@ function BlogSection() {
   );
 }
 
-export default BlogSection;
+export default withRouter(BlogSection);

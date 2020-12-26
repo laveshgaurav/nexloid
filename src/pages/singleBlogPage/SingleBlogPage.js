@@ -1,72 +1,68 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { Helmet } from 'react-helmet';
 import "./SingleBlogPage.css";
-import blog1 from "../../assets/blog1.svg";
-import blog2 from "../../assets/blog2.svg";
 import BlogCardMain from "../../components/blogCardMain/BlogCardMain";
 import Footer from "../../components/footer/Footer";
+
+import { fetchArticleById } from '../../redux/actions/actions';
+
 function SingleBlogPage(props) {
-  console.log(props.match);
+  const dispatch = useDispatch();
+  const blogPath = props.match.params.id;
+
+  let { openedArticle } = useSelector(({nexloid}) => ({
+    openedArticle: nexloid.openedArticle
+  }), shallowEqual);
+
+  useEffect(() => {
+    dispatch(fetchArticleById(blogPath));
+  }, [dispatch, blogPath]);
+ 
   return (
-    <React.Fragment>
-      <div className="blog-id-container">
-        <div className="date">
-          <p>10th</p>
-          <p>September, 2020</p>
-        </div>
-        <div className="content">
-          <h3>BLOG NAME</h3>
-          <img src={blog1} alt="blog1" />
-          <div className="para">
+      <React.Fragment>
+      {
+        openedArticle.length?openedArticle.map((data, index) => (
+        <div key={index}>
+        <Helmet>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          <title>{data.seo.metaTitle}</title>
+          <meta name="author" content={data.seo.metaAuthor} />
+          <meta name="description" content={data.seo.metaDescription} />
+
+          {/* twitter cards */}
+          <meta name="twitter:title" content={data.seo.twitterTitle}/>
+          <meta name="twitter:url" content={data.seo.twitterUrl}/>
+          <meta name="twitter:description" content={data.seo.twitterDescription}/>
+          <meta name="twitter:image" content={data.seo.twitterImage}/>
+          <meta name="twitter:card" content="summary_large_image"/>
+        </Helmet>
+        
+        <div className="blog-id-container" >
+          
+          <div className="date">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {data.date}
             </p>
           </div>
-          <img className="img2" src={blog2} alt="blog2" />
-          <caption className="caption">This is a photo from Unsplash</caption>
-          <div className="para">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          
+          <div className="content">
+            <h3>{data.title}</h3>
+            <img src={data.images.headerImage} alt={data.permalink} />
+            <div className="para" dangerouslySetInnerHTML={{__html: data.content}}>
+            </div>
+            <div className="tags">
+              <p>Tags : </p>
+              {
+                data.tags?.length?data.tags.map((data, index) => (
+                  <button>{data}</button>
+                )):null
+              }
+            </div>
           </div>
-          <div className="tags">
-            <p>Tags : </p>
-            <button>Just a tag</button>
-            <button>Just a tag</button>
-            <button>Just a tag</button>
-            <button>Just a tag</button>
-          </div>
-        </div>
-      </div>
+        </div></div>)):null
+      }
+      
       <div className="related-blog-container">
         <h2>Related blogs</h2>
         <div className="blogs-container">
@@ -89,7 +85,7 @@ function SingleBlogPage(props) {
         <button>View more blogs</button>
       </div>
       <Footer />
-    </React.Fragment>
+    </React.Fragment>    
   );
 }
 

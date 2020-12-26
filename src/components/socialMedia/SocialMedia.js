@@ -6,17 +6,17 @@ function SocialMedia() {
     <React.Fragment>
       <span>
         <Link>
-          <i class="fab fa-facebook-f"></i>
+          <i className="fab fa-facebook-f"></i>
         </Link>
       </span>
       <span>
         <Link>
-          <i class="fab fa-linkedin-in"></i>
+          <i className="fab fa-linkedin-in"></i>
         </Link>
       </span>
       <span>
         <Link>
-          <i class="fab fa-twitter"></i>
+          <i className="fab fa-twitter"></i>
         </Link>
       </span>
     </React.Fragment>

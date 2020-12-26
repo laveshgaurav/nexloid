@@ -40,7 +40,7 @@ function Footer() {
           <form className="forms">
             <input type="email" placeholder="Type your e-mail" />
             <button>
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </button>
           </form>
         </div>

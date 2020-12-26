@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./BlogCardMain.css";
 function BlogCardMain(props) {
-  const { date, title, content } = props;
+  const { date, title, content, to } = props;
   return (
     <React.Fragment>
-      <Link className="Blog-Card2" to="/blogs/1">
+      <Link className="Blog-Card2" to={to}>
         <h5>{date}</h5>
         <h2>{title}</h2>
         <p>{content}</p>
