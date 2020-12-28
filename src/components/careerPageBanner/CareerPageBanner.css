@@ -182,13 +182,13 @@
     height: 90vh;
   }
   .career-Banner-Container .career-Banner-Section .section1 .heading h3 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(2.5rem);
   }
   .career-Banner-Container .career-Banner-Section .section1 .heading p {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .career-Banner-Container .career-Banner-Section .section1 .heading button {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .career-Banner-Container .career-Banner-Section .section2 .img-box img {
     width: 100%;

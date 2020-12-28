@@ -111,7 +111,7 @@
 }
 
 .blogs-container .review .testimonial {
-  max-width: 320px;
+  max-width: 360px;
   height: auto;
   padding: 2% 1%;
   position: absolute;
@@ -119,8 +119,8 @@
   left: 20%;
   -webkit-box-shadow: 3px 3px 10px 1px #29292994;
           box-shadow: 3px 3px 10px 1px #29292994;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +171,6 @@
 .blogs-container .explore {
   width: 100%;
   padding: 2% 8%;
-  margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +463,7 @@
 
 @media only screen and (min-width: 1441px) {
   .blogs-container .blogs-section h2 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(3.5rem);
   }
   .blogs-container .blogs-section .blogs-content {
     width: 100%;
@@ -497,7 +496,7 @@
             align-items: flex-end;
   }
   .blogs-container .blogs-section .blogs-content .section2 .cards .box button {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .blogs-container .review {
     width: 100%;
@@ -567,7 +566,6 @@
   .blogs-container .explore {
     width: 100%;
     padding: 2% 8%;
-    margin: 5% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -580,11 +578,11 @@
   }
   .blogs-container .explore p {
     width: 50%;
-    font-size: calc(2rem + 2vh);
+    font-size: calc(2.5rem);
     color: #3685c3;
   }
   .blogs-container .explore button {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
 }
 /*# sourceMappingURL=BlogSection.css.map */

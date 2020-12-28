@@ -85,7 +85,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8%;
 }
 
 .Service-Banner-Container .Service-Banner-Section .section2 .img-box {
@@ -103,8 +102,8 @@
 }
 
 .Service-Banner-Container .Service-Banner-Section .section2 .img-box img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 .Service-Banner-Container .Service-Banner-Section .section3 {
@@ -182,17 +181,17 @@
     height: 90vh;
   }
   .Service-Banner-Container .Service-Banner-Section .section1 .heading h3 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(2.5rem);
   }
   .Service-Banner-Container .Service-Banner-Section .section1 .heading p {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .Service-Banner-Container .Service-Banner-Section .section1 .heading button {
-    font-size: calc(1rem + 2vh);
+    font-size: 1.5rem;
   }
   .Service-Banner-Container .Service-Banner-Section .section2 .img-box img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
   .Service-Banner-Container .Service-Banner-Section .section3 {
     width: 5%;

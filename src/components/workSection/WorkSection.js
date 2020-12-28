@@ -1,42 +1,39 @@
 import React from "react";
 import "./WorkSection.css";
-import work1 from "../../assets/work1.png";
-import work2 from "../../assets/work2.png";
-import { Link } from "react-router-dom";
 
-function WorkSection() {
+function WorkSection(props) {
+  let { articles } = props;
   return (
     <div className="work-container">
       <div className="work-section">
         <h2>OUR WORKS</h2>
-        <div className="work-box">
-          <div className="description">
-            <h3>Article name</h3>
-            <p>
-              With my knowledge in both design and technology I foster
-              productive teams in an collaborative environment that meets the
-              requirements of creatives and developers at the same time.
-            </p>
-            <Link href="#img-box">View case study</Link>
-          </div>
-          <div className="img-box">
-            <img src={work2} alt="work2" />
-          </div>
-        </div>
-        <div className="work-box">
-          <div className="img-box">
-            <img src={work1} alt="work1" />
-          </div>
-          <div className="description">
-            <h3>Article name</h3>
-            <p>
-              With my knowledge in both design and technology I foster
-              productive teams in an collaborative environment that meets the
-              requirements of creatives and developers at the same time.
-            </p>
-            <Link href="#description">View case study</Link>
-          </div>
-        </div>
+        {
+          articles?.length?articles.map((data, index) => (
+            <div className="work-box" key={index}>
+              {
+                index%2!==0?(
+                  <div className="img-box">
+                    <img src={data.featuredImage} alt={data.title} />
+                  </div>
+                ):null
+              }
+              <div className="description">
+                <h3>{data.title}</h3>
+                <p>
+                  {data.summary}
+                </p>
+                <a href={`/works/${data.permalink}`}>View case study</a>
+              </div>
+              {
+                index%2===0?(
+                  <div className="img-box">
+                    <img src={data.featuredImage} alt={data.title} />
+                  </div>
+                ):null
+              }
+            </div>
+          )):null
+        }
       </div>
       <div className="explore">
         <p>

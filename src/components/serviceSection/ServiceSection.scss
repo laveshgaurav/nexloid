@@ -3,11 +3,11 @@
     height: auto;
     .service-section{
         width: 100%;
-        min-height:100vh;
+        min-height:80vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 10%;
+        padding: 0 8%;
         flex-direction: column;
         h2{
             color: #464545;
@@ -16,11 +16,11 @@
         }
         .services {
             width: 100%;
-            height: auto;
+            min-height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 6%;
+            padding: 0 4%;
             flex-wrap: wrap;
         .service-box{
             width: 50%;
@@ -29,7 +29,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 8%;
+            padding: 4%;
             text-align: center;
             p{
                 color: #565656;

@@ -10,18 +10,22 @@ import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 
-import { fetchLatestArticles } from '../../redux/actions/actions';
+import { fetchLatestArticles, fetchLatestWorks, fetchAllServices } from '../../redux/actions/actions';
 
 
 function HomePage() {
-  const { latestArticles } = useSelector(({nexloid}) => ({
-    latestArticles: nexloid.latestArticles
+  const { latestArticles, latestWorks, allServices } = useSelector(({nexloid}) => ({
+    latestArticles: nexloid.latestArticles,
+    latestWorks: nexloid.latestWorks,
+    allServices: nexloid.allServices
   }), shallowEqual);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchLatestArticles());
+    dispatch(fetchLatestWorks());
+    dispatch(fetchAllServices());
   }, [dispatch]);
 
   return (
@@ -83,9 +87,9 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <ServiceSection />
+      <ServiceSection services={allServices}/>
       <ToolsSection />
-      <WorkSection />
+      <WorkSection articles={latestWorks}/>
       <BlogSection articles={latestArticles}/>
       <Footer />
     </div>

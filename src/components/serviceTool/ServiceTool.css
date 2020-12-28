@@ -14,7 +14,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 8%;
-  margin: 2rem 0;
 }
 
 .ServiceTools-Container .ServiceTools-Section h3 {
@@ -85,6 +84,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 10% 0;
     padding: 0 8%;
   }
   .ServiceTools-Container .ServiceTools-Section h3 {
@@ -138,17 +138,17 @@
 
 @media only screen and (min-width: 1441px) {
   .ServiceTools-Container .ServiceTools-Section h3 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(3rem);
   }
   .ServiceTools-Container .ServiceTools-Section .features .box .img-box {
-    width: calc(128px + 2vh);
-    height: calc(128px + 2vh);
+    width: calc(128px);
+    height: calc(128px);
   }
   .ServiceTools-Container .ServiceTools-Section .features .box h4 {
-    font-size: calc(0.8rem + 2vh);
+    font-size: calc(2.5rem);
   }
   .ServiceTools-Container .ServiceTools-Section .features .box p {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
 }
 /*# sourceMappingURL=ServiceTool.css.map */

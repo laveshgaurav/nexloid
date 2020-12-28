@@ -7,7 +7,7 @@
         display: flex;
         align-items: center;
        justify-content: space-between;
-        padding: 2% 8%;
+        padding: 0% 8%;
         flex-direction: column;
         // background-color: aqua;
         h2 {
@@ -42,7 +42,7 @@ p{
     color: #707070;
     // font-size: 12px;
     font-size: 1rem;
-    line-height: 22px;
+    line-height: 32px;
     margin-bottom: 0.6rem;
 
 }
@@ -64,7 +64,6 @@ a{
     .explore{
         width: 100%;
         padding: 2% 8%;
-margin: 5% 0;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -294,7 +293,7 @@ transform: translate(-50%,-50%);
     .work-container {
         .work-section {
             h2 {
-                 font-size: calc(2rem + 2vh);
+                 font-size: calc(3rem);
             }
 
             .work-box {
@@ -303,17 +302,18 @@ transform: translate(-50%,-50%);
 
 
                     h3 {
-                        font-size: calc(1.3rem + 2vh);
+                        font-size: calc(2.5rem);
                     }
 
                     p {
-                        font-size: calc(1rem + 2vh);
+                        font-size: calc(1.5rem);
+                        line-height: 3.5rem;
 
 
                     }
 
                     a {
-                    font-size: calc(0.8rem + 2vh);
+                    font-size: calc(1.2rem);
 
                     }
                 }
@@ -323,11 +323,11 @@ transform: translate(-50%,-50%);
         .explore {
             p {
                 width: 60%;
-                font-size: calc(1rem + 2vh);
+                font-size: calc(2.5rem);
             }
 
             button {
-                font-size: calc(1rem + 2vh);
+                font-size: calc(1.5rem );
             }
         }
     }

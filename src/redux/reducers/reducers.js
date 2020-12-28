@@ -5,9 +5,12 @@ const InitialState = {
   latestArticles: [],
   openedArticle: [],
   relatedArticles: [],
-  allCaseStudies: [],
-  latestCaseStudies: [],
-  openedCaseStudy: [],
+  allWorks: [],
+  latestWorks: [],
+  openedWork: [],
+  openedService: [],
+  allServices: [],
+  allCareers: [],
   isLoading: true
 }
 
@@ -40,6 +43,48 @@ export default (state = InitialState, {type, payload}) => {
       return {
         ...state,
         isLoading: payload
+      }
+    }
+
+    case actionType.FETCH_LATEST_WORKS : {
+      return {
+        ...state,
+        latestWorks: payload
+      }
+    }
+
+    case actionType.FETCH_A_WORK : {
+      return {
+        ...state,
+        openedWork: payload
+      }
+    }
+
+    case actionType.FETCH_ALL_WORKS : {
+      return {
+        ...state,
+        allWorks: payload
+      }
+    }
+
+    case actionType.FETCH_ALL_SERVICES : {
+      return {
+        ...state,
+        allServices: payload
+      }
+    }
+
+    case actionType.FETCH_SERVICE_DETAILS : {
+      return {
+        ...state,
+        openedService: payload
+      }
+    }
+
+    case actionType.FETCH_CAREERS : {
+      return {
+        ...state,
+        allCareers: payload
       }
     }
 

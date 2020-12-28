@@ -82,7 +82,7 @@ function SingleBlogPage(props) {
             content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
           />
         </div>
-        <button>View more blogs</button>
+        <button className="viewmore">View more blogs</button>
       </div>
       <Footer />
     </React.Fragment>    

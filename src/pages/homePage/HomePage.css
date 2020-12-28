@@ -86,7 +86,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8%;
+  padding: 0%;
 }
 
 .Home-Container .Home-Section .section2 .img-box {
@@ -338,10 +338,10 @@
     min-height: 90vh;
   }
   .Home-Container .Home-Section .section1 .heading h3 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(2.5rem);
   }
   .Home-Container .Home-Section .section1 .heading p {
-    font-size: calc(1rem + 2vh);
+    font-size: calc(1.5rem);
   }
   .Home-Container .Home-Section .section1 .heading button {
     font-size: calc(1rem + 2vh);
@@ -358,7 +358,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 8%;
+    padding: 0%;
   }
   .Home-Container .Home-Section .section2 .img-box {
     width: 100%;
@@ -409,11 +409,11 @@
     font-size: 2.5rem;
   }
   .Home-Container .Intro .section1 .heading h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .Home-Container .Intro .section1 .heading p {
     margin-top: 4%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .Home-Container .Intro .section2 .img-box {
     width: 100%;

@@ -20,7 +20,9 @@ function Footer() {
           <Link className="links" to="/service">
             SERVICES
           </Link>
-          <Link className="links">TOOLS</Link>
+          <Link className="links" to="/works">
+            WORKS
+          </Link>
           <Link className="links" to="/blogs">
             BLOGS
           </Link>
@@ -49,11 +51,12 @@ function Footer() {
         style={{
           textAlign: "center",
           backgroundColor: "#1A1E21",
-          color: "white",
+          color: "#FFF",
           margin: 0,
+          padding: "10px 0"
         }}
       >
-        Copyright
+        Copyright <a href="https://nexloid.com">Nexloid</a>
       </p>
     </React.Fragment>
   );
