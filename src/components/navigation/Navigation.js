@@ -1,5 +1,5 @@
-import React, { useState, useEffect} from "react";
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import "./Navigation.css";
 import logo from "../../assets/logo.png";
 import ham from "../../assets/ham.png";
@@ -7,7 +7,7 @@ import close from "../../assets/close.png";
 import { Link, NavLink } from "react-router-dom";
 import ContactUs from "../contactUs/ContactUs";
 
-import { fetchAllServices } from '../../redux/actions/actions';
+import { fetchAllServices } from "../../redux/actions/actions";
 function Navigation() {
   const [toggle, setToggle] = useState(true);
   const [drawerOpen, SetDrawerOpen] = useState(false);
@@ -31,9 +31,12 @@ function Navigation() {
 
   let dispatch = useDispatch();
 
-  const { allServices } = useSelector(({nexloid}) => ({
-    allServices: nexloid.allServices
-  }), shallowEqual);
+  const { allServices } = useSelector(
+    ({ nexloid }) => ({
+      allServices: nexloid.allServices,
+    }),
+    shallowEqual
+  );
 
   useEffect(() => {
     dispatch(fetchAllServices());
@@ -72,13 +75,17 @@ function Navigation() {
               ></i>
             </button>
             <div className="dropdown-content">
-              {
-                allServices?.length?allServices?.map((link, index) => (
-                  <Link className="nav-links" to={'/service/'+link.permalink} onClick={clickHam}>
-                    {link.title}
-                  </Link>
-                )):null
-              }
+              {allServices?.length
+                ? allServices?.map((link, index) => (
+                    <Link
+                      className="nav-links"
+                      to={"/service/" + link.permalink}
+                      onClick={clickHam}
+                    >
+                      {link.title}
+                    </Link>
+                  ))
+                : null}
             </div>
           </div>
           <div className="dropdown">
@@ -91,8 +98,12 @@ function Navigation() {
               ></i>
             </button>
             <div className="dropdown-content">
-              <Link className="nav-links">Organic</Link>
-              <Link className="nav-links">Nex-A</Link>
+              <Link className="nav-links" to="/tools/Nex-A" onClick={clickHam}>
+                Nex-A
+              </Link>
+              <Link className="nav-links" onClick={clickHam}>
+                Organic
+              </Link>
             </div>
           </div>
           <NavLink
