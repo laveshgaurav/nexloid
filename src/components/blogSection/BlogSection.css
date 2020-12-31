@@ -463,7 +463,7 @@
 
 @media only screen and (min-width: 1441px) {
   .blogs-container .blogs-section h2 {
-    font-size: calc(3.5rem);
+    font-size: calc(2.5rem);
   }
   .blogs-container .blogs-section .blogs-content {
     width: 100%;
@@ -496,7 +496,7 @@
             align-items: flex-end;
   }
   .blogs-container .blogs-section .blogs-content .section2 .cards .box button {
-    font-size: calc(1.5rem);
+    font-size: 1.2rem;
   }
   .blogs-container .review {
     width: 100%;
@@ -509,7 +509,7 @@
     text-align: center;
   }
   .blogs-container .review .img-box img {
-    width: 60%;
+    width: 50%;
   }
   .blogs-container .review .testimonial {
     max-width: 720px;
@@ -535,12 +535,12 @@
             align-items: flex-start;
   }
   .blogs-container .review .testimonial h4 {
-    font-size: calc(1rem + 2vh);
+    font-size: 2rem;
     margin-bottom: 0.4rem;
   }
   .blogs-container .review .testimonial p {
     margin-bottom: 0.4rem;
-    font-size: calc(0.2rem + 2vh);
+    font-size: 1.2rem;
   }
   .blogs-container .review .testimonial .profile {
     display: -webkit-box;
@@ -565,7 +565,7 @@
   }
   .blogs-container .explore {
     width: 100%;
-    padding: 2% 8%;
+    padding: 5% 8%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -578,11 +578,11 @@
   }
   .blogs-container .explore p {
     width: 50%;
-    font-size: calc(2.5rem);
+    font-size: 2rem;
     color: #3685c3;
   }
   .blogs-container .explore button {
-    font-size: calc(1.5rem);
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=BlogSection.css.map */

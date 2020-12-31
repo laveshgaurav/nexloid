@@ -76,7 +76,7 @@ class _ExternalService {
       .then(async blogPosts => {
         let result = [];
         for(let key in blogPosts) {
-            let { author, content,date, featuredImage, tags, id, seo, slug, title} = blogPosts[key];
+            let { author, content,date, featuredImage, tags, id, seo, slug, title, jsonLDSchema} = blogPosts[key];
             console.log("seo", seo);
             let genResponse = {
               id: id,
@@ -86,6 +86,7 @@ class _ExternalService {
               permalink: slug,
               tags: tags,
               seo: seo,
+              jsonLDSchema: jsonLDSchema,
               images : {
                 headerImage: await this.fetchImage(featuredImage[0])
               },
@@ -156,7 +157,7 @@ class _ExternalService {
       .then(async articles => {
         let result = [];
         for(let key in articles) {
-            let { author, content,date, featuredImage, tags, id, seo, slug, title} = articles[key];
+            let { author, content,date, featuredImage, tags, id, seo, slug, title, jsonLDSchema} = articles[key];
             let genResponse = {
               id: id,
               content: content,
@@ -165,6 +166,7 @@ class _ExternalService {
               permalink: slug,
               tags: tags,
               seo: seo,
+              jsonLDSchema: jsonLDSchema,
               featuredImage: await this.fetchImage(featuredImage[0]),
               date: new Date(date).toDateString()
             };

@@ -5,6 +5,8 @@ import WorkPageBanner from "../../components/workPageBanner/WorkPageBanner";
 import Footer from "../../components/footer/Footer";
 import "./WorkPage.css";
 
+import PageHelmet from '../../components/pageHelmet';
+
 import { fetchAllWorks } from '../../redux/actions/actions';
 
 function BlogPage() {
@@ -21,6 +23,20 @@ function BlogPage() {
 
   return (
     <React.Fragment>
+      <PageHelmet
+        title="Our Works | Case Studies"
+        author="Nexloid"
+        description="Our Works | Case Studies"
+        twTitle="Nexloid : Case Studies"
+        twUrl="https://nexloid.com/works"
+        twDescription="Nexloid : Case Studies"
+        twImage=""
+        ogTitle="Nexloid : Case Studies"
+        ogType="blog"
+        ogUrl="https://nexloid.com/works"
+        ogImage=""
+        ogDescription="Nexloid : Case Studies"
+      />
       <WorkPageBanner />
       <div className="blogs-container">
         {

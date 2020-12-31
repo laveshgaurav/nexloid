@@ -6,10 +6,27 @@ import project from "../../assets/project.svg";
 
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
+
 import "./AboutUsPage.css";
+import PageHelmet from '../../components/pageHelmet';
+
 function AboutUsPage() {
   return (
     <div className="AboutUs-Container">
+      <PageHelmet
+        title="Nexloid: Digital Analytics Agency - About Us"
+        author="Nexloid"
+        description="Digital Analytics Agency"
+        twTitle="Nexloid: Digital Analytics Agency - About Us"
+        twUrl="https://nexloid.com"
+        twDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        twImage=""
+        ogTitle="Nexloid: Digital Analytics Agency - About Us"
+        ogType="website"
+        ogUrl="https://nexloid.com"
+        ogImage=""
+        ogDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+      />
       <div className="AboutUs-Section">
         <div className="section1">
           <div className="heading">

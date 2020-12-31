@@ -33,7 +33,7 @@
           justify-content: center;
 }
 
-.Home-Container .Home-Section .section1 .heading h3 {
+.Home-Container .Home-Section .section1 .heading h1, .Home-Container .Home-Section .section1 .heading h3 {
   font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -146,7 +146,7 @@
 
 .Home-Container .Intro {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@
           justify-content: center;
 }
 
-.Home-Container .Intro .section1 .heading h3 {
+.Home-Container .Intro .section1 .heading h1, .Home-Container .Intro .section1 .heading h3 {
   font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -287,7 +287,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Home-Container .Intro .section1 .heading h3 {
+  .Home-Container .Intro .section1 .heading h1, .Home-Container .Intro .section1 .heading h3 {
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -337,14 +337,14 @@
   .Home-Container .Home-Section {
     min-height: 90vh;
   }
-  .Home-Container .Home-Section .section1 .heading h3 {
-    font-size: calc(2.5rem);
+  .Home-Container .Home-Section .section1 .heading h1, .Home-Container .Home-Section .section1 .heading h3 {
+    font-size: 2.5rem;
   }
   .Home-Container .Home-Section .section1 .heading p {
-    font-size: calc(1.5rem);
+    font-size: 1.2rem;
   }
   .Home-Container .Home-Section .section1 .heading button {
-    font-size: calc(1rem + 2vh);
+    font-size: 1.2rem;
   }
   .Home-Container .Home-Section .section2 {
     width: 55%;
@@ -408,12 +408,12 @@
     transition: 0.4s ease-out;
     font-size: 2.5rem;
   }
-  .Home-Container .Intro .section1 .heading h3 {
+  .Home-Container .Intro .section1 .heading h1, .Home-Container .Intro .section1 .heading h3 {
     font-size: 2.5rem;
   }
   .Home-Container .Intro .section1 .heading p {
     margin-top: 4%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .Home-Container .Intro .section2 .img-box {
     width: 100%;

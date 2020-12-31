@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;CAElB",
     "sources": [
-        "BlogPage.scss"
+        "WorkPage.scss"
     ],
     "names": [],
-    "file": "BlogPage.css"
+    "file": "WorkPage.css"
 }

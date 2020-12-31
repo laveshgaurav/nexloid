@@ -6,6 +6,7 @@ import Footer from "../../components/footer/Footer";
 import "./BlogPage.css";
 
 import { fetchAllArticles } from '../../redux/actions/actions';
+import PageHelmet from '../../components/pageHelmet';
 
 function BlogPage() {
 
@@ -21,6 +22,20 @@ function BlogPage() {
 
   return (
     <React.Fragment>
+      <PageHelmet
+        title="Our Blogs | Latest Digital Analytics Contents | Nexloid"
+        author="Nexloid"
+        description="Latest digital analytics contents by Nexloid"
+        twTitle="Latest Digital Analytics Contents"
+        twUrl="https://nexloid.com/blogs"
+        twDescription="Latest Digital Analytics Contents"
+        twImage=""
+        ogTitle="Latest Digital Analytics Contents"
+        ogType="blog"
+        ogUrl="https://nexloid.com/blogs"
+        ogImage=""
+        ogDescription="Latest Digital Analytics Contents"
+      />
       <BlogPageBanner />
       <div className="blogs-container">
         {

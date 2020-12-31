@@ -123,13 +123,13 @@
 
 @media only screen and (min-width: 1441px) {
   .service-container .service-section h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .service-container .service-section .services .service-box p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .service-container .service-section .services .service-box h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=ServiceSection.css.map */

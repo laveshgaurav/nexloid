@@ -9,6 +9,7 @@ import ToolsSection from "../../components/toolsSection/ToolsSection";
 import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
+import PageHelmet from '../../components/pageHelmet';
 
 import { fetchLatestArticles, fetchLatestWorks, fetchAllServices } from '../../redux/actions/actions';
 
@@ -30,11 +31,24 @@ function HomePage() {
 
   return (
     <div className="Home-Container">
+      <PageHelmet
+        title="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        author="Nexloid"
+        description="Digital Analytics Agency"
+        twTitle="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        twUrl="https://nexloid.com"
+        twDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        twImage=""
+        ogTitle="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        ogType="website"
+        ogUrl="https://nexloid.com"
+        ogImage=""
+        ogDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+      />
       <div className="Home-Section">
         <div className="section1">
           <div className="heading">
-            <h3>Analysing sites to</h3>
-            <h3>help your business</h3>
+            <h1>Analysing sites to <br/> help your business</h1>
             <p>
               Our team is here to help you with the necessary data to help run
               your business better.

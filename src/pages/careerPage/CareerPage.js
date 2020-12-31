@@ -6,6 +6,7 @@ import Footer from "../../components/footer/Footer";
 import "./CareerPage.css";
 
 import { fetchAllCareers } from '../../redux/actions/actions';
+import PageHelmet from '../../components/pageHelmet';
 
 function CareerPage() {
   const { allCareers } = useSelector(({nexloid}) => ({
@@ -20,6 +21,20 @@ function CareerPage() {
 
   return (
     <React.Fragment>
+      <PageHelmet
+        title="Nexloid: Digital Analytics Agency - Careers"
+        author="Nexloid"
+        description="Digital Analytics Agency"
+        twTitle="Nexloid: Digital Analytics Agency - Careers"
+        twUrl="https://nexloid.com/career"
+        twDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+        twImage=""
+        ogTitle="Nexloid: Digital Analytics Agency - Careers"
+        ogType="website"
+        ogUrl="https://nexloid.com/career"
+        ogImage=""
+        ogDescription="Nexloid: Digital Analytics Agency - Google and Adobe Analytics Specialist"
+      />
       <CareerPageBanner />
       <div className="position-accordion">
         {
