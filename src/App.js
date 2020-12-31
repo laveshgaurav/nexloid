@@ -16,14 +16,13 @@ const SingleWorkPage = lazy(() =>
 );
 const Navigation = lazy(() => import("./components/navigation/Navigation"));
 const HomePage = lazy(() => import("./pages/homePage/HomePage"));
-const ServicePage = lazy(() =>
-  import("./pages/servicePage/ServicePage")
-);
+const ServicePage = lazy(() => import("./pages/servicePage/ServicePage"));
 
 const AboutUsPage = lazy(() => import("./pages/aboutUsPage/AboutUsPage"));
 const CareerPage = lazy(() => import("./pages/careerPage/CareerPage"));
 const BlogPage = lazy(() => import("./pages/blogPage/BlogPage"));
 const WorkPage = lazy(() => import("./pages/workPage/WorkPage"));
+const ToolsNexA = lazy(() => import("./pages/toolsPage/ToolsNexA"));
 
 function App() {
   return (
@@ -43,11 +42,8 @@ function App() {
         <Switch>
           <Route path="/blogs/:id" exact component={SingleBlogPage} />
           <Route path="/" exact component={HomePage} />
-          <Route
-            path="/service/:serviceID"
-            exact
-            component={ServicePage}
-          />
+          <Route path="/service/:serviceID" exact component={ServicePage} />
+          <Route path="/tools/Nex-A" exact component={ToolsNexA} />
           <Route path="/aboutUs" exact component={AboutUsPage} />
           <Route path="/blogs" exact component={BlogPage} />
           <Route path="/works" exact component={WorkPage} />

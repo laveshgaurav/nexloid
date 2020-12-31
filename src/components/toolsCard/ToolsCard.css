@@ -1,0 +1,130 @@
+.tool-card-box {
+  width: 20%;
+  margin: 2.5%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: visible;
+  z-index: 5;
+  color: #4d4d4d;
+}
+
+.tool-card-box p {
+  font-size: 12px;
+}
+
+.tool-card-box h2 {
+  font-size: 3rem;
+}
+
+.tool-card-box h4 {
+  font-size: 16px;
+  margin: 2rem 0;
+}
+
+.tool-card-box::after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: skewX(-4deg) rotate3d(1, 1, 1, -25deg) scale(1.1);
+          transform: skewX(-4deg) rotate3d(1, 1, 1, -25deg) scale(1.1);
+  border-radius: 2.5rem;
+  z-index: -2;
+}
+
+.tool-card-box:nth-child(1)::after {
+  background: -webkit-gradient(linear, left top, right top, from(#ff9100), color-stop(1%, #ff9000), color-stop(26%, #ff7000), color-stop(51%, #ff5a00), color-stop(75%, #ff4c00), color-stop(96%, #ff4800));
+  background: linear-gradient(to right, #ff9100 0%, #ff9000 1%, #ff7000 26%, #ff5a00 51%, #ff4c00 75%, #ff4800 96%);
+}
+
+.tool-card-box:nth-child(2)::after {
+  background: -webkit-gradient(linear, left top, right top, from(#c50048), color-stop(48%, #df2a6a), to(#ff5e93));
+  background: linear-gradient(to right, #c50048 0%, #df2a6a 48%, #ff5e93 100%);
+}
+
+.tool-card-box:nth-child(3)::after {
+  background: -webkit-gradient(linear, left top, right top, from(#93dcfc), to(#07a9f0));
+  background: linear-gradient(to right, #93dcfc 0%, #07a9f0 100%);
+}
+
+.tool-card-box:nth-child(4)::after {
+  background: -webkit-gradient(linear, left top, right top, from(#49c8ff), to(#143cf1));
+  background: linear-gradient(to right, #49c8ff 0%, #143cf1 100%);
+}
+
+.tool-card-box::before {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: skewX(-4deg) rotate3d(1, 1, 1, -10deg);
+          transform: skewX(-4deg) rotate3d(1, 1, 1, -10deg);
+  z-index: -1;
+  background-color: white;
+  border-radius: 2.5rem;
+  border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .tool-card-box {
+    width: 40%;
+    margin: 5%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .tool-card-box {
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .tool-card-box {
+    width: 20%;
+    margin: 2.5%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    overflow: visible;
+    z-index: 5;
+    color: #4d4d4d;
+  }
+  .tool-card-box p {
+    font-size: 1.5rem;
+  }
+  .tool-card-box h2 {
+    font-size: 3.5rem;
+  }
+  .tool-card-box h4 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+  .tool-card-box h3 {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=ToolsCard.css.map */
