@@ -11,6 +11,9 @@
 ::-webkit-scrollbar {
   width: 0px;
 }
+h3{
+ overflow: visible; 
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
