@@ -73,8 +73,7 @@ function HomePage() {
         </div>
         <div className="section1">
           <div className="heading">
-            <h3>Basic introduction of who</h3>
-            <h3>
+            <h3>Basic introduction of who <br/>
               we're as a <span style={{ color: "#3685c3" }}>company</span>
             </h3>
             <p>

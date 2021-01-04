@@ -44,10 +44,13 @@ function SingleWorkPage(props) {
             <p>
               {data.date}
             </p>
+            <p>
+              by {data.author}
+            </p>
           </div>
           
           <div className="content">
-            <h3>{data.title}</h3>
+            <h1>{data.title}</h1>
             <img src={data.featuredImage} alt={data.permalink} />
             <div className="para" dangerouslySetInnerHTML={{__html: data.content}}>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-white.svg";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -12,9 +12,9 @@ function Footer() {
           </Link>
         </div>
         <div className="section">
-          <h6>Address</h6>
-          <h6>Contact</h6>
-          <h6>mail.id@gmail.com</h6>
+          <h6>Office Not Office, OMBR Layout, Banaswadi, Bengaluru, Karnataka 560043</h6>
+          <h6>+91 99643 43404</h6>
+          <h6>support@nexloid.com</h6>
         </div>
         <div className="section">
           <Link className="links" to="/service">
@@ -46,18 +46,11 @@ function Footer() {
             </button>
           </form>
         </div>
+        
       </div>
-      <p
-        style={{
-          textAlign: "center",
-          backgroundColor: "#1A1E21",
-          color: "#FFF",
-          margin: 0,
-          padding: "10px 0"
-        }}
-      >
-        Copyright <a href="https://nexloid.com">Nexloid</a>
-      </p>
+      <div className="footer-text">
+          Copyright 2020 <a href="https://nexloid.com">Nexloid</a> | All Rights Reserved
+        </div>
     </React.Fragment>
   );
 }

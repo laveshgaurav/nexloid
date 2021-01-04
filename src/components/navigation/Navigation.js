@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import "./Navigation.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-color.svg";
 import ham from "../../assets/ham.png";
 import close from "../../assets/close.png";
 import { Link, NavLink } from "react-router-dom";

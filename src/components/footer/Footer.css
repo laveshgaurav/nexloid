@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   background-color: #1A1E21;
-  padding: 2% 8%;
+  padding: 4% 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +204,7 @@
     width: 100%;
     height: auto;
     background-color: #1A1E21;
-    padding: 8%;
+    padding: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,5 +299,20 @@
     color: orange;
     border-radius: 0px 4px 4px 0px;
   }
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #929A9F;
+  width: 100%;
+  text-align: center;
+  background-color: #1A1E21;
+  padding: 1rem 0;
+  border-top: 1px solid #31363A;
+}
+
+.footer-text a {
+  color: #929292;
+  text-decoration: none;
 }
 /*# sourceMappingURL=Footer.css.map */

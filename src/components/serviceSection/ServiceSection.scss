@@ -46,12 +46,13 @@
 @media only screen and (max-width: 425px) {
     .service-container {
         width: 96%;
-        height: 100vh;
-        margin: 2%;
+        height: auto;
+        // margin: 2%;
         .service-section {
             width: 100%;
             height: 100%;
-            padding: 0 4%;
+            min-height: 60vh;
+
             h2 {
                 padding: 0.6rem;
                 margin-bottom: 0.8rem;
@@ -62,7 +63,7 @@
                 .service-box {
                     .img-box{
                         width: 72px;
-                        height: 72px;
+                        height: auto;
                         display: flex;
                         align-items: center;
                         justify-content: center;

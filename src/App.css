@@ -13,11 +13,11 @@
 }
 
 .Loader-container .circle {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid #3498db;
   border-radius: 50%;
-  width: 128px;
-  height: 128px;
+  width: 60px;
+  height: 60px;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
 }

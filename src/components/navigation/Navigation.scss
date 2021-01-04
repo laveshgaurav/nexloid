@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 4% 8%;
+    overflow-y: hidden;
 
     .Logo {
         width: 135px;
@@ -213,20 +214,21 @@
         padding: 2% 8%;
 
         .Logo {
-            width: 128px;
+            width: 100%;
             height: 128px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            flex-direction: row-reverse;
 
             .ham {
                 display: block;
-                width: 100%;
+                width: auto;
                 height: auto;
             }
 
             .logo_img {
-                width: 100%;
+                width: 128px;
                 height: 100%;
             }
         }
@@ -244,7 +246,7 @@
                justify-content: center;
                flex-direction: column;
                bottom: 0;
-               right:  0;
+               left:  0;
 box-shadow: 0 0 10px 2px #00000091;
            }
            .open {
@@ -348,28 +350,29 @@ box-shadow: 0 0 10px 2px #00000091;
         }
 
         .Button {
-            button {
-                color: #3685c3;
-                border: none;
-                outline: none;
-                padding: 6.8px 16.5px;
-                border-radius: 5px;
-                border: 2px solid #3685c3;
-                transition: 0.3s ease-in;
-                cursor: pointer;
+            display: none;
+            // button {
+            //     color: #3685c3;
+            //     border: none;
+            //     outline: none;
+            //     padding: 6.8px 16.5px;
+            //     border-radius: 5px;
+            //     border: 2px solid #3685c3;
+            //     transition: 0.3s ease-in;
+            //     cursor: pointer;
 
-                &:hover {
-                    color: white;
-                    background-color: #3685c3;
+            //     &:hover {
+            //         color: white;
+            //         background-color: #3685c3;
 
-                }
+            //     }
 
-                &:focus {
-                    border: 2px solid #3685c3;
-                    outline: none;
+            //     &:focus {
+            //         border: 2px solid #3685c3;
+            //         outline: none;
 
-                }
-            }
+            //     }
+            // }
         }
     }
 }
