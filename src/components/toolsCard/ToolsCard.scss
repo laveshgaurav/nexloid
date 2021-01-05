@@ -1,85 +1,3 @@
-.tool-card-box{
-    width: 20%;
-    margin: 2.5%;
-    height: auto;
-    // background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 1rem;
-    position: relative;
-    overflow: visible;
-    z-index: 5;
-    color: #4d4d4d;
-    p{
-        font-size: 12px;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    h4{
-        font-size: 16px;
-        margin: 2rem 0;
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        z-index: 3;
-        height: 100%;
-        width: 100%;
-                
-
-        left: 0;
-        top: 0;
-        transform: skewX(-4deg) rotate3d(1, 1, 1, -25deg) scale(1.1);
-        border-radius: 2.5rem;
-        z-index: -2;
-        
-    }
-    &:nth-child(1)::after{
-background: linear-gradient(to right, #ff9100 0%, #ff9000 1%, #ff7000 26%, #ff5a00 51%, #ff4c00 75%, #ff4800 96%);
-    }
-    &:nth-child(2)::after {
-        background: linear-gradient(to right, #c50048 0%, #df2a6a 48%, #ff5e93 100%);
-    }
-    &:nth-child(3)::after {
-        background: linear-gradient(to right, #93dcfc 0%, #07a9f0 100%);
-    }
-    &:nth-child(4)::after {
-        background: linear-gradient(to right, #49c8ff 0%, #143cf1 100%);
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: 3;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        transform: skewX(-4deg) rotate3d(1, 1, 1, -10deg);
-        z-index: -1;
-        background-color: white;
-                border-radius: 2.5rem;
-
-        border-bottom: 1px solid grey;
-
-    }
-    
-}
-@media only screen and (max-width: 768px) {
-    .tool-card-box {
-    width: 40%;
-    margin: 5%;}
-}
-
-
-@media only screen and (max-width: 425px) {
-.tool-card-box {
-    width: 90%;
-    margin: 5%;}
-}
-@media only screen and (min-width: 1441px) {
-
 .tool-card-box {
     width: 20%;
     margin: 2.5%;
@@ -95,19 +13,115 @@ background: linear-gradient(to right, #ff9100 0%, #ff9000 1%, #ff7000 26%, #ff5a
     color: #4d4d4d;
 
     p {
-        font-size: 1.5rem;
+        font-size: 12px;
     }
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: 16px;
         margin: 2rem 0;
     }
-    h3{
-        font-size: 2.5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+
+
+        left: 0;
+        top: 0;
+        transform: skewX(-4deg) rotate3d(1, 1, 1, -25deg) scale(1.1);
+        border-radius: 2.5rem;
+        z-index: -2;
+
+    }
+
+    &:nth-child(1)::after {
+        background: linear-gradient(to right, #ff9100 0%, #ff9000 1%, #ff7000 26%, #ff5a00 51%, #ff4c00 75%, #ff4800 96%);
+    }
+
+    &:nth-child(2)::after {
+        background: linear-gradient(to right, #c50048 0%, #df2a6a 48%, #ff5e93 100%);
+    }
+
+    &:nth-child(3)::after {
+        background: linear-gradient(to right, #93dcfc 0%, #07a9f0 100%);
+    }
+
+    &:nth-child(4)::after {
+        background: linear-gradient(to right, #49c8ff 0%, #143cf1 100%);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: skewX(-4deg) rotate3d(1, 1, 1, -10deg);
+        z-index: -1;
+        background-color: white;
+        border-radius: 2.5rem;
+
+        border-bottom: 1px solid grey;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .tool-card-box {
+        width: 40%;
+        margin: 5%;
     }
 }
+
+
+@media only screen and (max-width: 425px) {
+    .tool-card-box {
+        width: 90%;
+        margin: 5%;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+
+    .tool-card-box {
+        width: 20%;
+        margin: 2.5%;
+        height: auto;
+        // background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        position: relative;
+        overflow: visible;
+        z-index: 5;
+        color: #4d4d4d;
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
 }

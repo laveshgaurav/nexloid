@@ -42,7 +42,7 @@ We modify several different variables for your website and
         : null}
 
       <div className="tools-card-container">
-        <h3 className="h3">Steps for understanding</h3>
+        <h3>Steps for understanding</h3>
         <div className="card-container">
           <ToolsCard step="01" method="Sign In" />
           <ToolsCard step="02" method="Ask question" />
@@ -50,14 +50,7 @@ We modify several different variables for your website and
           <ToolsCard step="04" method="Let's repeat" />
         </div>
       </div>
-      {openedService?.length
-        ? openedService
-            .slice(1, 3)
-            .map((data, index) => <ServiceTool tools={data.tools} />)
-        : null}
-      <div className="button-container">
-        <button>Other Tool</button>
-      </div>
+      
       <div className="tools-bottom-banner">
         <div>
           <h1>Liking us so far?</h1>

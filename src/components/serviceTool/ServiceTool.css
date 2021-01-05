@@ -128,6 +128,7 @@
     margin-top: 0.4rem;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
   }
   .ServiceTools-Container .ServiceTools-Section .features .box p {
     text-align: center;
@@ -138,17 +139,17 @@
 
 @media only screen and (min-width: 1441px) {
   .ServiceTools-Container .ServiceTools-Section h3 {
-    font-size: calc(3rem);
+    font-size: 2.5rem;
   }
   .ServiceTools-Container .ServiceTools-Section .features .box .img-box {
     width: calc(128px);
     height: calc(128px);
   }
   .ServiceTools-Container .ServiceTools-Section .features .box h4 {
-    font-size: calc(2.5rem);
+    font-size: 1.5rem;
   }
   .ServiceTools-Container .ServiceTools-Section .features .box p {
-    font-size: calc(1.5rem);
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=ServiceTool.css.map */

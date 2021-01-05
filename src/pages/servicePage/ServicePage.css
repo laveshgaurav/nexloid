@@ -19,7 +19,7 @@
   width: 60%;
 }
 
-.servicePage-containers .service-box .content h3 {
+.servicePage-containers .service-box .content h1, .servicePage-containers .service-box .content h3 {
   font-weight: bold;
   font-size: 2rem;
 }
@@ -105,7 +105,7 @@
     padding: 2rem 1rem;
     width: 100%;
   }
-  .servicePage-containers .service-box .content h3 {
+  .servicePage-containers .service-box .content h1, .servicePage-containers .service-box .content h3 {
     font-weight: bold;
     font-size: 20px;
   }
@@ -124,7 +124,7 @@
 }
 
 @media only screen and (min-width: 1441px) {
-  .servicePage-containers .service-box .content h3 {
+  .servicePage-containers .service-box .content h1, .servicePage-containers .service-box .content h3 {
     font-weight: bold;
     font-size: 2.5rem;
   }

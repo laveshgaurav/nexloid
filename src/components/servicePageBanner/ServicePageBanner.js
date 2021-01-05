@@ -7,8 +7,8 @@ function ServicePageBanner(props) {
       <div className="Service-Banner-Section">
         <div className="section1">
           <div className="heading">
-            <h3>{props.head1}</h3>
-            <h3>{props.head2}</h3>
+            <h1>{props.head1}</h1>
+            {/* <h3>{props.head2}</h3> */}
             <p>{props.para}</p>
             <button>Watch a video</button>
           </div>

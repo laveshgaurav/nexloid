@@ -1,3 +1,11 @@
+@mixin positionSwap($x) {
+    -webkit-box-ordinal-group: $x;
+    -moz-box-ordinal-group: $x;
+    -ms-flex-order: $x;
+    -webkit-order: $x;
+    order: $x;
+}
+
 .Service-Banner-Container {
     width: 100%;
     height: auto;
@@ -21,6 +29,7 @@
             .heading {
 
                 // border: 2px solid red;
+                h1,
                 h3 {
                     font-size: 2rem;
                     font-weight: bold;
@@ -138,10 +147,11 @@
             .section1 {
                 width: 100%;
                 height: 100%;
-
+                @include positionSwap(2);
 
                 .heading {
 
+                    h1,
                     h3 {}
 
                     p {}
@@ -154,7 +164,7 @@
             .section2 {
                 width: 100%;
                 height: auto;
-
+                @include positionSwap(1);
 
                 .img-box {
                     width: 100%;
@@ -171,7 +181,7 @@
                 width: 100%;
                 height: auto;
                 flex-direction: row;
-
+                @include positionSwap(3);
                 span {
 
                     a {}
@@ -186,7 +196,7 @@
     .Service-Banner-Container {
 
         .Service-Banner-Section {
-           height: 90vh;
+            height: 90vh;
 
 
             .section1 {
@@ -195,18 +205,19 @@
                 .heading {
 
                     // border: 2px solid red;
+                    h1,
                     h3 {
                         font-size: calc(2.5rem);
 
                     }
 
                     p {
-                                               font-size: calc(1.5rem);
+                        font-size: 1.2rem;
 
                     }
 
                     button {
-                                                                      font-size: 1.5rem;
+                        font-size: 1.2rem;
 
                     }
 
@@ -226,35 +237,35 @@
                 }
             }
 
-        .section3 {
-            width: 5%;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            .section3 {
+                width: 5%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
 
-            // align-items: center;
-            span {
-                width: 100%;
-                padding: 0.4rem;
-                margin-top: 4rem;
-                // background-color: aquamarine;
-                text-align: center;
+                // align-items: center;
+                span {
+                    width: 100%;
+                    padding: 0.4rem;
+                    margin-top: 4rem;
+                    // background-color: aquamarine;
+                    text-align: center;
 
-                a {
-                    color: #464545;
+                    a {
+                        color: #464545;
 
-                    &:hover i {
-                        color: #3685c3;
-                    }
+                        &:hover i {
+                            color: #3685c3;
+                        }
 
-                    i {
-                        transition: 0.4s ease-out;
-                        font-size: 2.5rem;
+                        i {
+                            transition: 0.4s ease-out;
+                            font-size: 2.5rem;
+                        }
                     }
                 }
             }
-        }
         }
 
 
