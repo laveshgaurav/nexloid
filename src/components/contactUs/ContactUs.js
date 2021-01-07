@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-color.svg";
 import close from "../../assets/close.png";
 import contactUs from "../../assets/contact-us.png";
 import { motion } from "framer-motion";

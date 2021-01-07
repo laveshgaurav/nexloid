@@ -2,22 +2,24 @@ import React, {useEffect} from "react";
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import "./SingleWorkPage.css";
-import WorkCardMain from "../../components/workCardMain/WorkCardMain";
+import BlogCardMain from "../../components/blogCardMain/BlogCardMain";
 import Footer from "../../components/footer/Footer";
 
-import { fetchWorkById } from '../../redux/actions/actions';
+import { fetchWorkById, fetchRelatedArticles } from '../../redux/actions/actions';
 
 function SingleWorkPage(props) {
   const dispatch = useDispatch();
   const path = props.match.params.id;
 
-  let { openedWork } = useSelector(({nexloid}) => ({
-    openedWork: nexloid.openedWork
+  let { openedWork, relatedArticles } = useSelector(({nexloid}) => ({
+    openedWork: nexloid.openedWork,
+    relatedArticles: nexloid.relatedArticles
   }), shallowEqual);
 
   useEffect(() => {
     dispatch(fetchWorkById(path));
-  }, [dispatch, path]);
+    dispatch(fetchRelatedArticles(openedWork[0].tags, ''))
+  }, [dispatch, path, openedWork]);
  
   return (
       <React.Fragment>
@@ -63,30 +65,29 @@ function SingleWorkPage(props) {
               }
             </div>
           </div>
-        </div></div>)):null
+        </div></div>)):'Loading Content...'
       }
       
-      <div className="related-blog-container">
-        <h2>Related works</h2>
+      {
+       relatedArticles.length?(
+        <div className="related-blog-container">
+        <h2>Related blogs</h2>
         <div className="blogs-container">
-          <WorkCardMain
-            date="10th Sep, 2020"
-            title="Blog name"
-            content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-          />
-          <WorkCardMain
-            date="10th Sep, 2020"
-            title="Blog name"
-            content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-          />
-          <WorkCardMain
-            date="10th Sep, 2020"
-            title="Blog name"
-            content="The text goes here, don't have the time to write a story, so bear with me. It'll be a longggggg paragraph so you all can sit back get some chips and beer and enjoy the movie this is something to look for so we all can have a good time around."
-          />
+          {
+            relatedArticles.length?relatedArticles.map((data, index) => (
+              <BlogCardMain
+                date={data.date}
+                title={data.title}
+                content={data.summary}
+                to={`/blogs/${data.permalink}`}
+              />
+            )):'Loading Related Blogs...'
+          }
         </div>
-        <button className="viewmore">View more works</button>
+        {/* <button className="viewmore">View more blogs</button> */}
       </div>
+       ):null
+     } 
       <Footer />
     </React.Fragment>    
   );

@@ -38,6 +38,13 @@ export default (state = InitialState, {type, payload}) => {
         openedArticle: payload
       }
     }
+    
+    case actionType.FETCH_RELATED_ARTICLES : {
+      return {
+        ...state,
+        relatedArticles: payload
+      }
+    }
 
     case actionType.APP_LOADING : {
       return {

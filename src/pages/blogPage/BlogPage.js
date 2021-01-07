@@ -43,7 +43,7 @@ function BlogPage() {
             <BlogCardMain
               date={data.date}
               title={data.title}
-              content={data.summary.substring(100)}
+              content={data.summary.substring(0, 200)}
               to={'/blogs/'+data.permalink}
               key={index}
             />

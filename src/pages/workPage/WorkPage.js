@@ -44,7 +44,7 @@ function BlogPage() {
             <WorkCardMain
               date={data.date}
               title={data.title}
-              content={data.summary.substring(100)}
+              content={data.summary.substring(0, 200)}
               to={'/works/'+data.permalink}
               key={index}
             />

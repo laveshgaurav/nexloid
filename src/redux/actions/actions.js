@@ -28,6 +28,15 @@ export const fetchArticleById = (articleId) => async(dispatch) => {
   });
 };
 
+export const fetchRelatedArticles = (tags, articleId) => async(dispatch) => {
+  // await dispatch(initLoader(true));
+  const articles = await ExternalServices.getRelatedArticlesByTag(tags, articleId);
+  dispatch({
+    type: actionType.FETCH_RELATED_ARTICLES,
+    payload: articles
+  });
+};
+
 // works/case studies
 export const fetchLatestWorks = () => async(dispatch) => {
   // await dispatch(initLoader(true));

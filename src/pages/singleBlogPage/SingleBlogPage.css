@@ -306,10 +306,16 @@
     margin: 2rem 0;
   }
   .blog-id-container .content .para p {
-    font-size: 1.5rem;
     color: inherit;
-    margin-bottom: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .blog-id-container .content .para li {
+    font-size: 1.2rem;
+    color: inherit;
+    margin-bottom: 1.2rem;
+    line-height: 1.5rem;
   }
   .blog-id-container .content img {
     width: calc(50% + 25vw);

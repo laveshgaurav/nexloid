@@ -310,6 +310,36 @@ class _ExternalService {
       );
   }
 
+  async getRelatedArticlesByTag(refTags, articleID) {
+    return await this.app.content.get('articles')
+      .then(async blogPosts => {
+        let result = [];
+        for(let key in blogPosts) {
+          if(result.length < 3) {
+            let { id, date, slug, summary, title, tags } = blogPosts[key];
+
+            if(refTags.some(r=>tags.indexOf(r) >=0) && id!==articleID) {
+              let genResponse = {
+                id: id,
+                title: title,
+                permalink: slug,
+                summary: summary,
+                date: new Date(date).toDateString()
+              };
+    
+              result.push(genResponse);
+            }
+            
+           } else {
+             break;
+           }
+        }
+        // console.log(result);
+        return result;
+      })
+      .catch(error => console.error('Something went wrong while retrieving all the content. Details:', error));
+  }
+
   async ToolImageProcessing(arr) {
     return Promise.all(
       arr.map(async (data, index) => {
