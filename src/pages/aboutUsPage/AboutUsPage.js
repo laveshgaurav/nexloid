@@ -8,9 +8,11 @@ import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 
 import "./AboutUsPage.css";
-import PageHelmet from '../../components/pageHelmet';
+import PageHelmet from "../../components/pageHelmet";
+import { connect } from "react-redux";
+import { toggleContactUs } from "../../redux/actions/actions";
 
-function AboutUsPage() {
+function AboutUsPage(props) {
   return (
     <div className="AboutUs-Container">
       <PageHelmet
@@ -92,7 +94,7 @@ function AboutUsPage() {
               and meaningful stories, which in turn become fantastic digital
               experiences.
             </p>
-            <button>GET IN TOUCH</button>
+            <button onClick={props.toggleContactUs}>GET IN TOUCH</button>
           </div>
         </div>
       </div>
@@ -133,4 +135,16 @@ function AboutUsPage() {
   );
 }
 
-export default AboutUsPage;
+const mapStateToProps = (state) => {
+  return {
+    contactUs: state.nexloid.contactUs,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleContactUs: () => dispatch(toggleContactUs()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AboutUsPage);

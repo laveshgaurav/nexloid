@@ -40,6 +40,7 @@
           flex-direction: column;
   padding: 0 8%;
   margin: 4%;
+  position: relative;
 }
 
 .accordion {
@@ -83,6 +84,31 @@
 .careerContent {
   padding: 2% 4%;
   background-color: #b1b1b1;
+}
+
+.careerContent button {
+  margin-top: 2%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8.8px 24.5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #3685c3;
+  border: 2px solid #3685c3;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.careerContent button:hover {
+  background-color: white;
+  color: #3685c3;
+}
+
+.careerContent button:focus {
+  border: 2px solid #3685c3;
+  outline: none;
 }
 
 @media only screen and (min-width: 1441px) {

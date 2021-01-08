@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector, shallowEqual, connect } from "react-redux";
 import "./HomePage.css";
 import img1 from "../../assets/img1.svg";
 import img3 from "../../assets/img3.svg";
@@ -9,17 +9,24 @@ import ToolsSection from "../../components/toolsSection/ToolsSection";
 import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import PageHelmet from '../../components/pageHelmet';
+import PageHelmet from "../../components/pageHelmet";
 
-import { fetchLatestArticles, fetchLatestWorks, fetchAllServices } from '../../redux/actions/actions';
+import {
+  fetchLatestArticles,
+  fetchLatestWorks,
+  fetchAllServices,
+  toggleContactUs,
+} from "../../redux/actions/actions";
 
-
-function HomePage() {
-  const { latestArticles, latestWorks, allServices } = useSelector(({nexloid}) => ({
-    latestArticles: nexloid.latestArticles,
-    latestWorks: nexloid.latestWorks,
-    allServices: nexloid.allServices
-  }), shallowEqual);
+function HomePage(props) {
+  const { latestArticles, latestWorks, allServices } = useSelector(
+    ({ nexloid }) => ({
+      latestArticles: nexloid.latestArticles,
+      latestWorks: nexloid.latestWorks,
+      allServices: nexloid.allServices,
+    }),
+    shallowEqual
+  );
 
   const dispatch = useDispatch();
 
@@ -48,12 +55,14 @@ function HomePage() {
       <div className="Home-Section">
         <div className="section1">
           <div className="heading">
-            <h1>Analysing sites to <br/> help your business</h1>
+            <h1>
+              Analysing sites to <br /> help your business
+            </h1>
             <p>
               Our team is here to help you with the necessary data to help run
               your business better.
             </p>
-            <button>GET IN TOUCH</button>
+            <button onClick={props.toggleContactUs}>GET IN TOUCH</button>
           </div>
         </div>
         <div className="section2">
@@ -73,7 +82,8 @@ function HomePage() {
         </div>
         <div className="section1">
           <div className="heading">
-            <h3>Basic introduction of who <br/>
+            <h3>
+              Basic introduction of who <br />
               we're as a <span style={{ color: "#3685c3" }}>company</span>
             </h3>
             <p>
@@ -100,13 +110,24 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <ServiceSection services={allServices}/>
+      <ServiceSection services={allServices} />
       <ToolsSection />
-      <WorkSection articles={latestWorks}/>
-      <BlogSection articles={latestArticles}/>
+      <WorkSection articles={latestWorks} />
+      <BlogSection articles={latestArticles} />
       <Footer />
     </div>
   );
 }
 
-export default HomePage;
+const mapStateToProps = (state) => {
+  return {
+    contactUs: state.nexloid.contactUs,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleContactUs: () => dispatch(toggleContactUs()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

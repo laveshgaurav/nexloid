@@ -264,7 +264,7 @@
   }
   .aboutUs-container .aboutUs {
     width: 86%;
-    height: 50%;
+    height: auto;
     background-color: white;
     border-radius: 12px;
     display: -webkit-box;
@@ -274,7 +274,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 0.2rem;
+    padding: 0.6rem 0.2rem;
   }
   .aboutUs-container .aboutUs .top {
     width: 100%;
@@ -291,10 +291,10 @@
     padding: 0 1.8rem;
   }
   .aboutUs-container .aboutUs .top button img {
-    height: 1.2rem;
+    height: 100%;
   }
   .aboutUs-container .aboutUs .top img[alt=logo] {
-    visibility: hidden;
+    width: 60%;
   }
   .aboutUs-container .aboutUs .top button {
     height: -webkit-max-content;

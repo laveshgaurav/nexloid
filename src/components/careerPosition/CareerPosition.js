@@ -20,6 +20,7 @@ function CareerPosition(props) {
       <CSSTransition in={open} timeout={300} classNames="alert" unmountOnExit>
         <div className="careerContent">
           <p>{props.content}</p>
+          <button onClick={props.open}>Apply</button>
         </div>
       </CSSTransition>
     </div>

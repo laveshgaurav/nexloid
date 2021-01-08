@@ -1,4 +1,4 @@
-import { nexloid as actionType } from '../actions/actionTypes';
+import { nexloid as actionType } from "../actions/actionTypes";
 
 const InitialState = {
   allArticles: [],
@@ -11,90 +11,105 @@ const InitialState = {
   openedService: [],
   allServices: [],
   allCareers: [],
-  isLoading: true
-}
+  isLoading: true,
+  contactUs: false,
+  careerForm: false,
+};
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (state = InitialState, {type, payload}) => {
-  switch(type) {
+export default (state = InitialState, { type, payload }) => {
+  switch (type) {
     // blogs here
-    case actionType.FETCH_ALL_ARTICLES : {
+    case actionType.FETCH_ALL_ARTICLES: {
       return {
         ...state,
-        allArticles: payload
-      }
+        allArticles: payload,
+      };
+    }
+    case actionType.TOGGLE_CONTACT_US: {
+      return {
+        ...state,
+        contactUs: !state.contactUs,
+      };
+    }
+    case actionType.TOGGLE_CAREER_FORM: {
+      return {
+        ...state,
+        careerForm: !state.careerForm,
+      };
     }
 
-    case actionType.FETCH_LATEST_ARTICLES : {
+    case actionType.FETCH_LATEST_ARTICLES: {
       return {
         ...state,
-        latestArticles: payload
-      }
+        latestArticles: payload,
+      };
     }
 
-    case actionType.FETCH_AN_ARTICLE : {
+    case actionType.FETCH_AN_ARTICLE: {
       return {
         ...state,
-        openedArticle: payload
-      }
-    }
-    
-    case actionType.FETCH_RELATED_ARTICLES : {
-      return {
-        ...state,
-        relatedArticles: payload
-      }
+        openedArticle: payload,
+      };
     }
 
-    case actionType.APP_LOADING : {
+    case actionType.FETCH_RELATED_ARTICLES: {
       return {
         ...state,
-        isLoading: payload
-      }
+        relatedArticles: payload,
+      };
     }
 
-    case actionType.FETCH_LATEST_WORKS : {
+    case actionType.APP_LOADING: {
       return {
         ...state,
-        latestWorks: payload
-      }
+        isLoading: payload,
+      };
     }
 
-    case actionType.FETCH_A_WORK : {
+    case actionType.FETCH_LATEST_WORKS: {
       return {
         ...state,
-        openedWork: payload
-      }
+        latestWorks: payload,
+      };
     }
 
-    case actionType.FETCH_ALL_WORKS : {
+    case actionType.FETCH_A_WORK: {
       return {
         ...state,
-        allWorks: payload
-      }
+        openedWork: payload,
+      };
     }
 
-    case actionType.FETCH_ALL_SERVICES : {
+    case actionType.FETCH_ALL_WORKS: {
       return {
         ...state,
-        allServices: payload
-      }
+        allWorks: payload,
+      };
     }
 
-    case actionType.FETCH_SERVICE_DETAILS : {
+    case actionType.FETCH_ALL_SERVICES: {
       return {
         ...state,
-        openedService: payload
-      }
+        allServices: payload,
+      };
     }
 
-    case actionType.FETCH_CAREERS : {
+    case actionType.FETCH_SERVICE_DETAILS: {
       return {
         ...state,
-        allCareers: payload
-      }
+        openedService: payload,
+      };
     }
 
-    default: return state;
+    case actionType.FETCH_CAREERS: {
+      return {
+        ...state,
+        allCareers: payload,
+      };
+    }
+
+    default:
+      return state;
   }
-}
+};
