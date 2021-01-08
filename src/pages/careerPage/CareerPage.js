@@ -1,17 +1,21 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { useDispatch, useSelector, shallowEqual, connect } from "react-redux";
 import CareerPageBanner from "../../components/careerPageBanner/CareerPageBanner";
 import CareerPosition from "../../components/careerPosition/CareerPosition";
 import Footer from "../../components/footer/Footer";
 import "./CareerPage.css";
 
-import { fetchAllCareers } from '../../redux/actions/actions';
-import PageHelmet from '../../components/pageHelmet';
+import { fetchAllCareers, toggleCareerForm } from "../../redux/actions/actions";
+import PageHelmet from "../../components/pageHelmet";
+import CareerApply from "../../components/careerApply/CareerApply";
 
-function CareerPage() {
-  const { allCareers } = useSelector(({nexloid}) => ({
-    allCareers: nexloid.allCareers
-  }), shallowEqual);
+function CareerPage(props) {
+  const { allCareers } = useSelector(
+    ({ nexloid }) => ({
+      allCareers: nexloid.allCareers,
+    }),
+    shallowEqual
+  );
 
   const dispatch = useDispatch();
 
@@ -37,18 +41,33 @@ function CareerPage() {
       />
       <CareerPageBanner />
       <div className="position-accordion">
-        {
-          allCareers.length?allCareers.map((data, index) => (
-            <CareerPosition
-              title={data.positionName}
-              content={data.jobDescription}
-            />
-          )):null
-        }
+        {allCareers.length
+          ? allCareers.map((data, index) => (
+              <CareerPosition
+                title={data.positionName}
+                content={data.jobDescription}
+                open={props.toggleCareerForm}
+              />
+            ))
+          : null}
       </div>
+      {props.careerForm ? <CareerApply close={props.toggleCareerForm} /> : null}
+
       <Footer />
     </React.Fragment>
   );
 }
 
-export default CareerPage;
+const mapStateToProps = (state) => {
+  return {
+    careerForm: state.nexloid.careerForm,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleCareerForm: () => dispatch(toggleCareerForm()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CareerPage);

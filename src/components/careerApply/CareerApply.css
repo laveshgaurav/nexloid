@@ -1,0 +1,239 @@
+.CareerForm-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+.CareerForm-container .box {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.CareerForm-container .box h3 {
+  color: #f6861f;
+  font-size: 2rem;
+}
+
+.CareerForm-container .box .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CareerForm-container .box .forms .text-input {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 1.5rem;
+  margin: 6px 0;
+}
+
+.CareerForm-container .box .forms .file {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid gray;
+  color: white;
+  padding: 4px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: lighter;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  margin: 6px 0;
+}
+
+.CareerForm-container .box .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.CareerForm-container .box .btn-container button {
+  margin-right: 1rem;
+  padding: 4px 12px;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.CareerForm-container .box .btn-container .submit-btn {
+  margin-right: 1rem;
+  padding: 4px 12px;
+  border: none;
+  outline: none;
+  background-color: #3685c3;
+  border: 2px solid #3685c3;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  color: white;
+}
+
+.CareerForm-container .box .btn-container .submit-btn:hover {
+  background-color: white;
+  color: #3685c3;
+}
+
+.CareerForm-container .box .btn-container .submit-btn:focus {
+  border: 2px solid #3685c3;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .CareerForm-container .box h3 {
+    font-size: 1rem;
+  }
+  .CareerForm-container .box .forms .text-input {
+    font-size: 1rem;
+  }
+  .CareerForm-container .box .forms .file {
+    font-size: 1rem;
+  }
+  .CareerForm-container .box .btn-container button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .CareerForm-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+  }
+  .CareerForm-container .box {
+    width: 60%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .CareerForm-container .box h2 {
+    font-size: 3rem;
+    color: #f6861f;
+  }
+  .CareerForm-container .box .forms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .CareerForm-container .box .forms .text-input {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    margin: 6px 0;
+    font-size: 2rem;
+  }
+  .CareerForm-container .box .forms .file {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 2px solid gray;
+    color: white;
+    padding: 4px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-weight: lighter;
+    border-radius: 6px;
+    font-size: 2rem;
+  }
+  .CareerForm-container .box .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .CareerForm-container .box .btn-container .submit-btn {
+    margin-right: 1rem;
+    padding: 4px 12px;
+    border: none;
+    outline: none;
+    background-color: #3685c3;
+    border: 2px solid #3685c3;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    color: white;
+    font-size: 2rem;
+  }
+  .CareerForm-container .box .btn-container .submit-btn:hover {
+    background-color: white;
+    color: #3685c3;
+  }
+  .CareerForm-container .box .btn-container .submit-btn:focus {
+    border: 2px solid #3685c3;
+    outline: none;
+  }
+}
+/*# sourceMappingURL=CareerApply.css.map */

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { useDispatch, useSelector, shallowEqual, connect } from "react-redux";
 import "./Navigation.css";
 import logo from "../../assets/logo-color.svg";
 import ham from "../../assets/ham.png";
@@ -7,16 +7,17 @@ import close from "../../assets/close.png";
 import { Link, NavLink } from "react-router-dom";
 import ContactUs from "../contactUs/ContactUs";
 
-import { fetchAllServices } from "../../redux/actions/actions";
-function Navigation() {
+import { fetchAllServices, toggleContactUs } from "../../redux/actions/actions";
+function Navigation(props) {
   const [toggle, setToggle] = useState(true);
-  const [drawerOpen, SetDrawerOpen] = useState(false);
-  const closeDrawer = () => {
-    SetDrawerOpen(false);
-  };
+  const [drawerOpen, SetDrawerOpen] = useState(props.ContactUs);
   const openDrawer = () => {
     SetDrawerOpen(true);
   };
+  const closeDrawer = () => {
+    SetDrawerOpen(false);
+  };
+
   let drawerClasses = "navbar";
 
   if (toggle) {
@@ -141,14 +142,26 @@ function Navigation() {
         </div>
 
         <div className="Button">
-          <button onClick={openDrawer}>Contact us</button>
+          <button onClick={props.toggleContactUs}>Contact us</button>
         </div>
       </div>
-      {drawerOpen ? (
-        <ContactUs show={drawerOpen} closeDrawer={closeDrawer} />
+      {props.contactUs ? (
+        <ContactUs show={props.contactUs} closeDrawer={props.toggleContactUs} />
       ) : null}
     </React.Fragment>
   );
 }
 
-export default Navigation;
+const mapStateToProps = (state) => {
+  return {
+    contactUs: state.nexloid.contactUs,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleContactUs: () => dispatch(toggleContactUs()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

@@ -5,19 +5,31 @@ function SocialMedia() {
   return (
     <React.Fragment>
       <span>
-        <Link>
+        <a
+          href="https://www.facebook.com/nexloid/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fab fa-facebook-f"></i>
-        </Link>
+        </a>
       </span>
       <span>
-        <Link>
+        <a
+          href="https://www.linkedin.com/company/nexloid/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fab fa-linkedin-in"></i>
-        </Link>
+        </a>
       </span>
       <span>
-        <Link>
-          <i className="fab fa-twitter"></i>
-        </Link>
+        <a
+          href="https://www.youtube.com/channel/UCYm8jY9S-fjXMkJyiYAeYpw/featured"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-youtube-play"></i>
+        </a>
       </span>
     </React.Fragment>
   );

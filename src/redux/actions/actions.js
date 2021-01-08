@@ -1,94 +1,107 @@
-import { nexloid as actionType } from './actionTypes';
-import ExternalServices from '../../services/externalServices';
+import { nexloid as actionType } from "./actionTypes";
+import ExternalServices from "../../services/externalServices";
 
-export const fetchLatestArticles = () => async(dispatch) => {
+export const fetchLatestArticles = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const articles = await ExternalServices.getLatestArticles();
   dispatch({
     type: actionType.FETCH_LATEST_ARTICLES,
-    payload: articles
+    payload: articles,
   });
 };
 
-export const fetchAllArticles = () => async(dispatch) => {
+export const toggleContactUs = () => (dispatch) => {
+  dispatch({
+    type: actionType.TOGGLE_CONTACT_US,
+  });
+};
+export const toggleCareerForm = () => (dispatch) => {
+  dispatch({
+    type: actionType.TOGGLE_CAREER_FORM,
+  });
+};
+export const fetchAllArticles = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const articles = await ExternalServices.getAllArticles();
   dispatch({
     type: actionType.FETCH_ALL_ARTICLES,
-    payload: articles
+    payload: articles,
   });
 };
 
-export const fetchArticleById = (articleId) => async(dispatch) => {
+export const fetchArticleById = (articleId) => async (dispatch) => {
   // await dispatch(initLoader(true));
   const articles = await ExternalServices.getArticleById(articleId);
   dispatch({
     type: actionType.FETCH_AN_ARTICLE,
-    payload: articles
+    payload: articles,
   });
 };
 
-export const fetchRelatedArticles = (tags, articleId) => async(dispatch) => {
+export const fetchRelatedArticles = (tags, articleId) => async (dispatch) => {
   // await dispatch(initLoader(true));
-  const articles = await ExternalServices.getRelatedArticlesByTag(tags, articleId);
+  const articles = await ExternalServices.getRelatedArticlesByTag(
+    tags,
+    articleId
+  );
   dispatch({
     type: actionType.FETCH_RELATED_ARTICLES,
-    payload: articles
+    payload: articles,
   });
 };
 
 // works/case studies
-export const fetchLatestWorks = () => async(dispatch) => {
+export const fetchLatestWorks = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const works = await ExternalServices.getLatestWorks();
   dispatch({
     type: actionType.FETCH_LATEST_WORKS,
-    payload: works
+    payload: works,
   });
 };
 
-export const fetchAllWorks = () => async(dispatch) => {
+export const fetchAllWorks = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const works = await ExternalServices.getAllWorks();
   dispatch({
     type: actionType.FETCH_ALL_WORKS,
-    payload: works
+    payload: works,
   });
 };
 
-export const fetchWorkById = (id) => async(dispatch) => {
+export const fetchWorkById = (id) => async (dispatch) => {
   // await dispatch(initLoader(true));
   const works = await ExternalServices.getWorkById(id);
   dispatch({
     type: actionType.FETCH_A_WORK,
-    payload: works
+    payload: works,
   });
 };
 
 // services
-export const fetchServiceDetails = (serviceId) => async(dispatch) => {
+export const fetchServiceDetails = (serviceId) => async (dispatch) => {
   const details = await ExternalServices.getServiceById(serviceId);
   // console.log(details);
   dispatch({
     type: actionType.FETCH_SERVICE_DETAILS,
-    payload: details
+    payload: details,
   });
 };
 
-export const fetchAllServices = () => async(dispatch) => {
+export const fetchAllServices = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const services = await ExternalServices.getAllServices();
   dispatch({
     type: actionType.FETCH_ALL_SERVICES,
-    payload: services
+    payload: services,
   });
 };
 
-export const fetchAllCareers = () => async(dispatch) => {
+export const fetchAllCareers = () => async (dispatch) => {
   // await dispatch(initLoader(true));
   const careers = await ExternalServices.getAllCareers();
   dispatch({
     type: actionType.FETCH_CAREERS,
-    payload: careers
+    payload: careers,
   });
 };
