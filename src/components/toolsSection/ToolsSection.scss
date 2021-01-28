@@ -1,10 +1,12 @@
 .tools-container {
     width: 100%;
+    background: #f9fcff;
+    padding-top: 60px;
     height: auto;
 
     .tools-section {
         width: 100%;
-        min-height: 80vh;
+        min-height: 60vh;
         display: flex;
         align-items: center;
         // justify-content: center;
@@ -32,11 +34,9 @@
                 flex-direction: column;
                 align-items: center;
 
-                .circle {
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 100px;
-                    background-color: #E5E5E5;
+                img {
+                    height: 100px;
+                    width: 100%;
                 }
 
                 h3 {
@@ -74,14 +74,6 @@
                     flex-direction: column;
                     align-items: center;
                     padding: 8%;
-
-                    .circle {
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 100px;
-                        background-color: #E5E5E5;
-                    }
-
                     h3 {
                         color: #3685C3;
                         padding: 1rem;

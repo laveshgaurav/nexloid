@@ -45,12 +45,12 @@
 
 .accordion {
   background-color: #eee;
+  border: 1px solid #333;
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
   outline: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -63,7 +63,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: none;
   outline: none;
 }
 

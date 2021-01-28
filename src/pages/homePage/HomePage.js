@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector, shallowEqual, connect } from "react-redux";
 import "./HomePage.css";
 import img1 from "../../assets/img1.svg";
 import img3 from "../../assets/img3.svg";
 import ServiceSection from "../../components/serviceSection/ServiceSection";
-import WorkSection from "../../components/workSection/WorkSection";
+// import WorkSection from "../../components/workSection/WorkSection";
+import ClientSection from "../../components/ourClients/OurClients";
 import ToolsSection from "../../components/toolsSection/ToolsSection";
 import BlogSection from "../../components/blogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
@@ -13,16 +14,14 @@ import PageHelmet from "../../components/pageHelmet";
 
 import {
   fetchLatestArticles,
-  fetchLatestWorks,
   fetchAllServices,
   toggleContactUs,
 } from "../../redux/actions/actions";
 
 function HomePage(props) {
-  const { latestArticles, latestWorks, allServices } = useSelector(
+  const { latestArticles, allServices } = useSelector(
     ({ nexloid }) => ({
       latestArticles: nexloid.latestArticles,
-      latestWorks: nexloid.latestWorks,
       allServices: nexloid.allServices,
     }),
     shallowEqual
@@ -32,7 +31,7 @@ function HomePage(props) {
 
   useEffect(() => {
     dispatch(fetchLatestArticles());
-    dispatch(fetchLatestWorks());
+    // dispatch(fetchLatestWorks());
     dispatch(fetchAllServices());
   }, [dispatch]);
 
@@ -83,37 +82,18 @@ function HomePage(props) {
         <div className="section1">
           <div className="heading">
             <h3>
-              Basic introduction of who <br />
-              we're as a <span style={{ color: "#3685c3" }}>company</span>
+              Who we are?
             </h3>
             <p>
-              With more than a decade of experience I tackle a broad variety of
-              disciplines in the process of creating meaningful products that
-              make a real difference. With carefully selected tools and skills I
-              express my visions ranging from product design to the creation of
-              user experience up to development and delivery. My distinctive
-              strategic thinking helps me to pinpoint the holistic scope of a
-              product and evolve it by adding new business ideas, innovations
-              and values that meet user needs as well as business objectives.
-              Besides building user flows, information architecture and
-              wireframes, tailor-made interactive prototypes are constantly
-              putting concepts and ideas to the test and emphasize the
-              user-centered approach in my work. I work with the latest
-              techniques in web development and my agile workflow is the result
-              of the precisely combined tools and strategies that include object
-              oriented patterns, build scripts, pre-processors and minification,
-              source code management, testing as well as deployment. With my
-              knowledge in both design and technology I foster productive teams
-              in an collaborative environment that meets the requirements of
-              creatives and developers at the same time.
+            We are a new-generation digital analytics company providing you with the most accurate reports and solutions to your queries. With simple solutions and tools, we brief you with a personalised check plan and assist you drive more traffic to your website.
             </p>
           </div>
         </div>
       </div>
       <ServiceSection services={allServices} />
       <ToolsSection />
-      <WorkSection articles={latestWorks} />
-      <BlogSection articles={latestArticles} />
+      <ClientSection />
+      <BlogSection articles={latestArticles} contactPop={props.toggleContactUs}/>
       <Footer />
     </div>
   );

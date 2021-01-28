@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./WorkSection.css";
 
 function WorkSection(props) {
@@ -40,7 +41,9 @@ function WorkSection(props) {
           We're a group of individual who like to take challenges that's what
           define us
         </p>
+        <Link to="/works">
         <button>Explore more</button>
+        </Link>
       </div>
     </div>
   );

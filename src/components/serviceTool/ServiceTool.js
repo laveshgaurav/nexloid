@@ -2,12 +2,12 @@ import React from "react";
 import "./ServiceTool.css";
 
 function ServiceTool(props) {
-  let { tools } = props;
+  let { tools, title } = props;
   console.log("tools", tools);
   return (
     <div className="ServiceTools-Container">
       <div className="ServiceTools-Section">
-        <h3>Tools required</h3>
+        <h3>{props.title?props.title:`Tools required`}</h3>
         <div className="features">
           {
               tools.length?tools.map((tool, i) => (

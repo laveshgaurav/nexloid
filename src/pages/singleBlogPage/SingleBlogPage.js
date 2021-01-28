@@ -18,14 +18,14 @@ function SingleBlogPage(props) {
 
   useEffect(() => {
     dispatch(fetchArticleById(blogPath));
-    dispatch(fetchRelatedArticles(openedArticle[0].tags, openedArticle[0].id))
+    dispatch(fetchRelatedArticles(openedArticle&&openedArticle.length?openedArticle[0].tags:null, openedArticle&&openedArticle.length?openedArticle[0].id:null))
   }, [dispatch, blogPath, openedArticle]);
  
   return (
       <React.Fragment>
       {
-        openedArticle.length?openedArticle.map((data, index) => (
-        <div key={index}>
+        openedArticle && openedArticle.length?openedArticle.map((data, index) => (
+        <div key={index+Math.random()}>
         <PageHelmet
           title={data.seo.metaTitle}
           author={data.author}
@@ -70,7 +70,7 @@ function SingleBlogPage(props) {
       }
       
      {
-       relatedArticles.length?(
+       relatedArticles&&relatedArticles.length?(
         <div className="related-blog-container">
         <h2>Related blogs</h2>
         <div className="blogs-container">
@@ -80,9 +80,9 @@ function SingleBlogPage(props) {
                 date={data.date}
                 title={data.title}
                 content={data.summary}
-                to={`/blogs/${data.permalink}`}
+                to={`/articles/${data.permalink}`}
               />
-            )):'Loading Related Blogs...'
+            )):'Loading Related Articles...'
           }
         </div>
         {/* <button className="viewmore">View more blogs</button> */}

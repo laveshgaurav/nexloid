@@ -1,0 +1,147 @@
+.client-container {
+  width: 100%;
+  height: auto;
+  background: #f9fcff;
+}
+
+.client-container .client-section {
+  width: 100%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 8%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client-container .client-section h2 {
+  color: #464545;
+  border-bottom: 3px solid #F6861F;
+  padding: 0.3rem;
+}
+
+.client-container .client-section .clients {
+  width: 100%;
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 4%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.client-container .client-section .clients .client-box {
+  width: 25%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4%;
+  text-align: center;
+}
+
+.client-container .client-section .clients .client-box .img-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.client-container .client-section .clients .client-box a {
+  text-decoration: none;
+}
+
+.client-container .client-section .clients .client-box p {
+  color: #565656;
+  font-size: 1rem;
+}
+
+.client-container .client-section .clients .client-box h3 {
+  color: #3685C3;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .client-container {
+    width: 100%;
+    height: auto;
+  }
+  .client-container .client-section {
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+  }
+  .client-container .client-section h2 {
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+  .client-container .client-section .clients {
+    padding: 0 3%;
+  }
+  .client-container .client-section .clients .client-box {
+    width: 100%;
+  }
+  .client-container .client-section .clients .client-box .img-box {
+    width: 150px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 8%;
+  }
+  .client-container .client-section .clients .client-box .img-box img {
+    width: 100%;
+    height: auto;
+  }
+  .client-container .client-section .clients .client-box p {
+    color: #565656;
+    font-size: 10px;
+  }
+  .client-container .client-section .clients .client-box h3 {
+    color: #3685C3;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .client-container .client-section h2 {
+    font-size: 2.5rem;
+  }
+  .client-container .client-section .clients .client-box p {
+    font-size: 1.2rem;
+  }
+  .client-container .client-section .clients .client-box h3 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=ClientSection.css.map */

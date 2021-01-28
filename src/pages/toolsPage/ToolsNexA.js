@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import {Link} from 'react-router-dom';
 import ServicePageBanner from "../../components/servicePageBanner/ServicePageBanner";
-import nexA from "../../assets/nexA.svg";
+import nexA from "../../assets/nexa.svg";
 import ServiceTool from "../../components/serviceTool/ServiceTool";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { fetchServiceDetails } from "../../redux/actions/actions";
@@ -28,26 +29,22 @@ function ToolsNexA(props) {
       <ServicePageBanner
         image={nexA}
         head1="Nex-A"
-        para="We modify several different variables for your website and
- test for the version that brings the most valuable traffic and
- ensures higher chances of conversion in the least possible time.
-We modify several different variables for your website and
- test for the version that brings the most valuable traffic and
- ensures higher chances of conversion in the least possible time"
+        para="Nex-A is a simple ticketing system tool with better UX.
+        Nexa does everything needed with a signup, signup and most of the NDA(a non-disclosure agreement) is filled automatically while keeping your data under high security."
       />
       {openedService?.length
         ? openedService
             .slice(0, 1)
-            .map((data, index) => <ServiceTool tools={data.tools} />)
+            .map((data, index) => <ServiceTool tools={data.tools} title={`Apps it supports`}/>)
         : null}
 
       <div className="tools-card-container">
-        <h3>Steps for understanding</h3>
+        <h3>How it works?</h3>
         <div className="card-container">
-          <ToolsCard step="01" method="Sign In" />
-          <ToolsCard step="02" method="Ask question" />
-          <ToolsCard step="03" method="Resolve and answer" />
-          <ToolsCard step="04" method="Let's repeat" />
+          <ToolsCard step="1" method="Sign Up" text="Signup using your mail ids and sit back while the forum automatically fills up NDA for you!"/>
+          <ToolsCard step="2" method="Shoot your queries" text="We're here to answer your queries ASAP"/>
+          <ToolsCard step="3" method="Resolve and discuss" text="Whatever be the issue, you get a detailed report of each."/>
+          <ToolsCard step="4" method="Repeat!" text="Satisfied? Come back again."/>
         </div>
       </div>
       
@@ -56,7 +53,10 @@ We modify several different variables for your website and
           <h1>Liking us so far?</h1>
           <h2>Know us better.</h2>
         </div>
+        <Link to="/works">
         <button>Know more</button>
+        </Link>
+        
       </div>
       <Footer />
     </React.Fragment>

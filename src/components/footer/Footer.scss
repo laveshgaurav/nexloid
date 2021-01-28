@@ -7,7 +7,7 @@
     min-height: 30vh;
 
     .section {
-        width: 25%;
+        width: 33.33%;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
@@ -31,7 +31,7 @@
             transition: 0.4s ease-in-out;
             cursor: pointer;
             width: max-content;
-            padding: 0px 6px;
+            // padding: 0px 6px;
 
             &:hover {
                 color: #3685C3;
@@ -182,7 +182,7 @@
         width: 100%;
         height: auto;
         background-color: #1A1E21;
-        padding: 2%;
+        padding: 0;
         display: flex;
         min-height: 30vh;
         flex-wrap: wrap;
@@ -197,7 +197,7 @@
             flex-direction: column;
 
             img {
-                width: 40%;
+                width: 40%;;
             }
 
             h6 {
@@ -205,7 +205,7 @@
                 font-weight: 200;
                 font-size: 14px;
                 margin-bottom: 2.2em;
-
+                text-align: center;
             }
 
             a {
@@ -218,6 +218,7 @@
                 cursor: pointer;
                 width: max-content;
                 padding: 0px 6px;
+                text-align: center;
 
                 &:hover {
                     color: #3685C3;

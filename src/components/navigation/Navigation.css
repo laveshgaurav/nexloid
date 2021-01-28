@@ -157,7 +157,9 @@
   border: none;
   outline: none;
   color: gray;
-  padding: 10px 12px;
+  padding: 8.8px 24.5px;
+  border: 2px solid #333333;
+  border-radius: 5px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -169,6 +171,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.Button button:hover {
+  color: white;
+  background-color: #333333;
 }
 
 .Button .navbar .nav-links:hover,
@@ -212,29 +219,6 @@
 
 .Button .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.Button .Button button {
-  color: #3685c3;
-  border: none;
-  outline: none;
-  padding: 8.8px 24.5px;
-  border-radius: 5px;
-  border: 2px solid #3685c3;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  cursor: pointer;
-  background-color: white;
-}
-
-.Button .Button button:hover {
-  color: white;
-  background-color: #3685c3;
-}
-
-.Button .Button button:focus {
-  border: 2px solid #3685c3;
-  outline: none;
 }
 
 @media only screen and (max-width: 768px) {

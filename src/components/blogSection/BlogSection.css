@@ -96,8 +96,32 @@
 
 .blogs-container .review {
   width: 100%;
+  margin-top: 5%;
   height: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogs-container .review .heading {
+  margin-bottom: 2rem;
+}
+
+.blogs-container .review .heading h2 {
+  color: #464545;
+  border-bottom: 3px solid #F6861F;
+  padding: 0.3rem;
 }
 
 .blogs-container .review .img-box {
@@ -107,20 +131,20 @@
 }
 
 .blogs-container .review .img-box img {
-  width: 60%;
+  width: 50%;
 }
 
 .blogs-container .review .testimonial {
-  max-width: 360px;
-  height: auto;
-  padding: 2% 1%;
+  top: 20%;
+  left: 30%;
+  width: 330px;
+  padding: 2%;
   position: absolute;
-  top: 10%;
-  left: 20%;
-  -webkit-box-shadow: 3px 3px 10px 1px #29292994;
-          box-shadow: 3px 3px 10px 1px #29292994;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 2px 8px 10px -2px #29292994;
+          box-shadow: 2px 8px 10px -2px #29292994;
+  background-color: #FFFFFF;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,18 +198,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #f9fcff;
 }
 
 .blogs-container .explore p {
   width: 50%;
   font-size: 2rem;
   color: #3685c3;
+}
+
+.blogs-container .explore p span {
+  color: #333;
+  font-size: 1.2rem;
 }
 
 .blogs-container .explore button {
@@ -344,12 +374,14 @@
 @media only screen and (max-width: 425px) {
   .blogs-container {
     width: 100%;
+    padding-top: 10%;
     height: auto;
   }
   .blogs-container .review {
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 5%;
   }
   .blogs-container .review .img-box {
     width: 100%;
@@ -360,18 +392,18 @@
     width: 80%;
   }
   .blogs-container .review .testimonial {
-    width: 320px;
-    padding: 2% 1%;
+    width: 330px;
+    padding: 2%;
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    -webkit-box-shadow: 3px 3px 10px 1px #292929b0;
-            box-shadow: 3px 3px 10px 1px #292929b0;
-    background-color: #000000b9;
-    -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
+    -webkit-box-shadow: 2px 8px 10px -2px #29292994;
+            box-shadow: 2px 8px 10px -2px #29292994;
+    background-color: #ffffffeb;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
     border-radius: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,7 +424,6 @@
   .blogs-container .review .testimonial p {
     margin-bottom: 0.4rem;
     font-size: 10px;
-    color: white;
   }
   .blogs-container .review .testimonial .profile {
     display: -webkit-box;

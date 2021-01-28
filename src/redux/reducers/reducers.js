@@ -8,6 +8,7 @@ const InitialState = {
   allWorks: [],
   latestWorks: [],
   openedWork: [],
+  relatedWorks: [],
   openedService: [],
   allServices: [],
   allCareers: [],
@@ -19,6 +20,12 @@ const InitialState = {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state = InitialState, { type, payload }) => {
   switch (type) {
+    case actionType.CLEAR_OPENED_SERVICE : {
+      return {
+        ...state,
+        openedService: payload
+      }
+    }
     // blogs here
     case actionType.FETCH_ALL_ARTICLES: {
       return {
@@ -60,10 +67,10 @@ export default (state = InitialState, { type, payload }) => {
       };
     }
 
-    case actionType.APP_LOADING: {
+    case actionType.FETCH_RELATED_WORKS: {
       return {
         ...state,
-        isLoading: payload,
+        relatedWorks: payload,
       };
     }
 
@@ -106,6 +113,13 @@ export default (state = InitialState, { type, payload }) => {
       return {
         ...state,
         allCareers: payload,
+      };
+    }
+
+    case actionType.APP_LOADING: {
+      return {
+        ...state,
+        isLoading: payload,
       };
     }
 

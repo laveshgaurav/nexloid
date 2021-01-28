@@ -62,7 +62,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 1rem;
+  padding: 2rem 0 6rem 0;
 }
 
 .aboutUs-container .aboutUs .top {
@@ -133,6 +133,7 @@
 
 .aboutUs-container .aboutUs .bottom .image-box img {
   width: 100%;
+  padding: 50px;
 }
 
 .aboutUs-container .aboutUs .bottom .form {
@@ -153,7 +154,7 @@
   color: #565656;
 }
 
-.aboutUs-container .aboutUs .bottom .form form {
+.aboutUs-container .aboutUs .bottom .form > div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +165,7 @@
           flex-direction: column;
 }
 
-.aboutUs-container .aboutUs .bottom .form form .label {
+.aboutUs-container .aboutUs .bottom .form > div .label {
   color: #747474;
   font-weight: 500;
   font-size: 1rem;
@@ -178,23 +179,23 @@
   margin: 1.3rem 0;
 }
 
-.aboutUs-container .aboutUs .bottom .form form .label input {
+.aboutUs-container .aboutUs .bottom .form > div .label input {
   border: none;
   border-bottom: 2px solid #747474;
   outline: none;
   padding: 2px 6px;
 }
 
-.aboutUs-container .aboutUs .bottom .form form .name,
-.aboutUs-container .aboutUs .bottom .form form .phone {
+.aboutUs-container .aboutUs .bottom .form > div .name,
+.aboutUs-container .aboutUs .bottom .form > div .phone {
   width: 80%;
 }
 
-.aboutUs-container .aboutUs .bottom .form form .service {
+.aboutUs-container .aboutUs .bottom .form > div .service {
   font-weight: 600;
 }
 
-.aboutUs-container .aboutUs .bottom .form form .service select {
+.aboutUs-container .aboutUs .bottom .form > div .service select {
   border: none;
   outline: none;
   font-weight: 600;
@@ -202,7 +203,7 @@
   width: 40%;
 }
 
-.aboutUs-container .aboutUs .bottom .form form button {
+.aboutUs-container .aboutUs .bottom .form > div button {
   background-color: #3685c3;
   border: none;
   outline: none;
@@ -218,12 +219,12 @@
   color: white;
 }
 
-.aboutUs-container .aboutUs .bottom .form form button:hover {
+.aboutUs-container .aboutUs .bottom .form > div button:hover {
   background-color: white;
   color: #3685c3;
 }
 
-.aboutUs-container .aboutUs .bottom .form form button:focus {
+.aboutUs-container .aboutUs .bottom .form > div button:focus {
   border: 2px solid #3685c3;
   outline: none;
 }
@@ -263,9 +264,9 @@
             backdrop-filter: blur(12px);
   }
   .aboutUs-container .aboutUs {
-    width: 86%;
+    width: 85%;
     height: auto;
-    background-color: white;
+    background-color: #fff;
     border-radius: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -274,7 +275,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0.6rem 0.2rem;
+    padding: 1.5rem 0 1.5rem;
   }
   .aboutUs-container .aboutUs .top {
     width: 100%;
@@ -294,7 +295,7 @@
     height: 100%;
   }
   .aboutUs-container .aboutUs .top img[alt=logo] {
-    width: 60%;
+    width: 30%;
   }
   .aboutUs-container .aboutUs .top button {
     height: -webkit-max-content;
@@ -364,7 +365,7 @@
     font-weight: bold;
     color: #565656;
   }
-  .aboutUs-container .aboutUs .bottom .form form {
+  .aboutUs-container .aboutUs .bottom .form > div {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,7 +375,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutUs-container .aboutUs .bottom .form form .label {
+  .aboutUs-container .aboutUs .bottom .form > div .label {
     color: #747474;
     font-weight: 500;
     font-size: 12px;
@@ -387,27 +388,27 @@
             flex-direction: column;
     margin: 1rem 0;
   }
-  .aboutUs-container .aboutUs .bottom .form form .label input {
+  .aboutUs-container .aboutUs .bottom .form > div .label input {
     border: none;
     border-bottom: 2px solid #747474;
     outline: none;
     padding: 2px 6px;
   }
-  .aboutUs-container .aboutUs .bottom .form form .name,
-  .aboutUs-container .aboutUs .bottom .form form .phone {
+  .aboutUs-container .aboutUs .bottom .form > div .name,
+  .aboutUs-container .aboutUs .bottom .form > div .phone {
     width: 100%;
   }
-  .aboutUs-container .aboutUs .bottom .form form .service {
+  .aboutUs-container .aboutUs .bottom .form > div .service {
     font-weight: 600;
   }
-  .aboutUs-container .aboutUs .bottom .form form .service select {
+  .aboutUs-container .aboutUs .bottom .form > div .service select {
     border: none;
     outline: none;
     font-weight: 600;
     color: #747474;
     width: 70%;
   }
-  .aboutUs-container .aboutUs .bottom .form form button {
+  .aboutUs-container .aboutUs .bottom .form > div button {
     background-color: #3685c3;
     border: none;
     outline: none;
@@ -422,11 +423,11 @@
     cursor: pointer;
     color: white;
   }
-  .aboutUs-container .aboutUs .bottom .form form button:hover {
+  .aboutUs-container .aboutUs .bottom .form > div button:hover {
     background-color: white;
     color: #3685c3;
   }
-  .aboutUs-container .aboutUs .bottom .form form button:focus {
+  .aboutUs-container .aboutUs .bottom .form > div button:focus {
     border: 2px solid #3685c3;
     outline: none;
   }
@@ -440,6 +441,13 @@
     color: #565656;
     font-weight: bold;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1368px) {
+  .aboutUs-container .aboutUs {
+    height: 95%;
+    padding: 0 0 6rem 0;
   }
 }
 
@@ -503,7 +511,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 0 6rem 0;
   }
   .aboutUs-container .aboutUs .top {
     width: 100%;
@@ -587,7 +595,7 @@
     color: #565656;
     font-size: 2.5rem;
   }
-  .aboutUs-container .aboutUs .bottom .form form {
+  .aboutUs-container .aboutUs .bottom .form > div {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -597,7 +605,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutUs-container .aboutUs .bottom .form form .label {
+  .aboutUs-container .aboutUs .bottom .form > div .label {
     color: #747474;
     font-weight: 500;
     font-size: 1.5rem;
@@ -610,27 +618,27 @@
             flex-direction: column;
     margin: 1rem 0;
   }
-  .aboutUs-container .aboutUs .bottom .form form .label input {
+  .aboutUs-container .aboutUs .bottom .form > div .label input {
     border: none;
     border-bottom: 2px solid #747474;
     outline: none;
     padding: 2px 6px;
   }
-  .aboutUs-container .aboutUs .bottom .form form .name,
-  .aboutUs-container .aboutUs .bottom .form form .phone {
+  .aboutUs-container .aboutUs .bottom .form > div .name,
+  .aboutUs-container .aboutUs .bottom .form > div .phone {
     width: 80%;
   }
-  .aboutUs-container .aboutUs .bottom .form form .service {
+  .aboutUs-container .aboutUs .bottom .form > div .service {
     font-weight: 600;
   }
-  .aboutUs-container .aboutUs .bottom .form form .service select {
+  .aboutUs-container .aboutUs .bottom .form > div .service select {
     border: none;
     outline: none;
     font-weight: 600;
     color: #747474;
     width: 40%;
   }
-  .aboutUs-container .aboutUs .bottom .form form button {
+  .aboutUs-container .aboutUs .bottom .form > div button {
     background-color: #3685c3;
     border: none;
     outline: none;
@@ -646,11 +654,11 @@
     color: white;
     font-size: 1.5rem;
   }
-  .aboutUs-container .aboutUs .bottom .form form button:hover {
+  .aboutUs-container .aboutUs .bottom .form > div button:hover {
     background-color: white;
     color: #3685c3;
   }
-  .aboutUs-container .aboutUs .bottom .form form button:focus {
+  .aboutUs-container .aboutUs .bottom .form > div button:focus {
     border: 2px solid #3685c3;
     outline: none;
   }

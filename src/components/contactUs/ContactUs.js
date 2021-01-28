@@ -1,12 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDom from "react-dom";
 import logo from "../../assets/logo-color.svg";
 import close from "../../assets/close.png";
-import contactUs from "../../assets/contact-us.png";
+import contactUs from "../../assets/contact-us.svg";
 import { motion } from "framer-motion";
 import "./ContactUs.css";
+import ExternalService from '../../services/externalServices';
 
 function ContactUs({ show, closeDrawer }) {
+  let [firstName, setFirstName] = useState('');
+  let [lastName, setLastName] = useState('');
+  let [email, setEmail] = useState('');
+  let [company, setCompany] = useState('');
+  let [phone, setPhone] = useState('');
+  let [service, setService] = useState('');
+  let [leadSuccess, setLeadSuccess] = useState(false);
+
+  const submitLead = async () => {
+     let status = await ExternalService.createLead(firstName, lastName, company, email, phone, service);
+     
+     if(status) {
+       setFirstName('');
+       setLastName('');
+       setEmail('');
+       setCompany('');
+       setPhone('');
+       setService('');
+       setLeadSuccess(true);
+     } else {
+       alert('Something Went Wrong');
+       setLeadSuccess(false);
+     }
+  }
+
   const content = (
     <div className="aboutUs-container">
       {/* <button onClick={props.closeDrawer}>Close</button> */}
@@ -37,57 +63,33 @@ function ContactUs({ show, closeDrawer }) {
           </div>
           <div className="form">
             <h3>Contact us</h3>
-            <form
-              action="https://crm.zoho.com/crm/WebToLeadForm"
-              type="POST"
-              onsubmit='javascript:document.charset="UTF-8";'
-              name="WebToLeads4337895000000393013"
-            >
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="xnQsjsdp"
-                value="f3319231164a3c033765f2263e508fb113712974cb81482dafbb12b4b12d1da2"
-              />
-              <input type="hidden" name="zc_gad" id="zc_gad" value="" />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="xmIwtLD"
-                value="e943ffd0a1e5525de1ce5f916a746a0c115d467898bf53fe74c9dd327ab0ca46"
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="actionType"
-                value="TGVhZHM="
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="returnURL"
-                value="http://localhost:3000"
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                id="ldeskuid"
-                name="ldeskuid"
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                id="LDTuvid"
-                name="LDTuvid"
-              />
-
+            {
+                leadSuccess?(
+                  <small className="text-success">
+                    Submitted Succesfully!
+                  </small>   
+                ):''
+              }
+            <div>
               <div className="label name">
                 {/* <label style={{ paddingLeft: "4px" }}>YOUR NAME</label> */}
                 <input
                   type="text"
+                  id="First_Name"
+                  name="First_Name"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={(value)=>(setFirstName(value.target.value))}
+                />
+              </div>
+              <div className="label name">
+                <input
+                  type="text"
                   id="Last_Name"
-                  name="Last Name"
-                  placeholder="Name"
+                  name="Last_Name"
+                  placeholder="Last Name"
+                  value={lastName}
+                  onChange={(value)=>(setLastName(value.target.value))}
                 />
               </div>
               <div className="label name">
@@ -97,6 +99,8 @@ function ContactUs({ show, closeDrawer }) {
                   id="Company"
                   name="Company"
                   placeholder="Company"
+                  value={company}
+                  onChange={(value)=>(setCompany(value.target.value))}
                 />
               </div>
               <div className="label name">
@@ -106,6 +110,8 @@ function ContactUs({ show, closeDrawer }) {
                   id="Email"
                   name="Email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(value)=>(setEmail(value.target.value))}
                 />
               </div>
               <div className="label phone">
@@ -115,6 +121,8 @@ function ContactUs({ show, closeDrawer }) {
                   id="Mobile"
                   name="Mobile"
                   placeholder="Phone Number"
+                  value={phone}
+                  onChange={(value)=>(setPhone(value.target.value))}
                 />
               </div>
               <div className="label service">
@@ -127,19 +135,19 @@ function ContactUs({ show, closeDrawer }) {
                     ></i>
                   </label> */}
 
-                <select name="cars" id="cars">
+                <select name="services" id="services"
+                onChange={(value)=>(setService(value.target.value))}>
                   <option style={{ fontWeight: "bold" }} defaultValue hidden>
                     SERVICE REQUIRED
                   </option>
-                  <option>Tag Management</option>
-                  <option>Cro</option>
-                  <option>Power</option>
-                  <option>Digital Development</option>
+                  <option value="Tag Management">Tag Management</option>
+                  <option value="CRO">CRO</option>
+                  <option value="Business Intelligence">Business Intelligence</option>
                 </select>
               </div>
               <button
-                type="submit"
                 style={{ display: "flex", alignItems: "center" }}
+                onClick={()=>submitLead()}
               >
                 Submit
                 <i
@@ -148,11 +156,8 @@ function ContactUs({ show, closeDrawer }) {
                   style={{ marginLeft: "1rem" }}
                 ></i>
               </button>
-            </form>
-            {/* <div className="info">
-              <p>email us at:</p>
-              <h4>mail.id@nexloid.com</h4>
-            </div> */}
+              
+            </div>
           </div>
         </div>
       </motion.div>

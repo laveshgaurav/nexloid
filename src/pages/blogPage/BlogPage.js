@@ -23,16 +23,16 @@ function BlogPage() {
   return (
     <React.Fragment>
       <PageHelmet
-        title="Our Blogs | Latest Digital Analytics Contents | Nexloid"
+        title="Our Articles | Latest Digital Analytics Contents | Nexloid"
         author="Nexloid"
         description="Latest digital analytics contents by Nexloid"
         twTitle="Latest Digital Analytics Contents"
-        twUrl="https://nexloid.com/blogs"
+        twUrl="https://nexloid.com/articles"
         twDescription="Latest Digital Analytics Contents"
         twImage=""
         ogTitle="Latest Digital Analytics Contents"
         ogType="blog"
-        ogUrl="https://nexloid.com/blogs"
+        ogUrl="https://nexloid.com/articles"
         ogImage=""
         ogDescription="Latest Digital Analytics Contents"
       />
@@ -44,7 +44,7 @@ function BlogPage() {
               date={data.date}
               title={data.title}
               content={data.summary.substring(0, 200)}
-              to={'/blogs/'+data.permalink}
+              to={'/articles/'+data.permalink}
               key={index}
             />
           )):null

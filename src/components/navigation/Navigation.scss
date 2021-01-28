@@ -11,6 +11,9 @@
     justify-content: space-between;
     padding: 4% 8%;
     overflow-y: hidden;
+    // position: fixed;
+    // background: #FFFFFF;
+    // z-index: 1000;
 
     .Logo {
         width: 135px;
@@ -124,13 +127,20 @@
         border: none;
         outline: none;
         color: gray;
-        padding: 10px 12px;
+        padding: 8.8px 24.5px;
+        border: 2px solid #333333;
+        border-radius: 5px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
         transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         display: flex;
         align-items: center;
+
+        &:hover {
+            color: white;
+            background-color: #333333;
+        }
     }
 
     .navbar .nav-links:hover,
@@ -174,29 +184,29 @@
         display: block;
     }
 
-    .Button {
-        button {
-            color: #3685c3;
-            border: none;
-            outline: none;
-            padding: 8.8px 24.5px;
-            border-radius: 5px;
-            border: 2px solid #3685c3;
-            transition: 0.3s ease-in;
-            cursor: pointer;
-            background-color: white;
+    // .Button {
+    //     button {
+    //         color: #3685c3;
+    //         border: none;
+    //         outline: none;
+    //         padding: 8.8px 24.5px;
+    //         border-radius: 5px;
+    //         border: 2px solid #3685c3;
+    //         transition: 0.3s ease-in;
+    //         cursor: pointer;
+    //         background-color: white;
 
-            &:hover {
-                color: white;
-                background-color: #3685c3;
-            }
+    //         &:hover {
+    //             color: white;
+    //             background-color: #3685c3;
+    //         }
 
-            &:focus {
-                border: 2px solid #3685c3;
-                outline: none;
-            }
-        }
-    }
+    //         &:focus {
+    //             border: 2px solid #3685c3;
+    //             outline: none;
+    //         }
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 768px) {

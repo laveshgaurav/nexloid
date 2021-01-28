@@ -25,6 +25,7 @@
   .blogCard-container {
     width: 96%;
     margin: 2%;
+    margin-bottom: 10%;
   }
   .blogCard-container h3 {
     color: #202020;

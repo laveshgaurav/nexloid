@@ -1,6 +1,6 @@
 .tools-card-container {
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +12,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0 8%;
+  margin-bottom: 10%;
 }
 
 .tools-card-container h3 {

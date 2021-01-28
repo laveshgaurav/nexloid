@@ -4,13 +4,13 @@ import "./BlogSection.css";
 import blogs from "../../assets/blogs.svg";
 import BlogCard from "../blogCard/BlogCard";
 import likeReact from "../../assets/likeReact.svg";
-import profile1 from "../../assets/profile-1.jpg";
-import profile2 from "../../assets/profile-2.jpg";
+// import profile1 from "../../assets/profile-1.jpg";
+// import profile2 from "../../assets/profile-2.jpg";
 
 function BlogSection(props) {
   const cards = useRef(null);
   useEffect(() => {
-    const interval = setInterval(() => showSlide(), 1500);
+    const interval = setInterval(() => showSlide(), 4000);
     return () => {
       clearInterval(interval);
     };
@@ -41,7 +41,7 @@ function BlogSection(props) {
     <div className="blogs-container">
       <div className="blogs-section">
         <div className="heading">
-          <h2>BLOGS</h2>
+          <h2>ARTICLES</h2>
         </div>
         <div className="blogs-content">
           <div className="section1">
@@ -60,56 +60,62 @@ function BlogSection(props) {
                     />
                   )):null
                 }
-                <button onClick={()=>nextPath('/blogs')}>More Blogs</button>
+                <button onClick={()=>nextPath('/articles')}>Read More</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      
       <div className="review">
+        <div className="heading">
+          <h2>FROM OUR CLIENTELLE</h2>
+        </div>
         <div className="img-box">
           <img src={likeReact} alt="likeReact" />
         </div>
         <div className="testimonial" ref={cards}>
-          <h4>Awesome way</h4>
+          {/* <h4>Awesome way</h4> */}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          Nexloid has always remained a preferred partner for my team, the team at Nexloid not just has exceptional technical knowledge but also great sense of team work. The reports and solutions they offer are very easy to comprehend for even the non tech members also.
           </p>
           <div className="profile">
-            <div className="img-box">
+            {/* <div className="img-box">
               <img src={profile1} alt="profile1" />
-            </div>
+            </div> */}
             <div>
-              <h4>John Doe</h4>
-              <p>CEO, the wagon</p>
+              <h4>Sunil Penugonda</h4>
+              <p>Vice President, Dentsu Web Chutney</p>
             </div>
           </div>
         </div>
         <div className="testimonial">
-          <h4>Different Ecosystem</h4>
+          {/* <h4>Different Ecosystem</h4> */}
           <p>
-            Aenean aliquam laoreet justo, eget mattis augue imperdiet quis.
-            Donec eget nulla nunc. Nullam dapibus dolor a tellus fringilla
-            cursus. Sed et nisi ante. In lobortis nec lectus at eleifend.
-            Pellentesque egestas mattis tortor ut tristique.
+          We are really happy the way they build us the dashboards in our power bi tool, the best team to work with.
           </p>
           <div className="profile">
-            <div className="img-box">
+            {/* <div className="img-box">
               <img src={profile2} alt="profile2" />
-            </div>
+            </div> */}
             <div>
-              <h4>Max William</h4>
-              <p>MD, the wagon</p>
+              <h4>Aditya</h4>
+              <p>Marketing Head, Nilgiris Food Limited</p>
             </div>
           </div>
         </div>
+       
+      
       </div>
+     
       <div className="explore">
-        <p>It was an amazing journey discover our company</p>
-        <button>Know more</button>
+        <p>
+          Ready to work with us?
+          <br/>
+          <span>Assisting and reporting you with the queries.</span>
+        </p>
+        <button onClick={props.contactPop}>Get started!</button>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
-import AboutUs from "../../assets/aboutUs.svg";
-import cloud from "../../assets/cloud.svg";
+import { Link } from "react-router-dom";
+import AboutUs from "../../assets/about-us-header.svg";
+import cloud from "../../assets/about-us-cloud.svg";
 import teams from "../../assets/teams.svg";
 import project from "../../assets/project.svg";
 
@@ -39,10 +40,7 @@ function AboutUsPage(props) {
               & <span style={{ color: "#f6861f" }}>Digital, </span>How?
             </h3>
             <p>
-              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
-              artsy and fun team members. Our agency strives to create emotional
-              and meaningful stories, which in turn become fantastic digital
-              experiences.
+            With data ever evolving, analytics has been one of the most used word in the last decade or so. Nexloid helps you with the data and creates a path to your success.
             </p>
             <button>See our expertise</button>
           </div>
@@ -67,10 +65,7 @@ function AboutUsPage(props) {
             <h3>Our Team</h3>
 
             <p>
-              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
-              artsy and fun team members. Our agency strives to create emotional
-              and meaningful stories, which in turn become fantastic digital
-              experiences.
+            Here at Nexloid, we are the exact sum of happy, geeky, 'challenge-ready' and fun team members. Our company srives to provide with the best solutions for you to turn around your data.
             </p>
             {/* <button>GET IN TOUCH</button> */}
           </div>
@@ -89,10 +84,7 @@ function AboutUsPage(props) {
             </h3>
             <h3>could be maddening!</h3>
             <p>
-              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
-              artsy and fun team members. Our agency strives to create emotional
-              and meaningful stories, which in turn become fantastic digital
-              experiences.
+            Data is present in very aspect of our lives and without any correct measures we cannot take advantage of it. We are here to provide with the best possible services for you to take advantage of.
             </p>
             <button onClick={props.toggleContactUs}>GET IN TOUCH</button>
           </div>
@@ -108,14 +100,13 @@ function AboutUsPage(props) {
       <div className="AboutUs-Section">
         <div className="section1">
           <div className="heading">
-            <h3>Looking for more ?</h3>
+            <h3>Getting confused with what services to go for?</h3>
             <p>
-              Designers is the sum of 45 happy, wild, spirited, shy, geeky,
-              artsy and fun team members. Our agency strives to create emotional
-              and meaningful stories, which in turn become fantastic digital
-              experiences.
+            Check out our projects for the final decision!
             </p>
-            <button>Explore our projects</button>
+            <Link to="/works">
+              <button>Explore our projects</button>
+            </Link>
           </div>
         </div>
         <div className="section2">
@@ -128,7 +119,7 @@ function AboutUsPage(props) {
         <h4>
           <span style={{ color: "#f6861f" }}>Inspired to work with us?</span>
         </h4>
-        <p>Write to us @mail.id@gmail.com</p>
+        <p>Write to us <a href="mailto:support@nexloid.com">support@nexloid.com</a></p>
       </div>
       <Footer />
     </div>

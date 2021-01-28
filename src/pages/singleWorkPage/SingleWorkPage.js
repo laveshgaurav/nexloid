@@ -11,21 +11,21 @@ function SingleWorkPage(props) {
   const dispatch = useDispatch();
   const path = props.match.params.id;
 
-  let { openedWork, relatedArticles } = useSelector(({nexloid}) => ({
+  const { openedWork, relatedArticles } = useSelector(({nexloid}) => ({
     openedWork: nexloid.openedWork,
     relatedArticles: nexloid.relatedArticles
   }), shallowEqual);
 
   useEffect(() => {
     dispatch(fetchWorkById(path));
-    dispatch(fetchRelatedArticles(openedWork[0].tags, ''))
+    dispatch(fetchRelatedArticles(openedWork && openedWork.length?openedWork[0].tags:null, ''))
   }, [dispatch, path, openedWork]);
  
   return (
       <React.Fragment>
       {
-        openedWork.length?openedWork.map((data, index) => (
-        <div key={index}>
+        openedWork && openedWork.length ?openedWork.map((data, index) => (
+        <div key={index+Math.random()}>
         <Helmet>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
           <title>{data.seo.metaTitle}</title>
@@ -69,9 +69,9 @@ function SingleWorkPage(props) {
       }
       
       {
-       relatedArticles.length?(
+       relatedArticles&&relatedArticles.length?(
         <div className="related-blog-container">
-        <h2>Related blogs</h2>
+        <h2>Related articles</h2>
         <div className="blogs-container">
           {
             relatedArticles.length?relatedArticles.map((data, index) => (
@@ -79,9 +79,9 @@ function SingleWorkPage(props) {
                 date={data.date}
                 title={data.title}
                 content={data.summary}
-                to={`/blogs/${data.permalink}`}
+                to={`/articles/${data.permalink}`}
               />
-            )):'Loading Related Blogs...'
+            )):'Loading Related Articles...'
           }
         </div>
         {/* <button className="viewmore">View more blogs</button> */}

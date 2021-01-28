@@ -10,7 +10,7 @@ function ServicePageBanner(props) {
             <h1>{props.head1}</h1>
             {/* <h3>{props.head2}</h3> */}
             <p>{props.para}</p>
-            <button>Watch a video</button>
+            <a href="https://www.youtube.com/channel/UCYm8jY9S-fjXMkJyiYAeYpw/featured"><button>Watch a video</button></a>
           </div>
         </div>
         <div className="section2">

@@ -16,11 +16,11 @@ function WorkPageBanner() {
             </p>
           </div>
         </div>
-        <div className="section2">
+        {/* <div className="section2">
           <div className="img-box">
             <img src={blog} alt="blog" />
           </div>
-        </div>
+        </div> */}
         <div className="section3">
           <SocialMedia />
         </div>

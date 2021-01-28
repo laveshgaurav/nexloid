@@ -66,6 +66,14 @@ function Navigation(props) {
           >
             Service
           </NavLink> */}
+          <NavLink
+            activeClassName="link-active"
+            className="nav-links"
+            to="/aboutUs"
+            onClick={clickHam}
+          >
+            About
+          </NavLink>
           <div className="dropdown">
             <button className="dropbtn">
               Services
@@ -78,20 +86,21 @@ function Navigation(props) {
             <div className="dropdown-content">
               {allServices?.length
                 ? allServices?.map((link, index) => (
-                    <Link
+                    <a
                       className="nav-links"
-                      to={"/service/" + link.permalink}
+                      href={"/service/" + link.permalink}
                       onClick={clickHam}
+                      target="_self"
                     >
                       {link.title}
-                    </Link>
+                    </a>
                   ))
                 : null}
             </div>
           </div>
           <div className="dropdown">
             <button className="dropbtn">
-              Tools
+              Products
               <i
                 className="fa fa-angle-down"
                 aria-hidden="true"
@@ -118,10 +127,10 @@ function Navigation(props) {
           <NavLink
             activeClassName="link-active"
             className="nav-links"
-            to="/blogs"
+            to="/articles"
             onClick={clickHam}
           >
-            Blogs
+            Articles
           </NavLink>
           <NavLink
             activeClassName="link-active"
@@ -131,14 +140,7 @@ function Navigation(props) {
           >
             Career
           </NavLink>
-          <NavLink
-            activeClassName="link-active"
-            className="nav-links"
-            to="/aboutUs"
-            onClick={clickHam}
-          >
-            About
-          </NavLink>
+          
         </div>
 
         <div className="Button">

@@ -210,11 +210,11 @@ flex-direction: column;
         left: 0;
         z-index: -3;
         content: '';
-       background-color: #83acc978;
+       background-color: #ebf6ff;
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
-       clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+       clip-path:polygon(0% -1%, 100% 30%, 100% 100%, 0 70%);
     }
 }
 @media only screen and (min-width: 1441px) {

@@ -70,6 +70,41 @@
     }
 }
 
+.related-blog-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 8% 0 0 8%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // margin: 10% 0 0 0;
+    background-color: #c6e5ff;
+
+    h2 {
+        color: #3685c3;
+        font-weight: bold;
+    }
+
+    .blogs-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10% 0;
+    }
+
+    button {
+        width: fit-content;
+        align-self: center;
+        padding: 4px 8px;
+        outline: none;
+        border: none;
+        background-color: #3685c3;
+        color: white;
+        border-radius: 4px;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .servicePage-containers {
         width: 100%;
@@ -106,6 +141,40 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .related-blog-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 8%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 10% 0 0 0;
+        background-color: #c6e5ff;
+
+        h2 {
+            color: #3685c3;
+            font-weight: bold;
+        }
+
+        .blogs-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10% 0;
+        }
+
+        button {
+            width: fit-content;
+            align-self: center;
+            padding: 4px 8px;
+            outline: none;
+            border: none;
+            background-color: #3685c3;
+            color: white;
+            border-radius: 4px;
         }
     }
 }

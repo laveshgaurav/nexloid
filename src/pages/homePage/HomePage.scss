@@ -8,6 +8,7 @@
 .Home-Container {
     width: 100%;
     height: auto;
+    // padding-top: 5%;
 
     .Home-Section {
         width: 100%;
@@ -128,7 +129,7 @@
 
     .Intro {
         width: 100%;
-        min-height: 90vh;
+        min-height: 60vh;
         display: flex;
         align-items: center;
         padding: 0 8%;
@@ -193,6 +194,7 @@
 
 @media only screen and (max-width: 768px) {
     .Home-Container {
+        // padding-top: 30%;
         .Home-Section {
             height: auto;
             flex-direction: column;
@@ -299,6 +301,7 @@
 
 @media only screen and (min-width: 1441px) {
     .Home-Container {
+        // padding-top: 10%;
         .Home-Section {
             min-height: 90vh;
 

@@ -7,7 +7,7 @@ function BlogCard(props) {
     <div className="blogCard-container">
       <h3>{name}</h3>
       <p>{content}</p>
-      <Link to={`/blogs/${permalink}`}>Read more</Link>
+      <Link to={`/articles/${permalink}`}>Read more</Link>
     </div>
   );
 }

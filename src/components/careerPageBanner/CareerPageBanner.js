@@ -13,8 +13,7 @@ function CareerPageBanner() {
             </h3>
             <h3>our family?</h3>
             <p>
-              A short paragraph on how you hire or are always on a lookout for
-              marketing persons.
+            We are always on the lookout for a member to join the quest on achieving the greater goal. The client!
             </p>
           </div>
         </div>

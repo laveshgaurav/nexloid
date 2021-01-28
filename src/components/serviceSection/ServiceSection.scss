@@ -23,7 +23,7 @@
             padding: 0 4%;
             flex-wrap: wrap;
         .service-box{
-            width: 50%;
+            width: 33.33%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -31,6 +31,9 @@
             justify-content: center;
             padding: 4%;
             text-align: center;
+            a{
+                text-decoration: none;
+            }
             p{
                 color: #565656;
                 font-size: 1rem;
@@ -61,15 +64,16 @@
                 padding: 0 3%;
 
                 .service-box {
+                    width: 100%;
                     .img-box{
-                        width: 72px;
+                        width: 100%;
                         height: auto;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        margin:8%;
+                        // margin:8%;
                         img{
-                            width: 100%;
+                            width: 72px;
                             height: auto;
                         }
                     }
